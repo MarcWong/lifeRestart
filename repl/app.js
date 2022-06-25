@@ -487,12 +487,12 @@ class App {
         const trajectory = this.#life.next();
         const { age, content, isEnd } = trajectory;
         if(isEnd) this.#isEnd = true;
-        return `${age}岁：\t${
+        return `Age ${age}：\t${
             content.map(
                 ({type, description, grade, name, postEvent}) => {
                     switch(type) {
                         case 'TLT':
-                            return `天赋【${name}】发动：${description}`;
+                            return `Fotune [${name}]: ${description}`;
                         case 'EVT':
                             return description + (postEvent?`\n\t${postEvent}`:'');
                     }

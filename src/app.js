@@ -152,7 +152,7 @@ class App{
     }
 
     async start({
-        language = App.languages['zh-cn'],
+        language = App.languages['en-us'],
         theme = 'default',
     }) {
         this.resigterEvent();

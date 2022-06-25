@@ -352,9 +352,11 @@ class Property {
     isEnd() {
         return this.get(this.TYPES.LIF) < 1;
     }
-
     ageNext() {
         this.change(this.TYPES.AGE, 1);
+        while (!this.getAgeData(this.get(this.TYPES.AGE))) {
+            this.change(this.TYPES.AGE, 1);
+        }
         const age = this.get(this.TYPES.AGE);
         const {event, talent} = this.getAgeData(age);
         return {age, event, talent};

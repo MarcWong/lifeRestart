@@ -135,12 +135,15 @@ class Life {
         const {age, event, talent} = this.#property.ageNext();
 
         const talentContent = this.doTalent(talent);
+        console.log("age", age);
+        console.log("event", event);
+        console.log("selected event", this.random(event));
         const eventContent = this.doEvent(this.random(event));
 
         const isEnd = this.#property.isEnd();
 
         const content = [talentContent, eventContent].flat();
-        this.#achievement.achieve(this.AchievementOpportunity.TRAJECTORY);
+        //this.#achievement.achieve(this.AchievementOpportunity.TRAJECTORY);
         return { age, content, isEnd };
     }
 

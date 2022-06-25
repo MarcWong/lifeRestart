@@ -28,7 +28,7 @@ async function debug(config) {
     const core = new Life();
     core.config(config);
     await core.initial(
-        async fileName => JSON.parse(await readFile(`public/data/zh-cn/${fileName}.json`)),
+        async fileName => JSON.parse(await readFile(`public/data/en-us/${fileName}.json`)),
         async fileName => JSON.parse(await readFile(`public/data/${fileName}.json`)),
     );
 
@@ -74,7 +74,7 @@ async function debug(config) {
         const { age, content } = trajectory;
         console.debug(
             `---------------------------------`,
-            `\n-- ${age} 岁\n   `,
+            `\n-- Age ${age}\n   `,
             content.map(
                 ({type, description, rate, name, postEvent}) => {
                     switch(type) {
