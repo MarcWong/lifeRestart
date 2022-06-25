@@ -1,11 +1,13 @@
 {
     "x":0,
     "type":"View",
-    "selectedBox":181,
-    "selecteID":184,
+    "selectedBox":254,
+    "selecteID":255,
+    "searchKey":"View",
     "referenceLines":null,
     "props":{"width":1125,"sceneColor":"#000000","runtime":"Laya.runtime.ViewBase","height":2436},
     "nodeParent":-1,
+    "maxID":279,
     "label":"View",
     "isOpen":true,
     "isDirectory":true,
@@ -16,22 +18,25 @@
         {
             "x":15,
             "type":"Label",
+            "searchKey":"Label,title,title",
             "props":{"y":80,"var":"title","text":"UI_Title_Property","name":"title","fontSize":80,"font":"SimHei","color":"#ffffff","centerX":0},
             "nodeParent":1,
-            "label":"Label(title)",
+            "label":"title",
             "isDirectory":false,
             "isAniNode":true,
             "hasChild":false,
             "compId":6,
             "child":[
-                ]
+                ],
+            "$LOCKED":false
         },
         {
             "x":15,
             "type":"Box",
+            "searchKey":"Box,propertyAllocate",
             "props":{"top":230,"right":40,"name":"propertyAllocate","left":40,"height":1100},
             "nodeParent":1,
-            "label":"Box(propertyAllocate)",
+            "label":"propertyAllocate",
             "isOpen":true,
             "isDirectory":true,
             "isAniNode":true,
@@ -41,6 +46,7 @@
                 {
                     "x":30,
                     "type":"HBox",
+                    "searchKey":"HBox",
                     "props":{"top":0,"height":100,"centerX":0},
                     "nodeParent":8,
                     "label":"HBox",
@@ -53,9 +59,10 @@
                         {
                             "x":45,
                             "type":"Label",
+                            "searchKey":"Label,font_default",
                             "props":{"x":0,"text":"UI_Left_Property_Point","name":"font_default","fontSize":70,"font":"SimHei","color":"#ffffff","centerY":0},
                             "nodeParent":50,
-                            "label":"Label(font_default)",
+                            "label":"font_default",
                             "isDirectory":false,
                             "isAniNode":true,
                             "hasChild":false,
@@ -66,9 +73,10 @@
                         {
                             "x":45,
                             "type":"Label",
+                            "searchKey":"Label,font_default",
                             "props":{"x":1,"text":"UI_Colon","name":"font_default","fontSize":70,"font":"SimHei","color":"#ffffff","centerY":0},
                             "nodeParent":50,
-                            "label":"Label(font_default)",
+                            "label":"font_default",
                             "isDirectory":false,
                             "isAniNode":true,
                             "hasChild":false,
@@ -79,9 +87,10 @@
                         {
                             "x":45,
                             "type":"Label",
+                            "searchKey":"Label,font_default,labLeftPropertyPoint",
                             "props":{"x":2,"var":"labLeftPropertyPoint","text":"0","name":"font_default","fontSize":70,"color":"#ffffff","centerY":0},
                             "nodeParent":50,
-                            "label":"Label(labLeftPropertyPoint)",
+                            "label":"font_default",
                             "isDirectory":false,
                             "isAniNode":true,
                             "hasChild":false,
@@ -93,6 +102,7 @@
                 {
                     "x":30,
                     "type":"VBox",
+                    "searchKey":"VBox",
                     "props":{"top":200,"space":100,"right":50,"left":50},
                     "nodeParent":8,
                     "label":"VBox",
@@ -105,21 +115,22 @@
                         {
                             "x":45,
                             "type":"Box",
+                            "searchKey":"Box,boxCharm",
                             "props":{"y":0,"var":"boxCharm","right":0,"left":0,"height":130},
                             "nodeParent":120,
-                            "label":"Box(boxCharm)",
-                            "isOpen":true,
+                            "label":"boxCharm",
+                            "isOpen":false,
                             "isDirectory":true,
                             "isAniNode":true,
                             "hasChild":true,
                             "compId":10,
                             "child":[
                                 {
-                                    "x":60,
                                     "type":"Label",
+                                    "searchKey":"Label,font_default",
                                     "props":{"x":183,"text":"UI_Property_Charm","name":"font_default","fontSize":70,"font":"SimHei","color":"#ffffff","centerY":0,"anchorY":0.5,"anchorX":0.5},
                                     "nodeParent":10,
-                                    "label":"Label(font_default)",
+                                    "label":"font_default",
                                     "isDirectory":false,
                                     "isAniNode":true,
                                     "hasChild":false,
@@ -128,11 +139,11 @@
                                         ]
                                 },
                                 {
-                                    "x":60,
                                     "type":"Box",
+                                    "searchKey":"Box,property,boxCharmAllocate",
                                     "props":{"width":590,"var":"boxCharmAllocate","runtime":"Laya.runtime.ColorFilterItem","right":30,"name":"property","height":110,"centerY":0},
                                     "nodeParent":10,
-                                    "label":"Box(boxCharmAllocate)",
+                                    "label":"property",
                                     "isOpen":false,
                                     "isDirectory":true,
                                     "isAniNode":true,
@@ -141,9 +152,10 @@
                                     "child":[
                                         {
                                             "type":"Box",
+                                            "searchKey":"Box,btnCharmReduce,btnCharmReduce",
                                             "props":{"width":110,"var":"btnCharmReduce","name":"btnCharmReduce","left":0,"height":110,"centerY":0},
                                             "nodeParent":20,
-                                            "label":"Box(btnCharmReduce)",
+                                            "label":"btnCharmReduce",
                                             "isOpen":true,
                                             "isDirectory":true,
                                             "isAniNode":true,
@@ -152,6 +164,7 @@
                                             "child":[
                                                 {
                                                     "type":"Box",
+                                                    "searchKey":"Box",
                                                     "props":{"width":110,"height":110,"centerY":0,"centerX":0,"anchorY":0.5,"anchorX":0.5},
                                                     "nodeParent":21,
                                                     "label":"Box",
@@ -163,6 +176,7 @@
                                                     "child":[
                                                         {
                                                             "type":"Rect",
+                                                            "searchKey":"Rect",
                                                             "props":{"width":110,"lineWidth":1,"height":4,"fillColor":"#ffffff"},
                                                             "nodeParent":24,
                                                             "label":"Rect",
@@ -175,6 +189,7 @@
                                                         },
                                                         {
                                                             "type":"Rect",
+                                                            "searchKey":"Rect",
                                                             "props":{"y":106,"x":0,"width":110,"lineWidth":1,"height":4,"fillColor":"#ffffff"},
                                                             "nodeParent":24,
                                                             "label":"Rect",
@@ -187,6 +202,7 @@
                                                         },
                                                         {
                                                             "type":"Rect",
+                                                            "searchKey":"Rect",
                                                             "props":{"y":0,"x":0,"width":4,"lineWidth":1,"height":110,"fillColor":"#ffffff"},
                                                             "nodeParent":24,
                                                             "label":"Rect",
@@ -199,6 +215,7 @@
                                                         },
                                                         {
                                                             "type":"Rect",
+                                                            "searchKey":"Rect",
                                                             "props":{"y":0,"x":106,"width":4,"lineWidth":1,"height":110,"fillColor":"#ffffff"},
                                                             "nodeParent":24,
                                                             "label":"Rect",
@@ -212,6 +229,7 @@
                                                 },
                                                 {
                                                     "type":"Box",
+                                                    "searchKey":"Box",
                                                     "props":{"width":110,"runtime":"Laya.runtime.ScaleButton","height":110,"centerY":0,"centerX":0,"anchorY":0.5,"anchorX":0.5},
                                                     "nodeParent":21,
                                                     "label":"Box",
@@ -223,6 +241,7 @@
                                                     "child":[
                                                         {
                                                             "type":"Box",
+                                                            "searchKey":"Box",
                                                             "props":{"width":48,"height":12,"centerY":0,"centerX":0,"anchorY":0.5,"anchorX":0.5},
                                                             "nodeParent":39,
                                                             "label":"Box",
@@ -234,6 +253,7 @@
                                                             "child":[
                                                                 {
                                                                     "type":"Rect",
+                                                                    "searchKey":"Rect",
                                                                     "props":{"y":0,"x":0,"width":48,"lineWidth":1,"height":12,"fillColor":"#ffffff"},
                                                                     "nodeParent":25,
                                                                     "label":"Rect",
@@ -249,6 +269,7 @@
                                         },
                                         {
                                             "type":"Box",
+                                            "searchKey":"Box",
                                             "props":{"y":0,"x":110,"top":0,"right":110,"left":110,"bottom":0},
                                             "nodeParent":20,
                                             "label":"Box",
@@ -260,9 +281,10 @@
                                             "child":[
                                                 {
                                                     "type":"TextInput",
+                                                    "searchKey":"TextInput,inputCharm,inputCharm",
                                                     "props":{"var":"inputCharm","type":"number","top":0,"text":"0","right":0,"promptColor":"#828282","prompt":0,"name":"inputCharm","maxChars":1,"left":0,"fontSize":80,"font":"SimHei","color":"#ffffff","bottom":0,"align":"center"},
                                                     "nodeParent":42,
-                                                    "label":"TextInput(inputCharm)",
+                                                    "label":"inputCharm",
                                                     "isDirectory":false,
                                                     "isAniNode":true,
                                                     "hasChild":false,
@@ -272,6 +294,7 @@
                                                 },
                                                 {
                                                     "type":"Rect",
+                                                    "searchKey":"Rect",
                                                     "props":{"y":0,"x":0,"width":370,"lineWidth":1,"height":4,"fillColor":"#ffffff"},
                                                     "nodeParent":42,
                                                     "label":"Rect",
@@ -284,6 +307,7 @@
                                                 },
                                                 {
                                                     "type":"Rect",
+                                                    "searchKey":"Rect",
                                                     "props":{"y":106,"x":0,"width":370,"lineWidth":1,"height":4,"fillColor":"#ffffff"},
                                                     "nodeParent":42,
                                                     "label":"Rect",
@@ -297,9 +321,10 @@
                                         },
                                         {
                                             "type":"Box",
+                                            "searchKey":"Box,btnCharmIncrease,btnCharmIncrease",
                                             "props":{"width":110,"var":"btnCharmIncrease","right":0,"name":"btnCharmIncrease","height":110,"centerY":0},
                                             "nodeParent":20,
-                                            "label":"Box(btnCharmIncrease)",
+                                            "label":"btnCharmIncrease",
                                             "isOpen":false,
                                             "isDirectory":true,
                                             "isAniNode":true,
@@ -308,6 +333,7 @@
                                             "child":[
                                                 {
                                                     "type":"Box",
+                                                    "searchKey":"Box",
                                                     "props":{"width":110,"height":110,"centerY":0,"centerX":0,"anchorY":0.5,"anchorX":0.5},
                                                     "nodeParent":22,
                                                     "label":"Box",
@@ -319,6 +345,7 @@
                                                     "child":[
                                                         {
                                                             "type":"Rect",
+                                                            "searchKey":"Rect",
                                                             "props":{"width":110,"lineWidth":1,"height":4,"fillColor":"#ffffff"},
                                                             "nodeParent":31,
                                                             "label":"Rect",
@@ -331,6 +358,7 @@
                                                         },
                                                         {
                                                             "type":"Rect",
+                                                            "searchKey":"Rect",
                                                             "props":{"y":106,"x":0,"width":110,"lineWidth":1,"height":4,"fillColor":"#ffffff"},
                                                             "nodeParent":31,
                                                             "label":"Rect",
@@ -343,6 +371,7 @@
                                                         },
                                                         {
                                                             "type":"Rect",
+                                                            "searchKey":"Rect",
                                                             "props":{"y":0,"x":0,"width":4,"lineWidth":1,"height":110,"fillColor":"#ffffff"},
                                                             "nodeParent":31,
                                                             "label":"Rect",
@@ -355,6 +384,7 @@
                                                         },
                                                         {
                                                             "type":"Rect",
+                                                            "searchKey":"Rect",
                                                             "props":{"y":0,"x":106,"width":4,"lineWidth":1,"height":110,"fillColor":"#ffffff"},
                                                             "nodeParent":31,
                                                             "label":"Rect",
@@ -368,6 +398,7 @@
                                                 },
                                                 {
                                                     "type":"Box",
+                                                    "searchKey":"Box",
                                                     "props":{"width":110,"runtime":"Laya.runtime.ScaleButton","height":110,"centerY":0,"centerX":0,"anchorY":0.5,"anchorX":0.5},
                                                     "nodeParent":22,
                                                     "label":"Box",
@@ -379,6 +410,7 @@
                                                     "child":[
                                                         {
                                                             "type":"Box",
+                                                            "searchKey":"Box",
                                                             "props":{"width":48,"height":12,"centerY":0,"centerX":0,"anchorY":0.5,"anchorX":0.5},
                                                             "nodeParent":38,
                                                             "label":"Box",
@@ -390,6 +422,7 @@
                                                             "child":[
                                                                 {
                                                                     "type":"Rect",
+                                                                    "searchKey":"Rect",
                                                                     "props":{"y":0,"x":0,"width":48,"lineWidth":1,"height":12,"fillColor":"#ffffff"},
                                                                     "nodeParent":36,
                                                                     "label":"Rect",
@@ -403,6 +436,7 @@
                                                         },
                                                         {
                                                             "type":"Box",
+                                                            "searchKey":"Box",
                                                             "props":{"width":48,"rotation":90,"height":12,"centerY":0,"centerX":0,"anchorY":0.5,"anchorX":0.5},
                                                             "nodeParent":38,
                                                             "label":"Box",
@@ -414,6 +448,7 @@
                                                             "child":[
                                                                 {
                                                                     "type":"Rect",
+                                                                    "searchKey":"Rect",
                                                                     "props":{"y":0,"x":0,"width":48,"lineWidth":1,"height":12,"fillColor":"#ffffff"},
                                                                     "nodeParent":40,
                                                                     "label":"Rect",
@@ -432,21 +467,22 @@
                         {
                             "x":45,
                             "type":"Box",
+                            "searchKey":"Box,boxIntelligence",
                             "props":{"y":1,"var":"boxIntelligence","right":0,"left":0,"height":130},
                             "nodeParent":120,
-                            "label":"Box(boxIntelligence)",
-                            "isOpen":true,
+                            "label":"boxIntelligence",
+                            "isOpen":false,
                             "isDirectory":true,
                             "isAniNode":true,
                             "hasChild":true,
                             "compId":121,
                             "child":[
                                 {
-                                    "x":60,
                                     "type":"Label",
+                                    "searchKey":"Label,font_default",
                                     "props":{"x":183,"text":"UI_Property_Intelligence","name":"font_default","fontSize":70,"font":"SimHei","color":"#ffffff","centerY":0,"anchorY":0.5,"anchorX":0.5},
                                     "nodeParent":121,
-                                    "label":"Label(font_default)",
+                                    "label":"font_default",
                                     "isDirectory":false,
                                     "isAniNode":true,
                                     "hasChild":false,
@@ -455,11 +491,11 @@
                                         ]
                                 },
                                 {
-                                    "x":60,
                                     "type":"Box",
+                                    "searchKey":"Box,property,boxIntelligenceAllocate",
                                     "props":{"width":590,"var":"boxIntelligenceAllocate","runtime":"Laya.runtime.ColorFilterItem","right":30,"name":"property","height":110,"centerY":0},
                                     "nodeParent":121,
-                                    "label":"Box(boxIntelligenceAllocate)",
+                                    "label":"property",
                                     "isOpen":false,
                                     "isDirectory":true,
                                     "isAniNode":true,
@@ -468,9 +504,10 @@
                                     "child":[
                                         {
                                             "type":"Box",
+                                            "searchKey":"Box,btnIntelligenceReduce,btnIntelligenceReduce",
                                             "props":{"width":110,"var":"btnIntelligenceReduce","name":"btnIntelligenceReduce","left":0,"height":110,"centerY":0},
                                             "nodeParent":125,
-                                            "label":"Box(btnIntelligenceReduce)",
+                                            "label":"btnIntelligenceReduce",
                                             "isOpen":true,
                                             "isDirectory":true,
                                             "isAniNode":true,
@@ -479,6 +516,7 @@
                                             "child":[
                                                 {
                                                     "type":"Box",
+                                                    "searchKey":"Box",
                                                     "props":{"width":110,"height":110,"centerY":0,"centerX":0,"anchorY":0.5,"anchorX":0.5},
                                                     "nodeParent":126,
                                                     "label":"Box",
@@ -490,6 +528,7 @@
                                                     "child":[
                                                         {
                                                             "type":"Rect",
+                                                            "searchKey":"Rect",
                                                             "props":{"width":110,"lineWidth":1,"height":4,"fillColor":"#ffffff"},
                                                             "nodeParent":127,
                                                             "label":"Rect",
@@ -502,6 +541,7 @@
                                                         },
                                                         {
                                                             "type":"Rect",
+                                                            "searchKey":"Rect",
                                                             "props":{"y":106,"x":0,"width":110,"lineWidth":1,"height":4,"fillColor":"#ffffff"},
                                                             "nodeParent":127,
                                                             "label":"Rect",
@@ -514,6 +554,7 @@
                                                         },
                                                         {
                                                             "type":"Rect",
+                                                            "searchKey":"Rect",
                                                             "props":{"y":0,"x":0,"width":4,"lineWidth":1,"height":110,"fillColor":"#ffffff"},
                                                             "nodeParent":127,
                                                             "label":"Rect",
@@ -526,6 +567,7 @@
                                                         },
                                                         {
                                                             "type":"Rect",
+                                                            "searchKey":"Rect",
                                                             "props":{"y":0,"x":106,"width":4,"lineWidth":1,"height":110,"fillColor":"#ffffff"},
                                                             "nodeParent":127,
                                                             "label":"Rect",
@@ -539,6 +581,7 @@
                                                 },
                                                 {
                                                     "type":"Box",
+                                                    "searchKey":"Box",
                                                     "props":{"width":110,"runtime":"Laya.runtime.ScaleButton","height":110,"centerY":0,"centerX":0,"anchorY":0.5,"anchorX":0.5},
                                                     "nodeParent":126,
                                                     "label":"Box",
@@ -550,6 +593,7 @@
                                                     "child":[
                                                         {
                                                             "type":"Box",
+                                                            "searchKey":"Box",
                                                             "props":{"width":48,"height":12,"centerY":0,"centerX":0,"anchorY":0.5,"anchorX":0.5},
                                                             "nodeParent":132,
                                                             "label":"Box",
@@ -561,6 +605,7 @@
                                                             "child":[
                                                                 {
                                                                     "type":"Rect",
+                                                                    "searchKey":"Rect",
                                                                     "props":{"y":0,"x":0,"width":48,"lineWidth":1,"height":12,"fillColor":"#ffffff"},
                                                                     "nodeParent":133,
                                                                     "label":"Rect",
@@ -576,6 +621,7 @@
                                         },
                                         {
                                             "type":"Box",
+                                            "searchKey":"Box",
                                             "props":{"y":0,"x":110,"top":0,"right":110,"left":110,"bottom":0},
                                             "nodeParent":125,
                                             "label":"Box",
@@ -587,9 +633,10 @@
                                             "child":[
                                                 {
                                                     "type":"TextInput",
+                                                    "searchKey":"TextInput,inputIntelligence,inputIntelligence",
                                                     "props":{"var":"inputIntelligence","type":"number","top":0,"text":"0","right":0,"promptColor":"#828282","prompt":0,"name":"inputIntelligence","maxChars":1,"left":0,"fontSize":80,"font":"SimHei","color":"#ffffff","bottom":0,"align":"center"},
                                                     "nodeParent":135,
-                                                    "label":"TextInput(inputIntelligence)",
+                                                    "label":"inputIntelligence",
                                                     "isDirectory":false,
                                                     "isAniNode":true,
                                                     "hasChild":false,
@@ -599,6 +646,7 @@
                                                 },
                                                 {
                                                     "type":"Rect",
+                                                    "searchKey":"Rect",
                                                     "props":{"y":0,"x":0,"width":370,"lineWidth":1,"height":4,"fillColor":"#ffffff"},
                                                     "nodeParent":135,
                                                     "label":"Rect",
@@ -611,6 +659,7 @@
                                                 },
                                                 {
                                                     "type":"Rect",
+                                                    "searchKey":"Rect",
                                                     "props":{"y":106,"x":0,"width":370,"lineWidth":1,"height":4,"fillColor":"#ffffff"},
                                                     "nodeParent":135,
                                                     "label":"Rect",
@@ -624,9 +673,10 @@
                                         },
                                         {
                                             "type":"Box",
+                                            "searchKey":"Box,btnIntelligenceIncrease,btnIntelligenceIncrease",
                                             "props":{"width":110,"var":"btnIntelligenceIncrease","right":0,"name":"btnIntelligenceIncrease","height":110,"centerY":0},
                                             "nodeParent":125,
-                                            "label":"Box(btnIntelligenceIncrease)",
+                                            "label":"btnIntelligenceIncrease",
                                             "isOpen":true,
                                             "isDirectory":true,
                                             "isAniNode":true,
@@ -635,6 +685,7 @@
                                             "child":[
                                                 {
                                                     "type":"Box",
+                                                    "searchKey":"Box",
                                                     "props":{"width":110,"height":110,"centerY":0,"centerX":0,"anchorY":0.5,"anchorX":0.5},
                                                     "nodeParent":140,
                                                     "label":"Box",
@@ -646,6 +697,7 @@
                                                     "child":[
                                                         {
                                                             "type":"Rect",
+                                                            "searchKey":"Rect",
                                                             "props":{"width":110,"lineWidth":1,"height":4,"fillColor":"#ffffff"},
                                                             "nodeParent":141,
                                                             "label":"Rect",
@@ -658,6 +710,7 @@
                                                         },
                                                         {
                                                             "type":"Rect",
+                                                            "searchKey":"Rect",
                                                             "props":{"y":106,"x":0,"width":110,"lineWidth":1,"height":4,"fillColor":"#ffffff"},
                                                             "nodeParent":141,
                                                             "label":"Rect",
@@ -670,6 +723,7 @@
                                                         },
                                                         {
                                                             "type":"Rect",
+                                                            "searchKey":"Rect",
                                                             "props":{"y":0,"x":0,"width":4,"lineWidth":1,"height":110,"fillColor":"#ffffff"},
                                                             "nodeParent":141,
                                                             "label":"Rect",
@@ -682,6 +736,7 @@
                                                         },
                                                         {
                                                             "type":"Rect",
+                                                            "searchKey":"Rect",
                                                             "props":{"y":0,"x":106,"width":4,"lineWidth":1,"height":110,"fillColor":"#ffffff"},
                                                             "nodeParent":141,
                                                             "label":"Rect",
@@ -695,6 +750,7 @@
                                                 },
                                                 {
                                                     "type":"Box",
+                                                    "searchKey":"Box",
                                                     "props":{"width":110,"runtime":"Laya.runtime.ScaleButton","height":110,"centerY":0,"centerX":0,"anchorY":0.5,"anchorX":0.5},
                                                     "nodeParent":140,
                                                     "label":"Box",
@@ -706,6 +762,7 @@
                                                     "child":[
                                                         {
                                                             "type":"Box",
+                                                            "searchKey":"Box",
                                                             "props":{"width":48,"height":12,"centerY":0,"centerX":0,"anchorY":0.5,"anchorX":0.5},
                                                             "nodeParent":146,
                                                             "label":"Box",
@@ -717,6 +774,7 @@
                                                             "child":[
                                                                 {
                                                                     "type":"Rect",
+                                                                    "searchKey":"Rect",
                                                                     "props":{"y":0,"x":0,"width":48,"lineWidth":1,"height":12,"fillColor":"#ffffff"},
                                                                     "nodeParent":147,
                                                                     "label":"Rect",
@@ -730,6 +788,7 @@
                                                         },
                                                         {
                                                             "type":"Box",
+                                                            "searchKey":"Box",
                                                             "props":{"width":48,"rotation":90,"height":12,"centerY":0,"centerX":0,"anchorY":0.5,"anchorX":0.5},
                                                             "nodeParent":146,
                                                             "label":"Box",
@@ -741,6 +800,7 @@
                                                             "child":[
                                                                 {
                                                                     "type":"Rect",
+                                                                    "searchKey":"Rect",
                                                                     "props":{"y":0,"x":0,"width":48,"lineWidth":1,"height":12,"fillColor":"#ffffff"},
                                                                     "nodeParent":149,
                                                                     "label":"Rect",
@@ -759,9 +819,10 @@
                         {
                             "x":45,
                             "type":"Box",
+                            "searchKey":"Box,boxStrength",
                             "props":{"y":2,"var":"boxStrength","right":0,"left":0,"height":130},
                             "nodeParent":120,
-                            "label":"Box(boxStrength)",
+                            "label":"boxStrength",
                             "isOpen":true,
                             "isDirectory":true,
                             "isAniNode":true,
@@ -771,9 +832,10 @@
                                 {
                                     "x":60,
                                     "type":"Label",
+                                    "searchKey":"Label,font_default",
                                     "props":{"x":183,"text":"UI_Property_Strength","name":"font_default","fontSize":70,"font":"SimHei","color":"#ffffff","centerY":0,"anchorY":0.5,"anchorX":0.5},
                                     "nodeParent":151,
-                                    "label":"Label(font_default)",
+                                    "label":"font_default",
                                     "isDirectory":false,
                                     "isAniNode":true,
                                     "hasChild":false,
@@ -784,9 +846,10 @@
                                 {
                                     "x":60,
                                     "type":"Box",
+                                    "searchKey":"Box,property,boxStrengthAllocate",
                                     "props":{"width":590,"var":"boxStrengthAllocate","runtime":"Laya.runtime.ColorFilterItem","right":30,"name":"property","height":110,"centerY":0},
                                     "nodeParent":151,
-                                    "label":"Box(boxStrengthAllocate)",
+                                    "label":"property",
                                     "isOpen":false,
                                     "isDirectory":true,
                                     "isAniNode":true,
@@ -795,9 +858,10 @@
                                     "child":[
                                         {
                                             "type":"Box",
+                                            "searchKey":"Box,btnStrengthReduce,btnStrengthReduce",
                                             "props":{"width":110,"var":"btnStrengthReduce","name":"btnStrengthReduce","left":0,"height":110,"centerY":0},
                                             "nodeParent":155,
-                                            "label":"Box(btnStrengthReduce)",
+                                            "label":"btnStrengthReduce",
                                             "isOpen":true,
                                             "isDirectory":true,
                                             "isAniNode":true,
@@ -806,6 +870,7 @@
                                             "child":[
                                                 {
                                                     "type":"Box",
+                                                    "searchKey":"Box",
                                                     "props":{"width":110,"height":110,"centerY":0,"centerX":0,"anchorY":0.5,"anchorX":0.5},
                                                     "nodeParent":156,
                                                     "label":"Box",
@@ -817,6 +882,7 @@
                                                     "child":[
                                                         {
                                                             "type":"Rect",
+                                                            "searchKey":"Rect",
                                                             "props":{"width":110,"lineWidth":1,"height":4,"fillColor":"#ffffff"},
                                                             "nodeParent":157,
                                                             "label":"Rect",
@@ -829,6 +895,7 @@
                                                         },
                                                         {
                                                             "type":"Rect",
+                                                            "searchKey":"Rect",
                                                             "props":{"y":106,"x":0,"width":110,"lineWidth":1,"height":4,"fillColor":"#ffffff"},
                                                             "nodeParent":157,
                                                             "label":"Rect",
@@ -841,6 +908,7 @@
                                                         },
                                                         {
                                                             "type":"Rect",
+                                                            "searchKey":"Rect",
                                                             "props":{"y":0,"x":0,"width":4,"lineWidth":1,"height":110,"fillColor":"#ffffff"},
                                                             "nodeParent":157,
                                                             "label":"Rect",
@@ -853,6 +921,7 @@
                                                         },
                                                         {
                                                             "type":"Rect",
+                                                            "searchKey":"Rect",
                                                             "props":{"y":0,"x":106,"width":4,"lineWidth":1,"height":110,"fillColor":"#ffffff"},
                                                             "nodeParent":157,
                                                             "label":"Rect",
@@ -866,6 +935,7 @@
                                                 },
                                                 {
                                                     "type":"Box",
+                                                    "searchKey":"Box",
                                                     "props":{"width":110,"runtime":"Laya.runtime.ScaleButton","height":110,"centerY":0,"centerX":0,"anchorY":0.5,"anchorX":0.5},
                                                     "nodeParent":156,
                                                     "label":"Box",
@@ -877,6 +947,7 @@
                                                     "child":[
                                                         {
                                                             "type":"Box",
+                                                            "searchKey":"Box",
                                                             "props":{"width":48,"height":12,"centerY":0,"centerX":0,"anchorY":0.5,"anchorX":0.5},
                                                             "nodeParent":162,
                                                             "label":"Box",
@@ -888,6 +959,7 @@
                                                             "child":[
                                                                 {
                                                                     "type":"Rect",
+                                                                    "searchKey":"Rect",
                                                                     "props":{"y":0,"x":0,"width":48,"lineWidth":1,"height":12,"fillColor":"#ffffff"},
                                                                     "nodeParent":163,
                                                                     "label":"Rect",
@@ -903,6 +975,7 @@
                                         },
                                         {
                                             "type":"Box",
+                                            "searchKey":"Box",
                                             "props":{"y":0,"x":110,"top":0,"right":110,"left":110,"bottom":0},
                                             "nodeParent":155,
                                             "label":"Box",
@@ -914,9 +987,10 @@
                                             "child":[
                                                 {
                                                     "type":"TextInput",
+                                                    "searchKey":"TextInput,inputStrength,inputStrength",
                                                     "props":{"var":"inputStrength","type":"number","top":0,"text":"0","right":0,"promptColor":"#828282","prompt":0,"name":"inputStrength","maxChars":1,"left":0,"fontSize":80,"font":"SimHei","color":"#ffffff","bottom":0,"align":"center"},
                                                     "nodeParent":165,
-                                                    "label":"TextInput(inputStrength)",
+                                                    "label":"inputStrength",
                                                     "isDirectory":false,
                                                     "isAniNode":true,
                                                     "hasChild":false,
@@ -926,6 +1000,7 @@
                                                 },
                                                 {
                                                     "type":"Rect",
+                                                    "searchKey":"Rect",
                                                     "props":{"y":0,"x":0,"width":370,"lineWidth":1,"height":4,"fillColor":"#ffffff"},
                                                     "nodeParent":165,
                                                     "label":"Rect",
@@ -938,6 +1013,7 @@
                                                 },
                                                 {
                                                     "type":"Rect",
+                                                    "searchKey":"Rect",
                                                     "props":{"y":106,"x":0,"width":370,"lineWidth":1,"height":4,"fillColor":"#ffffff"},
                                                     "nodeParent":165,
                                                     "label":"Rect",
@@ -951,9 +1027,10 @@
                                         },
                                         {
                                             "type":"Box",
+                                            "searchKey":"Box,btnStrengthIncrease,btnStrengthIncrease",
                                             "props":{"width":110,"var":"btnStrengthIncrease","right":0,"name":"btnStrengthIncrease","height":110,"centerY":0},
                                             "nodeParent":155,
-                                            "label":"Box(btnStrengthIncrease)",
+                                            "label":"btnStrengthIncrease",
                                             "isOpen":true,
                                             "isDirectory":true,
                                             "isAniNode":true,
@@ -962,6 +1039,7 @@
                                             "child":[
                                                 {
                                                     "type":"Box",
+                                                    "searchKey":"Box",
                                                     "props":{"width":110,"height":110,"centerY":0,"centerX":0,"anchorY":0.5,"anchorX":0.5},
                                                     "nodeParent":170,
                                                     "label":"Box",
@@ -973,6 +1051,7 @@
                                                     "child":[
                                                         {
                                                             "type":"Rect",
+                                                            "searchKey":"Rect",
                                                             "props":{"width":110,"lineWidth":1,"height":4,"fillColor":"#ffffff"},
                                                             "nodeParent":171,
                                                             "label":"Rect",
@@ -985,6 +1064,7 @@
                                                         },
                                                         {
                                                             "type":"Rect",
+                                                            "searchKey":"Rect",
                                                             "props":{"y":106,"x":0,"width":110,"lineWidth":1,"height":4,"fillColor":"#ffffff"},
                                                             "nodeParent":171,
                                                             "label":"Rect",
@@ -997,6 +1077,7 @@
                                                         },
                                                         {
                                                             "type":"Rect",
+                                                            "searchKey":"Rect",
                                                             "props":{"y":0,"x":0,"width":4,"lineWidth":1,"height":110,"fillColor":"#ffffff"},
                                                             "nodeParent":171,
                                                             "label":"Rect",
@@ -1009,6 +1090,7 @@
                                                         },
                                                         {
                                                             "type":"Rect",
+                                                            "searchKey":"Rect",
                                                             "props":{"y":0,"x":106,"width":4,"lineWidth":1,"height":110,"fillColor":"#ffffff"},
                                                             "nodeParent":171,
                                                             "label":"Rect",
@@ -1022,6 +1104,7 @@
                                                 },
                                                 {
                                                     "type":"Box",
+                                                    "searchKey":"Box",
                                                     "props":{"width":110,"runtime":"Laya.runtime.ScaleButton","height":110,"centerY":0,"centerX":0,"anchorY":0.5,"anchorX":0.5},
                                                     "nodeParent":170,
                                                     "label":"Box",
@@ -1033,6 +1116,7 @@
                                                     "child":[
                                                         {
                                                             "type":"Box",
+                                                            "searchKey":"Box",
                                                             "props":{"width":48,"height":12,"centerY":0,"centerX":0,"anchorY":0.5,"anchorX":0.5},
                                                             "nodeParent":176,
                                                             "label":"Box",
@@ -1044,6 +1128,7 @@
                                                             "child":[
                                                                 {
                                                                     "type":"Rect",
+                                                                    "searchKey":"Rect",
                                                                     "props":{"y":0,"x":0,"width":48,"lineWidth":1,"height":12,"fillColor":"#ffffff"},
                                                                     "nodeParent":177,
                                                                     "label":"Rect",
@@ -1057,6 +1142,7 @@
                                                         },
                                                         {
                                                             "type":"Box",
+                                                            "searchKey":"Box",
                                                             "props":{"width":48,"rotation":90,"height":12,"centerY":0,"centerX":0,"anchorY":0.5,"anchorX":0.5},
                                                             "nodeParent":176,
                                                             "label":"Box",
@@ -1068,6 +1154,7 @@
                                                             "child":[
                                                                 {
                                                                     "type":"Rect",
+                                                                    "searchKey":"Rect",
                                                                     "props":{"y":0,"x":0,"width":48,"lineWidth":1,"height":12,"fillColor":"#ffffff"},
                                                                     "nodeParent":179,
                                                                     "label":"Rect",
@@ -1086,9 +1173,10 @@
                         {
                             "x":45,
                             "type":"Box",
-                            "props":{"y":3,"var":"boxMoney","right":0,"left":0,"height":130},
+                            "searchKey":"Box,boxEQ,boxMoney",
+                            "props":{"y":3,"var":"boxMoney","right":0,"name":"boxEQ","left":0,"height":130},
                             "nodeParent":120,
-                            "label":"Box(boxMoney)",
+                            "label":"boxEQ",
                             "isOpen":true,
                             "isDirectory":true,
                             "isAniNode":true,
@@ -1098,9 +1186,10 @@
                                 {
                                     "x":60,
                                     "type":"Label",
-                                    "props":{"x":183,"text":"UI_Property_Money","name":"font_default","fontSize":70,"font":"SimHei","color":"#ffffff","centerY":0,"anchorY":0.5,"anchorX":0.5},
+                                    "searchKey":"Label,font_default",
+                                    "props":{"x":183,"text":"UI_Property_Spirit","name":"font_default","fontSize":70,"font":"SimHei","color":"#ffffff","centerY":0,"anchorY":0.5,"anchorX":0.5},
                                     "nodeParent":181,
-                                    "label":"Label(font_default)",
+                                    "label":"font_default",
                                     "isDirectory":false,
                                     "isAniNode":true,
                                     "hasChild":false,
@@ -1111,21 +1200,24 @@
                                 {
                                     "x":60,
                                     "type":"Box",
-                                    "props":{"width":590,"var":"boxMoneyAllocate","runtime":"Laya.runtime.ColorFilterItem","right":30,"name":"property","height":110,"centerY":0},
+                                    "searchKey":"Box,property,boxSpiritAllocate",
+                                    "props":{"width":590,"var":"boxSpiritAllocate","runtime":"Laya.runtime.ColorFilterItem","right":30,"name":"property","height":110,"centerY":0},
                                     "nodeParent":181,
-                                    "label":"Box(boxMoneyAllocate)",
-                                    "isOpen":false,
+                                    "label":"property",
+                                    "isOpen":true,
                                     "isDirectory":true,
                                     "isAniNode":true,
                                     "hasChild":true,
                                     "compId":185,
                                     "child":[
                                         {
+                                            "x":75,
                                             "type":"Box",
-                                            "props":{"width":110,"var":"btnMoneyReduce","name":"btnMoneyReduce","left":0,"height":110,"centerY":0},
+                                            "searchKey":"Box,btnSpiritReduce,btnSpiritReduce",
+                                            "props":{"width":110,"var":"btnSpiritReduce","name":"btnSpiritReduce","left":0,"height":110,"centerY":0},
                                             "nodeParent":185,
-                                            "label":"Box(btnMoneyReduce)",
-                                            "isOpen":true,
+                                            "label":"btnSpiritReduce",
+                                            "isOpen":false,
                                             "isDirectory":true,
                                             "isAniNode":true,
                                             "hasChild":true,
@@ -1133,10 +1225,11 @@
                                             "child":[
                                                 {
                                                     "type":"Box",
+                                                    "searchKey":"Box",
                                                     "props":{"width":110,"height":110,"centerY":0,"centerX":0,"anchorY":0.5,"anchorX":0.5},
                                                     "nodeParent":186,
                                                     "label":"Box",
-                                                    "isOpen":true,
+                                                    "isOpen":false,
                                                     "isDirectory":true,
                                                     "isAniNode":true,
                                                     "hasChild":true,
@@ -1144,6 +1237,7 @@
                                                     "child":[
                                                         {
                                                             "type":"Rect",
+                                                            "searchKey":"Rect",
                                                             "props":{"width":110,"lineWidth":1,"height":4,"fillColor":"#ffffff"},
                                                             "nodeParent":187,
                                                             "label":"Rect",
@@ -1156,6 +1250,7 @@
                                                         },
                                                         {
                                                             "type":"Rect",
+                                                            "searchKey":"Rect",
                                                             "props":{"y":106,"x":0,"width":110,"lineWidth":1,"height":4,"fillColor":"#ffffff"},
                                                             "nodeParent":187,
                                                             "label":"Rect",
@@ -1168,6 +1263,7 @@
                                                         },
                                                         {
                                                             "type":"Rect",
+                                                            "searchKey":"Rect",
                                                             "props":{"y":0,"x":0,"width":4,"lineWidth":1,"height":110,"fillColor":"#ffffff"},
                                                             "nodeParent":187,
                                                             "label":"Rect",
@@ -1180,6 +1276,7 @@
                                                         },
                                                         {
                                                             "type":"Rect",
+                                                            "searchKey":"Rect",
                                                             "props":{"y":0,"x":106,"width":4,"lineWidth":1,"height":110,"fillColor":"#ffffff"},
                                                             "nodeParent":187,
                                                             "label":"Rect",
@@ -1193,10 +1290,11 @@
                                                 },
                                                 {
                                                     "type":"Box",
+                                                    "searchKey":"Box",
                                                     "props":{"width":110,"runtime":"Laya.runtime.ScaleButton","height":110,"centerY":0,"centerX":0,"anchorY":0.5,"anchorX":0.5},
                                                     "nodeParent":186,
                                                     "label":"Box",
-                                                    "isOpen":true,
+                                                    "isOpen":false,
                                                     "isDirectory":true,
                                                     "isAniNode":true,
                                                     "hasChild":true,
@@ -1204,6 +1302,7 @@
                                                     "child":[
                                                         {
                                                             "type":"Box",
+                                                            "searchKey":"Box",
                                                             "props":{"width":48,"height":12,"centerY":0,"centerX":0,"anchorY":0.5,"anchorX":0.5},
                                                             "nodeParent":192,
                                                             "label":"Box",
@@ -1215,6 +1314,7 @@
                                                             "child":[
                                                                 {
                                                                     "type":"Rect",
+                                                                    "searchKey":"Rect",
                                                                     "props":{"y":0,"x":0,"width":48,"lineWidth":1,"height":12,"fillColor":"#ffffff"},
                                                                     "nodeParent":193,
                                                                     "label":"Rect",
@@ -1229,7 +1329,9 @@
                                                 }]
                                         },
                                         {
+                                            "x":75,
                                             "type":"Box",
+                                            "searchKey":"Box",
                                             "props":{"y":0,"x":110,"top":0,"right":110,"left":110,"bottom":0},
                                             "nodeParent":185,
                                             "label":"Box",
@@ -1240,10 +1342,12 @@
                                             "compId":195,
                                             "child":[
                                                 {
+                                                    "x":90,
                                                     "type":"TextInput",
-                                                    "props":{"var":"inputMoney","type":"number","top":0,"text":"0","right":0,"promptColor":"#828282","prompt":0,"name":"inputMoney","maxChars":1,"left":0,"fontSize":80,"font":"SimHei","color":"#ffffff","bottom":0,"align":"center"},
+                                                    "searchKey":"TextInput,inputSpirit,inputSpirit",
+                                                    "props":{"var":"inputSpirit","type":"number","top":0,"text":"0","right":0,"promptColor":"#828282","prompt":0,"name":"inputSpirit","maxChars":1,"left":0,"fontSize":80,"font":"SimHei","color":"#ffffff","bottom":0,"align":"center"},
                                                     "nodeParent":195,
-                                                    "label":"TextInput(inputMoney)",
+                                                    "label":"inputSpirit",
                                                     "isDirectory":false,
                                                     "isAniNode":true,
                                                     "hasChild":false,
@@ -1252,7 +1356,9 @@
                                                         ]
                                                 },
                                                 {
+                                                    "x":90,
                                                     "type":"Rect",
+                                                    "searchKey":"Rect",
                                                     "props":{"y":0,"x":0,"width":370,"lineWidth":1,"height":4,"fillColor":"#ffffff"},
                                                     "nodeParent":195,
                                                     "label":"Rect",
@@ -1264,7 +1370,9 @@
                                                         ]
                                                 },
                                                 {
+                                                    "x":90,
                                                     "type":"Rect",
+                                                    "searchKey":"Rect",
                                                     "props":{"y":106,"x":0,"width":370,"lineWidth":1,"height":4,"fillColor":"#ffffff"},
                                                     "nodeParent":195,
                                                     "label":"Rect",
@@ -1277,10 +1385,12 @@
                                                 }]
                                         },
                                         {
+                                            "x":75,
                                             "type":"Box",
-                                            "props":{"width":110,"var":"btnMoneyIncrease","right":0,"name":"btnMoneyIncrease","height":110,"centerY":0},
+                                            "searchKey":"Box,btnSpiritIncrease,btnSpiritIncrease",
+                                            "props":{"width":110,"var":"btnSpiritIncrease","right":0,"name":"btnSpiritIncrease","height":110,"centerY":0},
                                             "nodeParent":185,
-                                            "label":"Box(btnMoneyIncrease)",
+                                            "label":"btnSpiritIncrease",
                                             "isOpen":true,
                                             "isDirectory":true,
                                             "isAniNode":true,
@@ -1288,11 +1398,13 @@
                                             "compId":200,
                                             "child":[
                                                 {
+                                                    "x":90,
                                                     "type":"Box",
+                                                    "searchKey":"Box",
                                                     "props":{"width":110,"height":110,"centerY":0,"centerX":0,"anchorY":0.5,"anchorX":0.5},
                                                     "nodeParent":200,
                                                     "label":"Box",
-                                                    "isOpen":true,
+                                                    "isOpen":false,
                                                     "isDirectory":true,
                                                     "isAniNode":true,
                                                     "hasChild":true,
@@ -1300,6 +1412,7 @@
                                                     "child":[
                                                         {
                                                             "type":"Rect",
+                                                            "searchKey":"Rect",
                                                             "props":{"width":110,"lineWidth":1,"height":4,"fillColor":"#ffffff"},
                                                             "nodeParent":201,
                                                             "label":"Rect",
@@ -1312,6 +1425,7 @@
                                                         },
                                                         {
                                                             "type":"Rect",
+                                                            "searchKey":"Rect",
                                                             "props":{"y":106,"x":0,"width":110,"lineWidth":1,"height":4,"fillColor":"#ffffff"},
                                                             "nodeParent":201,
                                                             "label":"Rect",
@@ -1324,6 +1438,7 @@
                                                         },
                                                         {
                                                             "type":"Rect",
+                                                            "searchKey":"Rect",
                                                             "props":{"y":0,"x":0,"width":4,"lineWidth":1,"height":110,"fillColor":"#ffffff"},
                                                             "nodeParent":201,
                                                             "label":"Rect",
@@ -1336,6 +1451,7 @@
                                                         },
                                                         {
                                                             "type":"Rect",
+                                                            "searchKey":"Rect",
                                                             "props":{"y":0,"x":106,"width":4,"lineWidth":1,"height":110,"fillColor":"#ffffff"},
                                                             "nodeParent":201,
                                                             "label":"Rect",
@@ -1348,11 +1464,13 @@
                                                         }]
                                                 },
                                                 {
+                                                    "x":90,
                                                     "type":"Box",
+                                                    "searchKey":"Box",
                                                     "props":{"width":110,"runtime":"Laya.runtime.ScaleButton","height":110,"centerY":0,"centerX":0,"anchorY":0.5,"anchorX":0.5},
                                                     "nodeParent":200,
                                                     "label":"Box",
-                                                    "isOpen":true,
+                                                    "isOpen":false,
                                                     "isDirectory":true,
                                                     "isAniNode":true,
                                                     "hasChild":true,
@@ -1360,6 +1478,7 @@
                                                     "child":[
                                                         {
                                                             "type":"Box",
+                                                            "searchKey":"Box",
                                                             "props":{"width":48,"height":12,"centerY":0,"centerX":0,"anchorY":0.5,"anchorX":0.5},
                                                             "nodeParent":206,
                                                             "label":"Box",
@@ -1371,6 +1490,7 @@
                                                             "child":[
                                                                 {
                                                                     "type":"Rect",
+                                                                    "searchKey":"Rect",
                                                                     "props":{"y":0,"x":0,"width":48,"lineWidth":1,"height":12,"fillColor":"#ffffff"},
                                                                     "nodeParent":207,
                                                                     "label":"Rect",
@@ -1384,6 +1504,7 @@
                                                         },
                                                         {
                                                             "type":"Box",
+                                                            "searchKey":"Box",
                                                             "props":{"width":48,"rotation":90,"height":12,"centerY":0,"centerX":0,"anchorY":0.5,"anchorX":0.5},
                                                             "nodeParent":206,
                                                             "label":"Box",
@@ -1395,6 +1516,7 @@
                                                             "child":[
                                                                 {
                                                                     "type":"Rect",
+                                                                    "searchKey":"Rect",
                                                                     "props":{"y":0,"x":0,"width":48,"lineWidth":1,"height":12,"fillColor":"#ffffff"},
                                                                     "nodeParent":209,
                                                                     "label":"Rect",
@@ -1409,16 +1531,377 @@
                                                 }]
                                         }]
                                 }]
+                        },
+                        {
+                            "x":45,
+                            "type":"Box",
+                            "searchKey":"Box,boxMoney",
+                            "props":{"y":-187,"x":-50,"right":0,"name":"boxMoney","left":0,"height":130},
+                            "nodeParent":120,
+                            "label":"boxMoney",
+                            "isOpen":true,
+                            "isDirectory":true,
+                            "isAniNode":true,
+                            "hasChild":true,
+                            "compId":252,
+                            "child":[
+                                {
+                                    "x":60,
+                                    "type":"Label",
+                                    "searchKey":"Label,font_default",
+                                    "props":{"x":183,"text":"UI_Property_Money","name":"font_default","fontSize":70,"font":"SimHei","color":"#ffffff","centerY":0,"anchorY":0.5,"anchorX":0.5},
+                                    "nodeParent":252,
+                                    "label":"font_default",
+                                    "isDirectory":false,
+                                    "isAniNode":true,
+                                    "hasChild":false,
+                                    "compId":253,
+                                    "child":[
+                                        ]
+                                },
+                                {
+                                    "x":60,
+                                    "type":"Box",
+                                    "searchKey":"Box,property",
+                                    "props":{"width":590,"runtime":"Laya.runtime.ColorFilterItem","right":30,"name":"property","height":110,"centerY":0},
+                                    "nodeParent":252,
+                                    "label":"property",
+                                    "isOpen":true,
+                                    "isDirectory":true,
+                                    "isAniNode":true,
+                                    "hasChild":true,
+                                    "compId":254,
+                                    "child":[
+                                        {
+                                            "x":75,
+                                            "type":"Box",
+                                            "searchKey":"Box,btnMoneyReduce,btnMoneyReduce",
+                                            "props":{"width":110,"var":"btnMoneyReduce","name":"btnMoneyReduce","left":0,"height":110,"centerY":0},
+                                            "nodeParent":254,
+                                            "label":"btnMoneyReduce",
+                                            "isOpen":false,
+                                            "isDirectory":true,
+                                            "isAniNode":true,
+                                            "hasChild":true,
+                                            "compId":255,
+                                            "child":[
+                                                {
+                                                    "type":"Box",
+                                                    "searchKey":"Box",
+                                                    "props":{"width":110,"height":110,"centerY":0,"centerX":0,"anchorY":0.5,"anchorX":0.5},
+                                                    "nodeParent":255,
+                                                    "label":"Box",
+                                                    "isOpen":true,
+                                                    "isDirectory":true,
+                                                    "isAniNode":true,
+                                                    "hasChild":true,
+                                                    "compId":256,
+                                                    "child":[
+                                                        {
+                                                            "type":"Rect",
+                                                            "searchKey":"Rect",
+                                                            "props":{"width":110,"lineWidth":1,"height":4,"fillColor":"#ffffff"},
+                                                            "nodeParent":256,
+                                                            "label":"Rect",
+                                                            "isDirectory":false,
+                                                            "isAniNode":true,
+                                                            "hasChild":false,
+                                                            "compId":257,
+                                                            "child":[
+                                                                ]
+                                                        },
+                                                        {
+                                                            "type":"Rect",
+                                                            "searchKey":"Rect",
+                                                            "props":{"y":106,"x":0,"width":110,"lineWidth":1,"height":4,"fillColor":"#ffffff"},
+                                                            "nodeParent":256,
+                                                            "label":"Rect",
+                                                            "isDirectory":false,
+                                                            "isAniNode":true,
+                                                            "hasChild":false,
+                                                            "compId":258,
+                                                            "child":[
+                                                                ]
+                                                        },
+                                                        {
+                                                            "type":"Rect",
+                                                            "searchKey":"Rect",
+                                                            "props":{"y":0,"x":0,"width":4,"lineWidth":1,"height":110,"fillColor":"#ffffff"},
+                                                            "nodeParent":256,
+                                                            "label":"Rect",
+                                                            "isDirectory":false,
+                                                            "isAniNode":true,
+                                                            "hasChild":false,
+                                                            "compId":259,
+                                                            "child":[
+                                                                ]
+                                                        },
+                                                        {
+                                                            "type":"Rect",
+                                                            "searchKey":"Rect",
+                                                            "props":{"y":0,"x":106,"width":4,"lineWidth":1,"height":110,"fillColor":"#ffffff"},
+                                                            "nodeParent":256,
+                                                            "label":"Rect",
+                                                            "isDirectory":false,
+                                                            "isAniNode":true,
+                                                            "hasChild":false,
+                                                            "compId":260,
+                                                            "child":[
+                                                                ]
+                                                        }]
+                                                },
+                                                {
+                                                    "type":"Box",
+                                                    "searchKey":"Box",
+                                                    "props":{"width":110,"runtime":"Laya.runtime.ScaleButton","height":110,"centerY":0,"centerX":0,"anchorY":0.5,"anchorX":0.5},
+                                                    "nodeParent":255,
+                                                    "label":"Box",
+                                                    "isOpen":true,
+                                                    "isDirectory":true,
+                                                    "isAniNode":true,
+                                                    "hasChild":true,
+                                                    "compId":261,
+                                                    "child":[
+                                                        {
+                                                            "type":"Box",
+                                                            "searchKey":"Box",
+                                                            "props":{"width":48,"height":12,"centerY":0,"centerX":0,"anchorY":0.5,"anchorX":0.5},
+                                                            "nodeParent":261,
+                                                            "label":"Box",
+                                                            "isOpen":true,
+                                                            "isDirectory":true,
+                                                            "isAniNode":true,
+                                                            "hasChild":true,
+                                                            "compId":262,
+                                                            "child":[
+                                                                {
+                                                                    "type":"Rect",
+                                                                    "searchKey":"Rect",
+                                                                    "props":{"y":0,"x":0,"width":48,"lineWidth":1,"height":12,"fillColor":"#ffffff"},
+                                                                    "nodeParent":262,
+                                                                    "label":"Rect",
+                                                                    "isDirectory":false,
+                                                                    "isAniNode":true,
+                                                                    "hasChild":false,
+                                                                    "compId":263,
+                                                                    "child":[
+                                                                        ]
+                                                                }]
+                                                        }]
+                                                }]
+                                        },
+                                        {
+                                            "x":75,
+                                            "type":"Box",
+                                            "searchKey":"Box",
+                                            "props":{"y":0,"x":110,"top":0,"right":110,"left":110,"bottom":0},
+                                            "nodeParent":254,
+                                            "label":"Box",
+                                            "isOpen":true,
+                                            "isDirectory":true,
+                                            "isAniNode":true,
+                                            "hasChild":true,
+                                            "compId":264,
+                                            "child":[
+                                                {
+                                                    "x":90,
+                                                    "type":"TextInput",
+                                                    "searchKey":"TextInput,inputMoney,inputMoney",
+                                                    "props":{"var":"inputMoney","type":"number","top":0,"text":"0","right":0,"promptColor":"#828282","prompt":0,"name":"inputMoney","maxChars":1,"left":0,"fontSize":80,"font":"SimHei","color":"#ffffff","bottom":0,"align":"center"},
+                                                    "nodeParent":264,
+                                                    "label":"inputMoney",
+                                                    "isDirectory":false,
+                                                    "isAniNode":true,
+                                                    "hasChild":false,
+                                                    "compId":265,
+                                                    "child":[
+                                                        ]
+                                                },
+                                                {
+                                                    "x":90,
+                                                    "type":"Rect",
+                                                    "searchKey":"Rect",
+                                                    "props":{"y":0,"x":0,"width":370,"lineWidth":1,"height":4,"fillColor":"#ffffff"},
+                                                    "nodeParent":264,
+                                                    "label":"Rect",
+                                                    "isDirectory":false,
+                                                    "isAniNode":true,
+                                                    "hasChild":false,
+                                                    "compId":266,
+                                                    "child":[
+                                                        ]
+                                                },
+                                                {
+                                                    "x":90,
+                                                    "type":"Rect",
+                                                    "searchKey":"Rect",
+                                                    "props":{"y":106,"x":0,"width":370,"lineWidth":1,"height":4,"fillColor":"#ffffff"},
+                                                    "nodeParent":264,
+                                                    "label":"Rect",
+                                                    "isDirectory":false,
+                                                    "isAniNode":true,
+                                                    "hasChild":false,
+                                                    "compId":267,
+                                                    "child":[
+                                                        ]
+                                                }]
+                                        },
+                                        {
+                                            "x":75,
+                                            "type":"Box",
+                                            "searchKey":"Box,btnMoneyIncrease,btnMoneyIncrease",
+                                            "props":{"width":110,"var":"btnMoneyIncrease","right":0,"name":"btnMoneyIncrease","height":110,"centerY":0},
+                                            "nodeParent":254,
+                                            "label":"btnMoneyIncrease",
+                                            "isOpen":false,
+                                            "isDirectory":true,
+                                            "isAniNode":true,
+                                            "hasChild":true,
+                                            "compId":268,
+                                            "child":[
+                                                {
+                                                    "type":"Box",
+                                                    "searchKey":"Box",
+                                                    "props":{"width":110,"height":110,"centerY":0,"centerX":0,"anchorY":0.5,"anchorX":0.5},
+                                                    "nodeParent":268,
+                                                    "label":"Box",
+                                                    "isOpen":true,
+                                                    "isDirectory":true,
+                                                    "isAniNode":true,
+                                                    "hasChild":true,
+                                                    "compId":269,
+                                                    "child":[
+                                                        {
+                                                            "type":"Rect",
+                                                            "searchKey":"Rect",
+                                                            "props":{"width":110,"lineWidth":1,"height":4,"fillColor":"#ffffff"},
+                                                            "nodeParent":269,
+                                                            "label":"Rect",
+                                                            "isDirectory":false,
+                                                            "isAniNode":true,
+                                                            "hasChild":false,
+                                                            "compId":270,
+                                                            "child":[
+                                                                ]
+                                                        },
+                                                        {
+                                                            "type":"Rect",
+                                                            "searchKey":"Rect",
+                                                            "props":{"y":106,"x":0,"width":110,"lineWidth":1,"height":4,"fillColor":"#ffffff"},
+                                                            "nodeParent":269,
+                                                            "label":"Rect",
+                                                            "isDirectory":false,
+                                                            "isAniNode":true,
+                                                            "hasChild":false,
+                                                            "compId":271,
+                                                            "child":[
+                                                                ]
+                                                        },
+                                                        {
+                                                            "type":"Rect",
+                                                            "searchKey":"Rect",
+                                                            "props":{"y":0,"x":0,"width":4,"lineWidth":1,"height":110,"fillColor":"#ffffff"},
+                                                            "nodeParent":269,
+                                                            "label":"Rect",
+                                                            "isDirectory":false,
+                                                            "isAniNode":true,
+                                                            "hasChild":false,
+                                                            "compId":272,
+                                                            "child":[
+                                                                ]
+                                                        },
+                                                        {
+                                                            "type":"Rect",
+                                                            "searchKey":"Rect",
+                                                            "props":{"y":0,"x":106,"width":4,"lineWidth":1,"height":110,"fillColor":"#ffffff"},
+                                                            "nodeParent":269,
+                                                            "label":"Rect",
+                                                            "isDirectory":false,
+                                                            "isAniNode":true,
+                                                            "hasChild":false,
+                                                            "compId":273,
+                                                            "child":[
+                                                                ]
+                                                        }]
+                                                },
+                                                {
+                                                    "type":"Box",
+                                                    "searchKey":"Box",
+                                                    "props":{"width":110,"runtime":"Laya.runtime.ScaleButton","height":110,"centerY":0,"centerX":0,"anchorY":0.5,"anchorX":0.5},
+                                                    "nodeParent":268,
+                                                    "label":"Box",
+                                                    "isOpen":true,
+                                                    "isDirectory":true,
+                                                    "isAniNode":true,
+                                                    "hasChild":true,
+                                                    "compId":274,
+                                                    "child":[
+                                                        {
+                                                            "type":"Box",
+                                                            "searchKey":"Box",
+                                                            "props":{"width":48,"height":12,"centerY":0,"centerX":0,"anchorY":0.5,"anchorX":0.5},
+                                                            "nodeParent":274,
+                                                            "label":"Box",
+                                                            "isOpen":true,
+                                                            "isDirectory":true,
+                                                            "isAniNode":true,
+                                                            "hasChild":true,
+                                                            "compId":275,
+                                                            "child":[
+                                                                {
+                                                                    "type":"Rect",
+                                                                    "searchKey":"Rect",
+                                                                    "props":{"y":0,"x":0,"width":48,"lineWidth":1,"height":12,"fillColor":"#ffffff"},
+                                                                    "nodeParent":275,
+                                                                    "label":"Rect",
+                                                                    "isDirectory":false,
+                                                                    "isAniNode":true,
+                                                                    "hasChild":false,
+                                                                    "compId":276,
+                                                                    "child":[
+                                                                        ]
+                                                                }]
+                                                        },
+                                                        {
+                                                            "type":"Box",
+                                                            "searchKey":"Box",
+                                                            "props":{"width":48,"rotation":90,"height":12,"centerY":0,"centerX":0,"anchorY":0.5,"anchorX":0.5},
+                                                            "nodeParent":274,
+                                                            "label":"Box",
+                                                            "isOpen":true,
+                                                            "isDirectory":true,
+                                                            "isAniNode":true,
+                                                            "hasChild":true,
+                                                            "compId":277,
+                                                            "child":[
+                                                                {
+                                                                    "type":"Rect",
+                                                                    "searchKey":"Rect",
+                                                                    "props":{"y":0,"x":0,"width":48,"lineWidth":1,"height":12,"fillColor":"#ffffff"},
+                                                                    "nodeParent":277,
+                                                                    "label":"Rect",
+                                                                    "isDirectory":false,
+                                                                    "isAniNode":true,
+                                                                    "hasChild":false,
+                                                                    "compId":278,
+                                                                    "child":[
+                                                                        ]
+                                                                }]
+                                                        }]
+                                                }]
+                                        }]
+                                }]
                         }]
                 }],
-            "$LOCKED":true
+            "$LOCKED":false
         },
         {
             "x":15,
             "type":"Box",
+            "searchKey":"Box,selectedTalents",
             "props":{"right":40,"name":"selectedTalents","left":40,"height":450,"bottom":300},
             "nodeParent":1,
-            "label":"Box(selectedTalents)",
+            "label":"selectedTalents",
             "isOpen":true,
             "isDirectory":true,
             "isAniNode":true,
@@ -1428,9 +1911,10 @@
                 {
                     "x":30,
                     "type":"Label",
+                    "searchKey":"Label,font_default",
                     "props":{"top":20,"text":"UI_Selected_Talent","name":"font_default","left":20,"fontSize":50,"font":"SimHei","color":"#ffffff"},
                     "nodeParent":56,
-                    "label":"Label(font_default)",
+                    "label":"font_default",
                     "isDirectory":false,
                     "isAniNode":true,
                     "hasChild":false,
@@ -1441,9 +1925,10 @@
                 {
                     "x":30,
                     "type":"List",
+                    "searchKey":"List,listSelectedTalents,listSelectedTalents",
                     "props":{"var":"listSelectedTalents","vScrollBarSkin":" ","top":110,"spaceY":20,"right":10,"repeatY":3,"repeatX":1,"name":"listSelectedTalents","left":10,"bottom":10},
                     "nodeParent":56,
-                    "label":"List(listSelectedTalents)",
+                    "label":"listSelectedTalents",
                     "isOpen":true,
                     "isDirectory":true,
                     "isAniNode":true,
@@ -1453,6 +1938,7 @@
                         {
                             "x":45,
                             "type":"Box",
+                            "searchKey":"Box",
                             "props":{"y":15,"runtime":"Laya.runtime.ColorfulBox","right":15,"renderType":"render","left":15,"height":80},
                             "nodeParent":58,
                             "label":"Box",
@@ -1465,9 +1951,10 @@
                                 {
                                     "x":60,
                                     "type":"Label",
+                                    "searchKey":"Label,label",
                                     "props":{"y":20,"text":"Title","name":"label","fontSize":50,"font":"SimHei","color":"#ffffff","centerY":0,"centerX":0},
                                     "nodeParent":215,
-                                    "label":"Label(label)",
+                                    "label":"label",
                                     "isDirectory":false,
                                     "isAniNode":false,
                                     "hasChild":false,
@@ -1482,9 +1969,10 @@
         {
             "x":15,
             "type":"HBox",
+            "searchKey":"HBox,buttonGroup",
             "props":{"space":40,"name":"buttonGroup","height":150,"centerX":0,"bottom":90},
             "nodeParent":1,
-            "label":"HBox(buttonGroup)",
+            "label":"buttonGroup",
             "isOpen":true,
             "isDirectory":true,
             "isAniNode":true,
@@ -1494,9 +1982,10 @@
                 {
                     "x":30,
                     "type":"Box",
+                    "searchKey":"Box,btnRandomAllocate,btnRandomAllocate",
                     "props":{"y":0,"x":0,"width":480,"var":"btnRandomAllocate","top":0,"runtime":"Laya.runtime.ColorfulBox","name":"btnRandomAllocate","bottom":0},
                     "nodeParent":212,
-                    "label":"Box(btnRandomAllocate)",
+                    "label":"btnRandomAllocate",
                     "isOpen":true,
                     "isDirectory":true,
                     "isAniNode":true,
@@ -1506,9 +1995,10 @@
                         {
                             "x":45,
                             "type":"Label",
+                            "searchKey":"Label,label",
                             "props":{"text":"UI_Random_Allocate","name":"label","fontSize":60,"font":"SimHei","color":"#ffffff","centerY":0,"centerX":0},
                             "nodeParent":72,
-                            "label":"Label(label)",
+                            "label":"label",
                             "isDirectory":false,
                             "isAniNode":true,
                             "hasChild":false,
@@ -1520,9 +2010,10 @@
                 {
                     "x":30,
                     "type":"Box",
+                    "searchKey":"Box,btnNext,btnNext",
                     "props":{"x":1,"width":480,"var":"btnNext","top":0,"runtime":"Laya.runtime.ColorfulBox","name":"btnNext","bottom":0},
                     "nodeParent":212,
-                    "label":"Box(btnNext)",
+                    "label":"btnNext",
                     "isOpen":true,
                     "isDirectory":true,
                     "isAniNode":true,
@@ -1532,9 +2023,10 @@
                         {
                             "x":45,
                             "type":"Label",
+                            "searchKey":"Label,label",
                             "props":{"text":"UI_Make_New_Life","name":"label","fontSize":60,"font":"SimHei","color":"#ffffff","centerY":0,"centerX":0},
                             "nodeParent":73,
-                            "label":"Label(label)",
+                            "label":"label",
                             "isDirectory":false,
                             "isAniNode":true,
                             "hasChild":false,

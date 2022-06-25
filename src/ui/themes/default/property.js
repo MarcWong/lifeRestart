@@ -17,10 +17,13 @@ export default class Property extends ui.view.DefaultTheme.PropertyUI {
         this.btnMoneyIncrease.on(Laya.Event.CLICK, this, this.onPropertyAllocate, [types.MNY, 1]);
         this.btnMoneyReduce.on(Laya.Event.CLICK, this, this.onPropertyAllocate, [types.MNY, -1]);
 
-        this.inputCharm.on(Laya.Event.INPUT, this, this.onPropertyAllocateInput, [types.CHR]);
-        this.inputIntelligence.on(Laya.Event.INPUT, this, this.onPropertyAllocateInput, [types.INT]);
-        this.inputStrength.on(Laya.Event.INPUT, this, this.onPropertyAllocateInput, [types.STR]);
-        this.inputMoney.on(Laya.Event.INPUT, this, this.onPropertyAllocateInput, [types.MNY]);
+        this.btnSpiritIncrease.on(Laya.Event.CLICK, this, this.onPropertyAllocate, [types.SPR, 1]);
+        this.btnSpiritReduce.on(Laya.Event.CLICK, this, this.onPropertyAllocate, [types.SPR, -1]);
+
+        //this.inputCharm.on(Laya.Event.INPUT, this, this.onPropertyAllocateInput, [types.CHR]);
+        //this.inputIntelligence.on(Laya.Event.INPUT, this, this.onPropertyAllocateInput, [types.INT]);
+        //this.inputStrength.on(Laya.Event.INPUT, this, this.onPropertyAllocateInput, [types.STR]);
+        //this.inputMoney.on(Laya.Event.INPUT, this, this.onPropertyAllocateInput, [types.MNY]);
 
         const selectAll = ({currentTarget: item}) => { item.text=''; };
         this.inputCharm.on(Laya.Event.MOUSE_DOWN, this, selectAll);
@@ -53,6 +56,7 @@ export default class Property extends ui.view.DefaultTheme.PropertyUI {
             [this.#types.INT]: 0,
             [this.#types.STR]: 0,
             [this.#types.MNY]: 0,
+            [this.#types.SPR]: 0,
         }
         this.updateAllocate();
     }
@@ -76,7 +80,8 @@ export default class Property extends ui.view.DefaultTheme.PropertyUI {
         return this.#propertyAllocate[this.#types.CHR]
             +  this.#propertyAllocate[this.#types.INT]
             +  this.#propertyAllocate[this.#types.STR]
-            +  this.#propertyAllocate[this.#types.MNY];
+            + this.#propertyAllocate[this.#types.MNY]
+            + this.#propertyAllocate[this.#types.SPR];
     }
 
     updateAllocate() {
@@ -84,11 +89,13 @@ export default class Property extends ui.view.DefaultTheme.PropertyUI {
         const intelligence = this.#propertyAllocate[this.#types.INT];
         const strength = this.#propertyAllocate[this.#types.STR];
         const money = this.#propertyAllocate[this.#types.MNY];
+        const EQ = this.#propertyAllocate[this.#types.SPR];
 
         this.inputCharm.text = ''+charm;
         this.inputIntelligence.text = ''+intelligence;
         this.inputStrength.text = ''+strength;
-        this.inputMoney.text = ''+money;
+        this.inputMoney.text = '' + money;
+        this.inputSpirit.text = '' + EQ;
 
         this.labLeftPropertyPoint.text = this.#propertyPoints - this.total;
 
@@ -100,6 +107,8 @@ export default class Property extends ui.view.DefaultTheme.PropertyUI {
         this.btnStrengthReduce.disabled = this.btnStrengthReduce.gray = false;
         this.btnMoneyIncrease.disabled = this.btnMoneyIncrease.gray = false;
         this.btnMoneyReduce.disabled = this.btnMoneyReduce.gray = false;
+        this.btnSpiritIncrease.disabled = this.btnSpiritIncrease.gray = false;
+        this.btnSpiritReduce.disabled = this.btnSpiritReduce.gray = false;
     }
 
     check(left, right, value) {
@@ -110,12 +119,12 @@ export default class Property extends ui.view.DefaultTheme.PropertyUI {
 
     random() {
         let t = this.#propertyPoints;
-        const arr = new Array(4).fill(this.#propertyAllocateLimit[1]);
+        const arr = new Array(5).fill(this.#propertyAllocateLimit[1]);
 
         while (t > 0) {
             const sub = Math.round(Math.random() * (Math.min(t, this.#propertyAllocateLimit[1]) - 1)) + 1;
             while(true) {
-                const select = Math.floor(Math.random() * 4) % 4;
+                const select = Math.floor(Math.random() * 5) % 5;
                 if(arr[select] - sub <0) continue;
                 arr[select] -= sub;
                 t -= sub;
@@ -126,6 +135,7 @@ export default class Property extends ui.view.DefaultTheme.PropertyUI {
         this.#propertyAllocate[this.#types.INT] = this.#propertyAllocateLimit[1] - arr[1];
         this.#propertyAllocate[this.#types.STR] = this.#propertyAllocateLimit[1] - arr[2];
         this.#propertyAllocate[this.#types.MNY] = this.#propertyAllocateLimit[1] - arr[3];
+        this.#propertyAllocate[this.#types.SPR] = this.#propertyAllocateLimit[1] - arr[4];
 
         this.updateAllocate();
     }
@@ -153,7 +163,7 @@ export default class Property extends ui.view.DefaultTheme.PropertyUI {
         let value = parseInt(inputItem.text) || 0;
         const total = this.total;
         if (total + value < 0) {
-            value = this.#propertyAllocateLimit[0] * 4 - total;
+            value = this.#propertyAllocateLimit[0] * 5 - total;
         } else if (total + value > this.#propertyPoints) {
             value = this.#propertyPoints - total;
         }

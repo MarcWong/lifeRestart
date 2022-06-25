@@ -32,8 +32,8 @@ globalThis.goto = async tag => {
 }
 class App{
     constructor(){
-        this.name = 'lifeRestart';
-        this.version = '2.0.0';
+        this.name = 'Samsara';
+        this.version = '0.0.1';
         console.log(`${this.name} ${this.version}`);
     }
 
@@ -127,7 +127,7 @@ class App{
                 this.#language = language;
                 break;
             default:
-                this.#language = App.languages['zh-cn'];
+                this.#language = App.languages['en-us'];
                 break;
         }
         globalThis.$lang =
