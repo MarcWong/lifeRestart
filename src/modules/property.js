@@ -354,7 +354,7 @@ class Property {
     }
     ageNext() {
         this.change(this.TYPES.AGE, 1);
-        while (!this.getAgeData(this.get(this.TYPES.AGE))) {
+        while (!this.getAgeData(this.get(this.TYPES.AGE)) && this.get(this.TYPES.AGE) < 103) {
             this.change(this.TYPES.AGE, 1);
         }
         const age = this.get(this.TYPES.AGE);

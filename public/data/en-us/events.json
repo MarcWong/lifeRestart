@@ -63,43 +63,38 @@
     },
     "10011": {
         "id": 10011,
-        "event": "You are born into a low-income family.",
+        "event": "You are born into a low-income family in a rural area.",
         "include": "MNY>2&MNY<5"
     },
     "10012": {
         "id": 10012,
-        "event": "You are born into a middle class family.",
-        "include": "MNY>4&MNY<7"
+        "event": "You are born into a low-income family in a city.",
+        "include": "MNY>3&MNY<5"
     },
     "10013": {
         "id": 10013,
-        "event": "You are born into a middle-upper class family.",
-        "include": "MNY>6&MNY<9"
+        "event": "You are born into a middle class family in a city.",
+        "include": "MNY>4&MNY<7"
     },
     "10014": {
         "id": 10014,
-        "event": "You are born into an upper-class family.",
-        "include": "MNY>8&MNY<11"
+        "event": "You are born into a middle-upper class family in a city.",
+        "include": "MNY>6&MNY<9"
     },
     "10015": {
         "id": 10015,
-        "event": "You are born into a very rich family.",
-        "include": "MNY>10&MNY<13"
+        "event": "You are born into an upper-class family in the captical of your country.",
+        "include": "MNY>8&MNY<11"
     },
     "10016": {
         "id": 10016,
+        "event": "You are born into a very rich family in the capital of your country.",
+        "include": "MNY>10&MNY<13"
+    },
+    "10017": {
+        "id": 10017,
         "event": "You are born into the richest family of the country.",
         "include": "MNY>12"
-    },
-    "10020": {
-        "id": 10020,
-        "event": "You live in a rural area.",
-        "include": "MNY<5"
-    },
-    "10021": {
-        "id": 10021,
-        "event": "You live in a city.",
-        "include": "MNY>3"
     },
     "10022": {
         "id": 10022,
@@ -7771,279 +7766,167 @@
     },
     "11000": {
         "id": 11000,
-        "event": "你做了MBTI测试，发现自己是ENTJ。",
-        "include": "(EVT?[10010])&(CHR<5)&(SPR<5)",
-        "exclude": "EVT?[10993,10994,10995,10996,10997,10998,10999,11000,11001,11002,11003,11004,11005,11006,11007,11008]"
+        "event": "Faced with worsening floods and a shortage of housing, the Netherlands builds floating communities along its coastline which inspires many flood-prone nations worldwide."
     },
     "11001": {
         "id": 11001,
-        "event": "你做了MBTI测试，发现自己是ISFP。",
-        "include": "(EVT?[10010])&(CHR>5)&(SPR<5)",
-        "exclude": "EVT?[10993,10994,10995,10996,10997,10998,10999,11000,11001,11002,11003,11004,11005,11006,11007,11008]"
+        "event": "North America experiences the Grate Famines due to the vector change from climate warming in 2025. As a result, what was once known as rubbish or garbage is one of today’s most valuable resources and is mined both on land and sea. Everything is a resource. The cost of carbon is now included in the price of goods and transactions. "
     },
     "11002": {
         "id": 11002,
-        "event": "你做了MBTI测试，发现自己是ISFJ。",
-        "include": "(EVT?[10010])&(INT>5)&(SPR<5)",
-        "exclude": "EVT?[10993,10994,10995,10996,10997,10998,10999,11000,11001,11002,11003,11004,11005,11006,11007,11008]"
+        "event": "CoCA (Cities of Climate Action) agree on planet first as a guiding principle above all else at their annual meeting at the Virtual Planet Meeting room — no physical travel was necessary."
     },
     "11003": {
         "id": 11003,
-        "event": "你做了MBTI测试，发现自己是ISTP。",
-        "include": "(EVT?[10010])&(INT>5)&(STR<5)",
-        "exclude": "EVT?[10993,10994,10995,10996,10997,10998,10999,11000,11001,11002,11003,11004,11005,11006,11007,11008]"
+        "event": "The Parliament of the Commons was established as an arm of the United Nations (UN) General Assembly bringing voices of the global commons, like our Oceans, Forests, Savannahs and Atmosphere, to the world stage; each has their own flag flying at the UN."
     },
     "11004": {
         "id": 11004,
-        "event": "你做了MBTI测试，发现自己是ISTJ。",
-        "include": "(EVT?[10010])&(INT>4)&(CHR<6)",
-        "exclude": "EVT?[10993,10994,10995,10996,10997,10998,10999,11000,11001,11002,11003,11004,11005,11006,11007,11008]"
+        "event": "After the 35th summer Olympic games which is held in Autumn, the Olympic committee is dismissed, because of the unstoppable trend of athletes using biologically engineered body parts to compete."
     },
     "11005": {
         "id": 11005,
-        "event": "你做了MBTI测试，发现自己是ESFP。",
-        "include": "(EVT?[10010])&(CHR>5)&(STR>4)",
-        "exclude": "EVT?[10993,10994,10995,10996,10997,10998,10999,11000,11001,11002,11003,11004,11005,11006,11007,11008]"
+        "event": "Black market reaches at an all-time high over all other markets globally."
     },
     "11006": {
         "id": 11006,
-        "event": "你做了MBTI测试，发现自己是ESTP。",
-        "include": "(EVT?[10010])&(CHR>5)&(STR<6)",
-        "exclude": "EVT?[10993,10994,10995,10996,10997,10998,10999,11000,11001,11002,11003,11004,11005,11006,11007,11008]"
+        "event": "Resilience building codes are now implemented globally to ‘protect’ the population from nature’s temper. The smog crisis in the Beijing, Shanghai, Tokyo, and New Delhi has become unbearable, leading to largescale smog dome projects for commercial and wealthy residential areas."
     },
     "11007": {
         "id": 11007,
-        "event": "你做了MBTI测试，发现自己是ESFJ。",
-        "include": "(EVT?[10010])&(CHR<6)&(INT<6)",
-        "exclude": "EVT?[10993,10994,10995,10996,10997,10998,10999,11000,11001,11002,11003,11004,11005,11006,11007,11008]"
+        "event": "70% of ‘meatlike’ protein is grown in labs and crated from plant-based products and the cultivation of animal cells. With nearly 60% of the global population relying on synthetic food sources, severe micronutrient deficiencies across large parts of the population due to over-reliance on synthetic food sources are starting to show."
     },
     "11008": {
         "id": 11008,
-        "event": "你做了MBTI测试，发现自己是ESTJ。",
-        "include": "(EVT?[10010])&(CHR<6)&(STR>4)",
-        "exclude": "EVT?[10993,10994,10995,10996,10997,10998,10999,11000,11001,11002,11003,11004,11005,11006,11007,11008]"
+        "event": "An estimated number of 1.5 billion people lived with a mental health disorder, with 1 billion self-identify as female. This is slightly more than one in five people globally. 752 million of people are psychiatric medicines on a regular basis."
     },
     "11009": {
         "id": 11009,
-        "event": "你梦见自己穿越回古代用现代知识乱杀。",
-        "include": "EVT?[10940]",
-        "exclude": "EVT?[10944,11009]"
+        "event": "Close to 1600,000 people die from suicide every year globally. That’s one person every 20 seconds."
     },
     "11010": {
         "id": 11010,
-        "event": "上课时打了个盹，被老师粉笔头砸醒。",
-        "include": "EVT?[10940]",
-        "exclude": "EVT?[11010]"
+        "event": "Leading global concrete manufacturers commitment to 100% renewable energy for all production."
     },
     "11011": {
         "id": 11011,
-        "event": "同学们偷偷评选班花。",
-        "postEvent": "班花不是你。",
-        "include": "EVT?[10940]",
-        "exclude": "EVT?[11011,10001,10110,10111]",
-        "branch": [
-            "CHR>7:21011"
-        ]
+        "event": "Drugs including cocaine, opioids and heroin are legalized in Canada, US, UK, Australia and Scandinavian countries."
     },
     "11012": {
         "id": 11012,
-        "event": "同学们偷偷评选校草。",
-        "postEvent": "校草不是你。",
-        "include": "EVT?[10940]",
-        "exclude": "EVT?[11012,10002,10110,10111]",
-        "branch": [
-            "CHR>8:21012"
-        ]
+        "event": "238770 people die from drug overdoses. Two thirds of those who die from drug overdoses are younger than 50 years old."
     },
     "11013": {
         "id": 11013,
-        "event": "有同学在纸上画游戏给其他同学玩，被老师没收了。",
-        "include": "EVT?[10940]",
-        "exclude": "EVT?[10944,11013]"
+        "event": "Divorce rate is tripled in comparison to 2020, a new term called ‘Double-sided Tape’ becomes popular to describe people who choose to marry someone from the opposite sex of their previous married partner."
     },
     "11014": {
         "id": 11014,
-        "event": "你后桌的同学抄你作业，不小心把你名字也抄上了。",
-        "include": "EVT?[10940]",
-        "exclude": "EVT?[10944,11014]"
+        "event": "Virgin plastic is banned globally, Circular processing of waste is now the global norm, and all plastic is made from 100% reused materials."
     },
     "11015": {
         "id": 11015,
-        "event": "学校食堂推出新菜：番茄炒西红柿。",
-        "include": "EVT?[10940]",
-        "exclude": "EVT?[10944,11015,21015,11016,11017,11018,11019,11020]"
+        "event": "Citrus can now be grown successfully in Scandinavia and large parts of northern China and Russia."
     },
     "11016": {
         "id": 11016,
-        "event": "学校食堂推出新菜：去肉牛肉面。",
-        "include": "EVT?[10940]",
-        "exclude": "EVT?[10944,11015,11016,11017,11018,11019,11020,21015]"
+        "event": "The global female life expectancy is increased by 10 years, an average healthy female with a healthy bank account can expect to live till 90 years old."
     },
     "11017": {
         "id": 11017,
-        "event": "学校食堂推出新菜：青椒炒草莓。",
-        "include": "EVT?[10940]",
-        "exclude": "EVT?[10944,11015,11016,11017,11018,11019,11020,21015]"
+        "event": "ZIKA-49 epidemic outbreak starts in Toronto’s Chinatown and sweeps the world, it lasted for two years."
     },
     "11018": {
         "id": 11018,
-        "event": "学校食堂推出新菜：酸梅汤豆腐脑。",
-        "include": "EVT?[10940]",
-        "exclude": "EVT?[10944,11015,11016,11017,11018,11019,11020,21015]"
+        "event": "The second global march ‘People First – Not Planet’ takes place in most CoCA (Cities of Climate Action) cities across the globe. IPCC (Intergovernmental Panel on Climate Change) increases the global warming temperature threshold to 3°C."
     },
     "11019": {
         "id": 11019,
-        "event": "学校食堂推出新菜：可乐烧黄瓜。",
-        "include": "EVT?[10940]",
-        "exclude": "EVT?[10944,11015,11016,11017,11018,11019,11020,21015]"
+        "event": "The current number of mind-reading helmet users reaches 5 billion. These helmets are used to remote control personal electronic devices."
     },
     "11020": {
         "id": 11020,
-        "event": "学校食堂推出新菜：面条馅包子。",
-        "include": "EVT?[10940]",
-        "exclude": "EVT?[10944,11015,11016,11017,11018,11019,11020,21015]"
+        "event": "According to a worldwide survey more than 70% of the world population haven’t used pen or pencil to write on paper for 3 years."
     },
     "11021": {
         "id": 11021,
-        "event": "最新桌游三国自走棋风靡学校，放学后很多同学一起玩。",
-        "include": "EVT?[10940]",
-        "exclude": "EVT?[11021]"
+        "event": "Retirement age is raised to 70 in most countries."
     },
     "11022": {
         "id": 11022,
-        "event": "学校组织在操场上办跳蚤市场。",
-        "postEvent": "你卖了些旧书。",
-        "include": "EVT?[10940]",
-        "exclude": "EVT?[11022]",
-        "branch": [
-            "INT>8:21022"
-        ]
+        "event": "Education has been entirely digitalized; teachers are being replaced by a system called ‘The Ultimate Education’, a database that standardizes all the knowledge one might need to learn by specific ages. Teachers are either employed to develop this system or conduct one on one tutorials with selective rich kids."
     },
     "11023": {
         "id": 11023,
-        "event": "你和一个老师闹了很大矛盾，心态爆炸。",
-        "effect": {
-            "SPR": -1
-        },
-        "include": "EVT?[10940]",
-        "exclude": "EVT?[11023]",
-        "branch": [
-            "SPR<2:10062"
-        ]
+        "event": "Wearable sensors are popularized, more and more people are using sensors and computers to monitor health and activities with immediacy. everyone’s DNA are sequenced, which alerts who has what possibility of developing what disease when."
     },
     "11024": {
         "id": 11024,
-        "event": "你脑力有限，跟不上课程。",
-        "include": "(EVT?[10945])&(INT<2)",
-        "exclude": "EVT?[11024]"
+        "event": "1 in 3 newborn babies are genetically engineered, laws soon come out in the US, Netherlands followed by China and 50 other countries to limit such technology because it opens unprecedented gaps between rich and poor."
     },
     "11025": {
         "id": 11025,
-        "event": "你身体不好，经常请假去医院。",
-        "include": "(EVT?[10940])&(STR<2)",
-        "exclude": "EVT?[11025]",
-        "branch": [
-            "STR<1:21025"
-        ]
+        "event": "Dataism which originates in China becomes the world most popular religion."
     },
     "11026": {
         "id": 11026,
-        "event": "学校添加了性少数厕所。",
-        "include": "(EVT?[10010])&(EVT?[10110,10111,10002])",
-        "exclude": "EVT?[11026]"
+        "event": "A health care reform sweeps the world doctors are largely replaced by digital doctors for the purpose of preventing mistakes in diagnose, increasing the immediacy of treatments and providing more ‘humane’ responses according to each patient’s psychological needs."
     },
     "11027": {
         "id": 11027,
-        "event": "校门口发生一起斗殴事件，多人受伤。",
-        "include": "EVT?[10940]",
-        "exclude": "EVT?[11027]",
-        "branch": [
-            "TLT?[1108]:21027"
-        ]
+        "event": "China’s conflict with Taiwan turns into Cold War II with the US and Europe on the one side and Asian countries and the Islamic states on the other. This results in the rapid development of countries that are not involved in this global dispute, especially countries in the southern parts of the world."
     },
     "11028": {
         "id": 11028,
-        "event": "学习压力很大，你向学校心理老师倾诉。",
-        "include": "EVT?[10941]",
-        "exclude": "EVT?[11028]"
+        "event": "Digital lawyers emerge, causing fairer and more efficient judgements in most civil dispute cases. This causes millions of educated people to lose their jobs and join the masses of an economically useless class."
     },
     "11029": {
         "id": 11029,
-        "event": "学校食堂推出新菜：挂面炒意面。",
-        "include": "EVT?[10941]",
-        "exclude": "EVT?[11029,11030,11031,11032,11033,11034]"
+        "event": "3 billion people have a sleep implant in their brain which enables humans to control when to go to sleep and when to wake up precisely."
     },
     "11030": {
         "id": 11030,
-        "event": "学校食堂推出新菜：醋香烤翅。",
-        "include": "EVT?[10941]",
-        "exclude": "EVT?[11029,11030,11031,11032,11033,11034]"
+        "event": "Over 25 million people transform parts of their bodies to better functioning prosthesis each year, heart and brain can also be replaced which ensure longer lifespans."
     },
     "11031": {
         "id": 11031,
-        "event": "学校食堂推出新菜：大东南羊肉串。",
-        "include": "EVT?[10941]",
-        "exclude": "EVT?[11029,11030,11031,11032,11033,11034]"
+        "event": "Democracy and the free market are replaced altogether by algorithm. Most people accept the algorithm behind various technologies to make every choice for them from daily groceries to national vote."
     },
     "11032": {
         "id": 11032,
-        "event": "学校食堂推出新菜：肉包沙拉。",
-        "include": "EVT?[10941]",
-        "exclude": "EVT?[11029,11030,11031,11032,11033,11034]"
+        "event": "65% of the world population pursue a career path in art. However, more than 50 percent of the artists chose to use an AI implant in their brain or work with AI to produce ‘better art.’"
     },
     "11033": {
         "id": 11033,
-        "event": "学校食堂推出新菜：酱油捞饭。",
-        "include": "EVT?[10941]",
-        "exclude": "EVT?[11029,11030,11031,11032,11033,11034]"
+        "event": "The permanent members of the United Nations Security Council are reformatted: Japan, India, African Countries United Council, Islamic States United Council, EU (UK and France), US, China, and Russia."
     },
     "11034": {
         "id": 11034,
-        "event": "学校食堂推出新菜：榴莲馅小笼包。",
-        "include": "EVT?[10941]",
-        "exclude": "EVT?[11029,11030,11031,11032,11033,11034]"
+        "event": "Humans are forbidden to drive cars. All vehicles are connected to a single network making car accidents virtually impossible."
     },
     "11035": {
         "id": 11035,
-        "event": "你很喜欢实验课。",
-        "include": "EVT?[10941]",
-        "exclude": "EVT?[11035]"
+        "event": "You realize that it’s impossible to go on living without connecting to the global all-knowing network which possesses all the data in the world."
     },
     "11036": {
         "id": 11036,
-        "event": "下课铃一响，所有人都抱着书冲向食堂。",
-        "include": "EVT?[10944]",
-        "exclude": "EVT?[11036]"
+        "event": "‘Cyber 911,’ a day when the whole global all-knowing network is shut down for 24 hours happens because realizing that dataism has become a sovereignty threat, governments attempt to fight against big data companies to establish laws, borders and sovereignty across the internet and ends in failure."
     },
     "11037": {
         "id": 11037,
-        "event": "几乎每节课间你们老师都拖堂到下一节课铃响。",
-        "include": "EVT?[10941]",
-        "exclude": "EVT?[11037]"
+        "event": "Liberalism collapses because most people realize that the all-knowing network knows each individual better than they know themselves."
     },
     "11038": {
         "id": 11038,
-        "event": "你开始提前学后面的内容。",
-        "include": "(EVT?[10941])&(INT>7)",
-        "exclude": "EVT?[11038]"
+        "event": "Most people lose their economic and military usefulness, a new elite class of fully upgraded superhumans emerge. These people own and control everyone’s data, claim armies that rely on cutting-edge technologies, and become religious leaders of Dataism. Their unheard-of abilities and unprecedented creativity allow them to make the most important decisions in the world."
     },
     "11039": {
         "id": 11039,
-        "event": "你被淹没在题海中。",
-        "effect": {
-            "SPR": -1
-        },
-        "include": "EVT?[10941]",
-        "exclude": "EVT?[11039]"
+        "event": "Global birth rate has gone done to 1.2 births per woman."
     },
     "11040": {
         "id": 11040,
-        "event": "同校有学生跳楼自杀。被学校压下来了。",
-        "effect": {
-            "SPR": -1
-        },
-        "include": "EVT?[10941]",
-        "exclude": "EVT?[11040]"
+        "event": "The human sensory experiences including the night vision, the ability to smell, the ability to hear low pitches and dream experiences become designable products in the supermarket. Due to our declining memory, the Memory Cloud Drive become the best seller of the year."
     },
     "11041": {
         "id": 11041,
