@@ -1,15 +1,15 @@
 {
     "10000": {
         "id": 10000,
-        "event": "You're dead",
+        "event": "You're dead.",
         "effect": {
             "LIF": -1
         },
         "NoRandom": 1,
         "branch": [
-            "(AGE![500])&(TLT?[1148])&(EVT![20001]):20001",
-            "(AGE![500])&(TLT?[1147])&(EVT![20000]):20000",
-            "(AGE![500])&(TLT?[2024])&(EVT?[10679,10680,10681])&(EVT![11504]):11504"
+            "(TLT?[90009])&(EVT![20001]):20001",
+            "(TLT?[1147])&(EVT![20000]):20000",
+            "(TLT?[2024])&(EVT?[10679,10680,10681])&(EVT![11504]):11504"
         ]
     },
     "10001": {
@@ -35,17 +35,17 @@
     "10004": {
         "id": 10004,
         "event": "You almost died from childbirth, and you are diagnosed congenital heart disease.",
-        "include": "STR<1"
+        "include": "STR<2"
     },
     "10005": {
         "id": 10005,
         "event": "Because you are born disabled, the hospital is your second home.",
-        "include": "STR>0 & STR<2"
+        "include": "STR>0 & STR<3"
     },
     "10006": {
         "id": 10006,
         "event": "You are diagnosed asthma.",
-        "include": "STR>1 & STR<4"
+        "include": "STR>2 & STR<5"
     },
     "10007": {
         "id": 10007,
@@ -54,7 +54,16 @@
     },
     "10008": {
         "id": 10008,
-        "event": "You grew up without any disease."
+        "event": "You get an infection, but your parents couldn't afford your operation in the hospital.",
+        "include": "STR<2",
+        "branch": [
+            "STR<2:10000"
+        ]
+    },
+    "10009": {
+        "id": 10009,
+        "event": "You grew up without any disease.",
+        "include": "STR>2"
     },
     "10010": {
         "id": 10010,
