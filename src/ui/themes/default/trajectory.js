@@ -48,6 +48,7 @@ export default class Trajectory extends ui.view.DefaultTheme.TrajectoryUI {
     #enableExtend;
 
     init({propertyAllocate, talents, enableExtend}) {
+        console.log('trajectory init', propertyAllocate)
         this.#enableExtend = enableExtend;
         this.boxParticle.visible = false;
         this.boxSpeed.visible = true;

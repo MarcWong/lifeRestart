@@ -11,7 +11,7 @@
 		GameConfig.screenMode="none";
 		GameConfig.alignV="top";
 		GameConfig.alignH="left";
-		GameConfig.startScene= ui.view.DefaultTheme.ModeUI;
+		GameConfig.startScene= ui.view.DefaultTheme.SexOrientationUI;
 		GameConfig.sceneRoot= "";
 		GameConfig.debug=false;
 		GameConfig.stat=false;

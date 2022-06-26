@@ -42,7 +42,8 @@ export default class Property extends ui.view.DefaultTheme.PropertyUI {
     #propertyAllocate;
     #propertyAllocateLimit;
 
-    init({talents}) {
+    init({ talents, property }) {
+        console.log('property init', talents, property);
         this.listSelectedTalents.array = talents;
         const replace = core.remake(talents.map(talent => talent.id));
         if(replace.length > 0) {
@@ -57,6 +58,13 @@ export default class Property extends ui.view.DefaultTheme.PropertyUI {
             [this.#types.STR]: 0,
             [this.#types.MNY]: 0,
             [this.#types.SPR]: 0,
+            [this.#types.AFG]: property[this.#types.AFG],
+            [this.#types.CHN]: property[this.#types.CHN],
+            [this.#types.EGP]: property[this.#types.EGP],
+            [this.#types.IND]: property[this.#types.IND],
+            [this.#types.JPN]: property[this.#types.JPN],
+            [this.#types.USA]: property[this.#types.USA],
+            [this.#types.LBTQ]: property[this.#types.LBTQ],
         }
         this.updateAllocate();
     }

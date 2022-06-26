@@ -11,14 +11,104 @@
         "id": 10001,
         "event": "You are born as a girl."
     },
-    "10002": {
-        "id": 10002,
+    "810001": {
+        "id": 810001,
         "event": "You are born as a girl. You have congenital anomalies.",
-        "include": "MNY<1",
+        "include": "(MNY<1&(US>0|CH>0|EGY>0|JAP>0))|(MNY>4&IND>0)",
         "branch": [
             "MNY<1:10000"
         ]
     },
+    "810101": {
+        "id": 810101,
+        "event": "You are a girl. You are born into an extremely poor family in a rural area.",
+        "include": "(MNY<2&(US>0|CH>0|EGY>0|JAP>0))|(MNY>4&IND>0)"
+    },
+
+    "810102": {
+        "id": 810102,
+        "event": "You get an infection, and your parents couldn’t afford to cure you in the hospital.",
+        "include": "(MNY<2&(US>0|CH>0|EGY>0|JAP>0))|(MNY>4&IND>0)",
+        "branch": [
+            "MNY<2:10000"
+        ]
+    },
+    "810201": {
+        "id": 810201,
+        "event": "You are a girl. You are born into a very poor family.",
+        "include": "(MNY<3&(US>0|CH>0|EGY>0|JAP>0))|(MNY>4&IND>0)"
+    },
+    "810202": {
+        "id": 810202,
+        "event": "You often starve.",
+        "include": "(MNY<3&(US>0|CH>0|EGY>0|JAP>0))|(MNY>4&IND>0)"
+    },
+    "810203": {
+        "id": 810203,
+        "event": "You are sent to the hospital because of congenital heart disease, and your parents cannot afford your operation.",
+        "include": "(MNY<3&(US>0|CH>0|EGY>0|JAP>0))|(MNY>4&IND>0)",
+        "branch": [
+            "MNY<3:10000"
+        ]
+    },
+    "810301": {
+        "id": 810301,
+        "event": "You are a girl. You are born into a low-income family in a rural area.",
+        "include": "(MNY<4&(US>0|CH>0|EGY>0|JAP>0))|(MNY>4&IND>0)"
+    },
+    "810302": {
+        "id": 810302,
+        "event": "There is no kindergarten, so you stay at home and start to help your family with farming.",
+        "include": "(MNY<4&(US>0|CH>0|EGY>0|JAP>0))|(MNY>4&IND>0)"
+    },
+    "810303": {
+        "id": 810303,
+        "event": "You enter the only local primary school in your area. You suffer from bad grades. Your parents work in another city far from you and they only come home once a year.",
+        "include": "(MNY<4&(US>0|CH>0|EGY>0|JAP>0))|(MNY>4&IND>0)"
+    },
+    "810304": {
+        "id": 810304,
+        "event": "You are bullied because of your low-income family and your low grades. However, your parents have no time to stand up for you.",
+        "include": "(MNY<4&(US>0|CH>0|EGY>0|JAP>0))|(MNY>4&IND>0)"
+    },
+    "810305": {
+        "id": 810305,
+        "event": "When other people have graduate from college, you have been working for years doing simple repetitive jobs.",
+        "include": "(MNY<4&(US>0|CH>0|EGY>0|JAP>0))|(MNY>4&IND>0)"
+    },
+    "810306": {
+        "id": 810306,
+        "event": "You have been replaced by a machine and you are fired.",
+        "include": "(MNY<4&(US>0|CH>0|EGY>0|JAP>0))|(MNY>4&IND>0)"
+    },
+    "810307": {
+        "id": 810307,
+        "event": "You start to learn new techniques that cannot be replaced by machines.",
+        "include": "(MNY<4&(US>0|CH>0|EGY>0|JAP>0))|(MNY>4&IND>0)"
+    },
+    "810308": {
+        "id": 810308,
+        "event": "You are still doing the basic service jobs that cannot be replaced by machines and AI.",
+        "include": "(MNY<4&(US>0|CH>0|EGY>0|JAP>0))|(MNY>4&IND>0)"
+    },
+    "810309": {
+        "id": 810309,
+        "event": "You must retire because no one wants you anymore, but you don’t have money.",
+        "include": "(MNY<4&(US>0|CH>0|EGY>0|JAP>0))|(MNY>4&IND>0)"
+    },
+    "810310": {
+        "id": 810310,
+        "event": "You cannot afford the hospital.",
+        "include": "(MNY<4&(US>0|CH>0|EGY>0|JAP>0))|(MNY>4&IND>0)",
+        "branch": [
+            "MNY<4:10000"
+        ]
+    },
+    
+
+
+    
+
     "10003": {
         "id": 10003,
         "event": "You are born as a girl. You have birth defects.",
@@ -100,73 +190,10 @@
         "event": "You are born into the richest family of the country.",
         "include": "MNY>12"
     },
-    "10288": {
-        "id": 10288,
-        "event": "你为自己而活，过得很快乐。",
-        "effect": {
-            "SPR": 1
-        },
-        "include": "(TLT?[1041,1027])&(EVT?[10009])"
-    },
-    "10289": {
-        "id": 10289,
-        "event": "你遭遇了严重的车祸。",
-        "include": "EVT?[10009]",
-        "exclude": "TLT?[1043]",
-        "branch": [
-            "EVT?[10007,10008]:30002",
-            "TLT?[1135]:40062",
-            "EVT?[10009]:10000"
-        ]
-    },
-    "10290": {
-        "id": 10290,
-        "event": "你查出了晚期癌症。",
-        "include": "(STR<6)&(EVT?[10009])",
-        "exclude": "EVT?[10290]",
-        "branch": [
-            "EVT?[10009]:10000"
-        ]
-    },
-    "10291": {
-        "id": 10291,
-        "event": "你突发心血管疾病去世。",
-        "include": "(STR<6)&(EVT?[10009])",
-        "exclude": "TLT?[1044]",
-        "branch": [
-            "EVT?[10009]:10000"
-        ]
-    },
-    "10292": {
-        "id": 10292,
-        "event": "你的身体越来越差了。",
-        "effect": {
-            "STR": -1
-        },
-        "include": "(STR<6)&(EVT?[10009])",
-        "exclude": "EVT?[10292]"
-    },
-    "10293": {
-        "id": 10293,
-        "event": "你经常锻炼，身体还不错。",
-        "effect": {
-            "SPR": 1
-        },
-        "include": "(STR>5)&(EVT?[10009])",
-        "exclude": "EVT?[10293]"
-    },
-    "10294": {
-        "id": 10294,
-        "event": "你在睡梦中安然离世。",
-        "effect": {
-            "SPR": 1
-        },
-        "include": "(STR>5)&(EVT?[10009])",
-        "exclude": "(TLT?[1048])|(EVT?[10294])",
-        "branch": [
-            "EVT?[10009]:10000"
-        ]
-    },
+
+    
+
+
     "11000": {
         "id": 11000,
         "event": "Faced with worsening floods and a shortage of housing, the Netherlands builds floating communities along its coastline which inspires many flood-prone nations worldwide."
@@ -364,7 +391,7 @@
 
     "21006": {
         "id": 21006,
-        "event": "You are diagnosed major depression, eating disorder and drug addiction. You are sent to a drug rehab. Under proper health regulation you start to adopt a healthier diet.",
+        "event": "You are diagnosed anxiety disorders, eating disorder and drug addiction. You are sent to a drug rehab. Under proper health regulation you start to adopt a healthier diet.",
         "include": "US>0&LBTQ=0"
     },
 
@@ -443,7 +470,7 @@
     },
     "22007": {
         "id": 22007,
-        "event": "You are diagnosed major depression, eating disorder and drug addiction. You are sent to a drug rehab.",
+        "event": "You are diagnosed anxiety disorders, eating disorder and drug addiction. You are sent to a drug rehab.",
         "include": "US>0&LBTQ>0"
     },
     "22008": {
@@ -467,17 +494,671 @@
         "include": "US>0&LBTQ>0"
     },
 
+    "31001": {
+        "id": 31001,
+        "event": "PCR test is required every day in most cities. Without uploading a negative test result you cannot walk out of your home. It becomes a daily habitual activity as normal as brushing one’s teeth. The Climate Action Fund is established in Europe and China as global courts agree to hear its first Climate Inaction Class-Action Lawsuit.",
+        "include": "CH>0&LBTQ=0"
+    },
 
+    "31002": {
+        "id": 31002,
+        "event": "China closes its borders and stops issuing passports to its citizens completely. Sanctioned by the west, China experiences an economic crisis.",
+        "include": "CH>0&LBTQ=0"
+    },
 
+    "31003": {
+        "id": 31003,
+        "event": "China struggles to find space, food, energy, and resources to sustain its population, the Fifteenth Five-Year-Plan (2026-2030) under the headline of “agricultural expansion for the people” and “green revolution” is implemented.",
+        "include": "CH>0&LBTQ=0"
+    },
+    "31004": {
+        "id": 31004,
+        "event": "Shanghai experienced prolonged blackouts in 20 when temperatures remained above 50ºC for days on end and its electrical grid came under significant pressure.",
+        "include": "CH>0&LBTQ=0"
+    },
+    "31005": {
+        "id": 31005,
+        "event": "China started its aggressive green energy programme. China is the global leader in renewable energy which supplies 50% of domestic energy demand; it now sells energy and network services to neighboring countries.",
+        "include": "CH>0&LBTQ=0"
+    },
+    "31006": {
+        "id": 31006,
+        "event": "CRAA (China-Russia Arctic Alliance) is established. China supports Russia through technology exchange in its Arctic seabed mining efforts.",
+        "include": "CH>0&LBTQ=0"
+    },
+    "31007": {
+        "id": 31007,
+        "event": "A new wave of feminist movement burst out on the internet. You attempt to join the cause and your post received millions of thumb ups, yet your comment is being removed from the internet in a few hours’ time and you are being tracked and followed by governmental officials.",
+        "include": "CH>0&LBTQ=0"
+    },
+    "31008": {
+        "id": 31008,
+        "event": "Because you hang out with your friends and arrive home after 10 pm you have a big fight with your parents. Your parents then blame your choice of major is different from their expectation of what majors a girl ‘should’ major in.",
+        "include": "CH>0&LBTQ=0"
+    },
+    "31009": {
+        "id": 31009,
+        "event": "On March 8th, Compulsory Marriage Law is passed, requiring women to get married before 35, if you don’t get married you will face a huge fine and the government will randomly assign a man to get married to. Your mom calls you and urges you to marry soon.",
+        "include": "CH>0&LBTQ=0"
+    },
+    "31010": {
+        "id": 31010,
+        "event": "On the eve of deciding to get divorced you learnt that the government just prolonged the Divorce cooling-off period from 30 days to 1 year, which means that a couple must sleep in the same room for a year under surveillance after their submission of divorce proposal, making it virtually impossible to get divorced.",
+        "include": "CH>0&LBTQ=0"
+    },
+    "31011": {
+        "id": 31011,
+        "event": "“Two Children Policy” is passed, requiring all women must give birth to two children before age 45. If you don’t give birth to your second child, your only child will not be allowed to take Gaokao. (The National College Entrance Examination) You and your husband are taken to the hospital, and you are force to accept an in vitro fertilization under the surveillance of a governmental official camera.",
+        "include": "CH>0&LBTQ=0"
+    },
+
+    "32001": {
+        "id": 32001,
+        "event": "PCR test is required every day in most cities. Without uploading a negative test result you cannot walk out of your home. It becomes a daily habitual activity as normal as brushing one’s teeth. The Climate Action Fund is established in Europe and China as global courts agree to hear its first Climate Inaction Class-Action Lawsuit.",
+        "include": "CH>0&LBTQ>0"
+    },
+    "32002": {
+        "id": 32002,
+        "event": "China closes its borders and stops issuing passports to its citizens completely. Sanctioned by the west, China experiences an economic crisis.",
+        "include": "CH>0&LBTQ>0"
+    },
+    "32003": {
+        "id": 32003,
+        "event": "China struggles to find space, food, energy and resources to sustain its population, the Fifteenth Five-Year-Plan (2026-2030) under the headline of “agricultural expansion for the people” and “green revolution” is implemented.",
+        "include": "CH>0&LBTQ>0"
+    },
+    "32004": {
+        "id": 32004,
+        "event": "Shanghai experienced prolonged blackouts in 20 when temperatures remained above 50ºC for days on end and its electrical grid came under significant pressure.",
+        "include": "CH>0&LBTQ>0"
+    },
+    "32005": {
+        "id": 32005,
+        "event": "You start to feel uncomfortable when wearing dresses and being addressed as a girl. At the same time, China started its aggressive green energy programme. China is the global leader in renewable energy which supplies 50% of domestic energy demand; it now sells energy and network services to neighboring countries.",
+        "include": "CH>0&LBTQ>0"
+    },
+    "32006": {
+        "id": 32006,
+        "event": "CRAA (China-Russia Arctic Alliance) is established. China supports Russia through technology exchange in its Arctic seabed mining efforts.",
+        "include": "CH>0&LBTQ>0"
+    },
+    "32007": {
+        "id": 32007,
+        "event": "You become best friend with a boy and a girl in school, and you secretly love your female best friend. You confess to them separately. Both supports you, yet when you confess your love to the girl, she rejects it and says that she has a secret lover in her heart already, you suspect that it’s your male best friend.",
+        "include": "CH>0&LBTQ>0"
+    },
+    "32008": {
+        "id": 32008,
+        "event": " Because you hang out with your friends and arrive home after 10 pm you have a big fight with your parents. Your parents then blame your choice of major is different from their expectation of what majors a girl ‘should’ major in.",
+        "include": "CH>0&LBTQ>0"
+    },
+    "32009": {
+        "id": 32009,
+        "event": "You try to find ways to get Feminizing Hormone Therapy, yet your reasoning is not justified. You try to obtain medicine from online stores. You spent a lot of money, but the medicine doesn’t work. You also find it hard to navigate the world because though all your friends support you, it’s hard to find a partner.",
+        "include": "CH>0&LBTQ>0"
+    },
+    "32010": {
+        "id": 32010,
+        "event": "You are diagnosed anxiety disorders. On the bright side, you finally find a loving partner.",
+        "include": "CH>0&LBTQ>0"
+    },
+    "32011": {
+        "id": 32011,
+        "event": "On March 8th, Compulsory Marriage Law is passed, requiring women to get married before 35, if you don’t get married you will face a huge fine and the government will randomly assign a man to get married to. Your mom calls you and urges you to marry soon.",
+        "include": "CH>0&LBTQ>0"
+    },
+    "32012": {
+        "id": 32012,
+        "event": "You are assigned a man to get married, luckily, he is also a homosexual so you both agreed to live as roommates and allow your partners to come to your home to have sex.",
+        "include": "CH>0&LBTQ>0"
+    },
+    "32013": {
+        "id": 32013,
+        "event": "“Two Children Policy” is passed, requiring all women must give birth to two children before age 45. If you don’t give birth to your second child, your only child will not be allowed to take Gaokao. (The National College Entrance Examination) You and your husband are taken to the hospital, and you are force to accept an in vitro fertilization under the surveillance of a governmental official camera. Your husband hugs you for the first time and you cried together when you return home.",
+        "include": "CH>0&LBTQ>0"
+    },
+    "32014": {
+        "id": 32014,
+        "event": "You give birth to your first kid. It’s a girl. You have been thinking about killing her in the cradle many times and then feel guilty about this thought many times.",
+        "include": "CH>0&LBTQ>0"
+    },
+    "32015": {
+        "id": 32015,
+        "event": "You and your husband are taken to the hospital again, but this time you feel numb.",
+        "include": "CH>0&LBTQ>0"
+    },
+    "32016": {
+        "id": 32016,
+        "event": "You give birth to your second child. It is a girl again; you receive a huge amount of money from the government for giving birth to two girls. Three months later, you give the money and your two kids to you and your husband’s parents and let them take care of your children for you.",
+        "include": "CH>0&LBTQ>0"
+    },
+
+    "41101": {
+        "id": 41101,
+        "event": "Your mom told you to be careful about the men around you. Every man you come across is a potential rapist. Be it the male teachers in school, male friends or relatives, you don’t quite understand the word ‘rape’ but you know it’s a very bad thing.",
+        "include": "IND>0&LBTQ=0&MNY<5"
+    },
+    "41102": {
+        "id": 41102,
+        "event": "Your mom starts to teach you how to cook, washing dishes becomes you and your mom’s duty.",
+        "include": "IND>0&LBTQ=0&MNY<5"
+    },
+    "41103": {
+        "id": 41103,
+        "event": "You are harassed for the first time on the way to school. From then on, this happens every now and then.",
+        "include": "IND>0&LBTQ=0&MNY<5"
+    },
+    "41104": {
+        "id": 41104,
+        "event": "You fall in love with a boy, yet after you find out that his caste is different from yours, tears stream down because you know you will never be able to marry him.",
+        "include": "IND>0&LBTQ=0&MNY<5"
+    },
+    "41105": {
+        "id": 41105,
+        "event": "You are forced to drop out from school. Every month while menstruating, you are not allowed to touch or go near your dad and your brother at home because during those few days you become ‘impure’.",
+        "include": "IND>0&LBTQ=0&MNY<5"
+    },
+    "41106": {
+        "id": 41106,
+        "event": "Your mom shouts at you, asking you ‘Why are you wearing such a short dress and why your bra strap is showing?’ before you leave the house. You know there’s no point arguing with her, so you get changed.",
+        "include": "IND>0&LBTQ=0&MNY<5"
+    },
+    "41107": {
+        "id": 41107,
+        "event": "You heard that one of your best friends at school suffers from acid attack because she rejected someone’s proposal.",
+        "include": "IND>0&LBTQ=0&MNY<5"
+    },
+    "41108": {
+        "id": 41108,
+        "event": "You tried drinking and smoking for the first time at a friend’s party. You find your clothes are inside out the next day morning and you cannot find your underwear. You dare not tell your parents or anyone else about it.",
+        "include": "IND>0&LBTQ=0&MNY<5"
+    },
+    "41109": {
+        "id": 41109,
+        "event": "You are married to a man who is 14 years older than you.",
+        "include": "IND>0&LBTQ=0&MNY<5"
+    },
+    "41110": {
+        "id": 41110,
+        "event": "You give birth to your first kid; you feel terrible that she is a girl. This also endangers your relationship with your mother-in-law, you had a big fight with her. What’s worse is that your husband is never on your side.",
+        "include": "IND>0&LBTQ=0&MNY<5"
+    },
+
+    "41201": {
+        "id": 41201,
+        "event": "Your mother tells you that: Nothing in life is ever going to be with you except your education. Your dad isn’t very enthusiastic about spending too much on your education, but he always made sure that you face no kind of discrimination whatsoever.",
+        "include": "IND>0&LBTQ=0&MNY>4"
+    },
+    "41202": {
+        "id": 41202,
+        "event": "Your brother always makes sure that no one would try groping you when you are in crowded public places. When you are scared to attend an event in an unfamiliar area in the city, he happily accompanies you and waits there till you feel comfortable.",
+        "include": "IND>0&LBTQ=0&MNY>4"
+    },
+    "41203": {
+        "id": 41203,
+        "event": "You are a hardworking student and choose PCM (Physics, Chemistry, Math) after tenth standard. Your parents get you enrolled in the most reputed IIT-JEE coaching institute of your city.",
+        "include": "IND>0&LBTQ=0&MNY>4"
+    },
+    "41204": {
+        "id": 41204,
+        "event": "You attend a friend’s birthday party, yet you forget about the time, and you are still at her place after 8:30 which is when you must go home. When you come out of her place after 9 o’clock, you see your father waiting for you across the street.",
+        "include": "IND>0&LBTQ=0&MNY>4"
+    },
+    "41205": {
+        "id": 41205,
+        "event": "You choose to leave India and seek a brighter career abroad.",
+        "include": "IND>0&LBTQ=0&MNY>4"
+    },
 
     "42101": {
         "id": 42101,
         "event": "You feel that you might be something other than heterosexual or straight.",
-        "include": "INDIA>0&LBTQ>0&MNY<5"
+        "include": "IND>0&LBTQ>0&MNY<5"
     },
     "42102": {
         "id": 42102,
-        "event": "You  other than heterosexual or straight.",
-        "include": "INDIA>0&LBTQ>0&MNY<5"
+        "event": "After seeking advice on social media you are positive about coming out however, on the day you are about to tell your parents, you hear about a secret honor killing of your only lesbian friend which your father participated in. You plan to run away but you have no money.",
+        "include": "IND>0&LBTQ>0&MNY<5"
+    },
+    "42103": {
+        "id": 42103,
+        "event": "Your parents discover that you are not heterosexual, A village medic prescribed rape as a treatment to cure you, so your parents forced a family friend to rape you, hoping to correct your sexual orientation. Their attempt fails to cure you but succeeds in leading you to PTSD.",
+        "include": "IND>0&LBTQ>0&MNY<5"
+    },
+    "42104": {
+        "id": 42104,
+        "event": "You try to kill yourself, but your parents discover it in time and send you to the hospital. Then you are sent to a psychiatric ward for several months where you are treated like a criminal. You must take psychotic drugs and undergo torturous psychosexual experiments.",
+        "include": "IND>0&LBTQ>0&MNY<5"
+    },
+    "42105": {
+        "id": 42105,
+        "event": "Under the pressure of marriage, you try to seek a gay man who would be ready to put up with this show of marriage online. Luckily, you find a suitable candidate. Though after marriage you still need to perform household chores, you feel freer than ever before.",
+        "include": "IND>0&LBTQ>0&MNY<5"
+    },
+    "42201": {
+        "id": 42201,
+        "event": "Your mother tells you that: Nothing in life is ever going to be with you except your education. Your dad isn’t very enthusiastic about spending too much on your education, but he always made sure that you face no kind of discrimination whatsoever.",
+        "include": "IND>0&LBTQ>0&MNY>4"
+    },
+    "42202": {
+        "id": 42202,
+        "event": "You feel that you might be something other than heterosexual or straight.",
+        "include": "IND>0&LBTQ>0&MNY>4"
+    },
+    "42203": {
+        "id": 42203,
+        "event": "Your brother always makes sure that no one would try groping you when you are in crowded public places. When you are scared to attend an event in an unfamiliar area in the city, he happily accompanies you and waits there till you feel comfortable.",
+        "include": "IND>0&LBTQ>0&MNY>4"
+    },
+    "42204": {
+        "id": 42204,
+        "event": "After seeking advice on social media you are positive about coming out. You first tell your brother about it, and you successfully win his support. However, when you tell your parents about it your dad becomes furious, he slaps you. You overhear a conversation between your parents at night discussing which psychiatric ward should they send you to.",
+        "include": "IND>0&LBTQ>0&MNY>4"
+    },
+    "42205": {
+        "id": 42205,
+        "event": "You secretly decide to apply to universities in the UK and US. In April, you receive several offers.",
+        "include": "IND>0&LBTQ>0&MNY>4"
+    },
+    "42206": {
+        "id": 42206,
+        "event": "In college you can finally dress like yourself. You also find a loving partner. Your parents don’t really talk to you, but your brother supports you and you believe that your parents will come around one day.",
+        "include": "IND>0&LBTQ>0&MNY>4"
+    },
+    "51001": {
+        "id": 51001,
+        "event": "Your mom takes you into a small, humid, and dark room, a person in a white cloak opens your legs and waves a scissor in front of you. Your vagina feels icy, and then, unimaginably painful. The pain lessens for a moment as something warm floods out. It becomes more painful when a needle penetrates through your skin several times.",
+        "include": "EGY>0&LBTQ=0"
+    },
+    "51002": {
+        "id": 51002,
+        "event": "You mom teaches you to serve tea and coffee to your father and brother. When you laugh out at home, your mom shouts at you, warning you that laughing out loud in public is forbidden.",
+        "include": "EGY>0&LBTQ=0"
+    },
+    "51003": {
+        "id": 51003,
+        "event": "You mom teaches you how to wear a hijab and tells you that you will not be respected in public if you don’t do it, it is a way to protect yourself. From then on you wear it every day.",
+        "include": "EGY>0&LBTQ=0"
+    },
+    "51004": {
+        "id": 51004,
+        "event": "You are sexually harassed on your way to work. You feel numb because this happens almost every day from the day your breasts grow.",
+        "include": "EGY>0&LBTQ=0"
+    },
+    "51005": {
+        "id": 51005,
+        "event": "You have a big fight with your parents because they ignore your hard work pursuing a career path and make you feel like a failure for not being married.",
+        "include": "EGY>0&LBTQ=0"
+    },
+    "51006": {
+        "id": 51006,
+        "event": "You are married to a man assigned by your parents. You hate having sex because it is unbearably painful, especially the first time when your husband penetrates your sealed vagina.",
+        "include": "EGY>0&LBTQ=0"
+    },
+    "51007": {
+        "id": 51007,
+        "event": "You are pressured into bearing children and your husband urges you to resign and become a housewife.",
+        "include": "EGY>0&LBTQ=0"
+    },
+    "51008": {
+        "id": 51008,
+        "event": "Though you have been beaten by your husband for years and you have seen your mom been beaten by your father as a kid, you visit the hospital by yourself this time because it just won’t stop bleeding.",
+        "include": "EGY>0&LBTQ=0"
+    },
+    "51009": {
+        "id": 51009,
+        "event": "You are accused by your husband’s family because your two kids are both girls, they want a boy ‘to carry the family name.’",
+        "include": "EGY>0&LBTQ=0"
+    },
+
+    "52001": {
+        "id": 52001,
+        "event": "Your mom takes you into a small, humid, and dark room, a person in a white cloak opens your legs and waves a scissor in front of you. Your vagina feels icy, and then, unimaginably painful. The pain lessens for a moment as something warm floods out. It becomes more painful when a needle penetrates through your skin several times.",
+        "include": "EGY>0&LBTQ>0"
+    },
+    "52002": {
+        "id": 52002,
+        "event": "You mom teaches you to serve tea and coffee to your father and brother. When you laugh out at home, your mom shouts at you, warning you that laughing out loud in public is forbidden.",
+        "include": "EGY>0&LBTQ>0"
+    },
+    "52003": {
+        "id": 52003,
+        "event": "You mom teaches you how to wear a hijab and tells you that you will not be respected in public if you don’t do it, it is a way to protect yourself. From then on you wear it every day.",
+        "include": "EGY>0&LBTQ>0"
+    },
+    "52004": {
+        "id": 52004,
+        "event": "You feel that you might be something other than heterosexual or straight.",
+        "include": "EGY>0&LBTQ>0"
+    },
+    "52005": {
+        "id": 52005,
+        "event": "After seeking advice on social media you are positive about coming out however, on the day you finally made up your mind to tell your parents, you hear about your only gay friend was accused of an LGBTQ-related offense of which your father participated in. You know that you can only end up in worse situations because you are a girl.",
+        "include": "EGY>0&LBTQ>0"
+    },
+    "52006": {
+        "id": 52006,
+        "event": "Your parents discover that you are not heterosexual, your parents forced a family friend to rape you, hoping to correct your sexual orientation. Their attempt fails to cure you but succeeds in leading you to PTSD.",
+        "include": "EGY>0&LBTQ>0"
+    },
+    "52007": {
+        "id": 52007,
+        "event": "You are sexually harassed on the street. You feel numb because this happens almost every day from the day your breasts grow.",
+        "include": "EGY>0&LBTQ>0"
+    },
+    "52008": {
+        "id": 52008,
+        "event": "You waived a rainbow gay pride flag at a concert in Cairo. You are charged with ‘inciting debauchery” and arrested by the Egypt’s authority. You are tortured with electric shocks and send to a solitary confinement for three months.",
+        "include": "EGY>0&LBTQ>0"
+    },
+    "52009": {
+        "id": 52009,
+        "event": "You flee to Canada, which granted you political asylum. However, you have no job, and you cannot find any value in yourself. Whenever someone tries to interview you, all the terrible memories from FGM to torturing haunt you again and again. You start to hate yourself, and question why can’t you just be normal?",
+        "include": "EGY>0&LBTQ>0"
+    },
+    "52010": {
+        "id": 52010,
+        "event": "Your mom became seriously ill and died. Your father and siblings blame you for being selfish.",
+        "include": "EGY>0&LBTQ>0"
+    },
+    "52011": {
+        "id": 52011,
+        "event": "You suffer from guilt, PTSD, panic attacks and loneliness and try to commit suicide.",
+        "include": "EGY>0&LBTQ>0"
+    },
+
+    "61001": {
+        "id": 61001,
+        "event": "Your parents take you to Tokyo Disneyland for the first time on your birthday.",
+        "include": "JAP>0&LBTQ=0"
+    },
+    "61002": {
+        "id": 61002,
+        "event": "Your mom spends hours to prepare the perfect obento(lunchbox) for you every day.",
+        "include": "JAP>0&LBTQ=0"
+    },
+    "61003": {
+        "id": 61003,
+        "event": "You joined the community chorus and start to learn the piano. Almost all the students at your after-school music school are girls.",
+        "include": "JAP>0&LBTQ=0"
+    },
+    "61004": {
+        "id": 61004,
+        "event": "Your grandma teaches you how to prepare tea and cook curry. You can’t believe her devotion to her husband and family as she tells you that she must kneel and help grandpa change shoes every day.",
+        "include": "JAP>0&LBTQ=0"
+    },
+    "61005": {
+        "id": 61005,
+        "event": "You are outraged when your school require all girls to wear uniform skirts that expose the legs and knees even in the snowy days in the winter while boys can wear pants and hear techs.",
+        "include": "JAP>0&LBTQ=0"
+    },
+    "61006": {
+        "id": 61006,
+        "event": "Your physical education teacher tells you to lower your skirts below the knee because a fellow student was sexually harassed. Boys in your class giggles and you feel disgusted because it shouldn’t be the girl’s fault that she is harassed.",
+        "include": "JAP>0&LBTQ=0"
+    },
+    "61007": {
+        "id": 61007,
+        "event": "It’s difficult for you to find a job as you witness male candidates with similar resume get the job while you are turned down. You want to build up a successful career for yourself.",
+        "include": "JAP>0&LBTQ=0"
+    },
+    "61008": {
+        "id": 61008,
+        "event": "You travel to Taiwan.",
+        "include": "JAP>0&LBTQ=0"
+    },
+    "61009": {
+        "id": 61009,
+        "event": "Japan population decrease to 119.2 million.",
+        "include": "JAP>0&LBTQ=0"
+    },
+    "61010": {
+        "id": 61010,
+        "event": "You give birth to your first child. Although your husband and his family pressures you to stay at home and become a housewife, you’ve decided to continue working and balance it out.",
+        "include": "JAP>0&LBTQ=0"
+    },
+    "61011": {
+        "id": 61012,
+        "event": "You get a divorce",
+        "include": "JAP>0&LBTQ=0"
+    },
+    "61012": {
+        "id": 61012,
+        "event": "You become a ‘Double-sided Tape’ because you follow the trend and married a female in your second marriage.",
+        "include": "JAP>0&LBTQ=0"
+    },
+    "61013": {
+        "id": 61013,
+        "event": "You get a second divorce, the ‘Double-sided Tape’ life didn’t work out for you.",
+        "include": "JAP>0&LBTQ=0"
+    },
+    "61014": {
+        "id": 61014,
+        "event": "Japan population decrease to 59.72 million.",
+        "include": "JAP>0&LBTQ=0"
+    },
+
+    "62001": {
+        "id": 62001,
+        "event": "Your parents take you to Tokyo Disneyland for the first time on your birthday.",
+        "include": "JAP>0&LBTQ>0"
+    },
+    "62002": {
+        "id": 62002,
+        "event": "Your mom spends hours to prepare the perfect obento(lunchbox) for you every day.",
+        "include": "JAP>0&LBTQ>0"
+    },
+    "62003": {
+        "id": 62003,
+        "event": "You start to feel uncomfortable when wearing school uniforms and being addressed as a girl.",
+        "include": "JAP>0&LBTQ>0"
+    },
+    "62004": {
+        "id": 62004,
+        "event": "Your grandma teaches you how to prepare tea and cook curry. You can’t believe her devotion to her husband and family as she tells you that she must kneel and help grandpa change shoes every day.",
+        "include": "JAP>0&LBTQ>0"
+    },
+    "62005": {
+        "id": 62005,
+        "event": "You are outraged when your school require all girls to wear uniform skirts that expose the legs and knees even in the snowy days in the winter while boys can wear pants and hear techs.",
+        "include": "JAP>0&LBTQ>0"
+    },
+    "62006": {
+        "id": 62006,
+        "event": "You become best friend with a boy and a girl in school, and you secretly love your female best friend. You confess to them separately. Both supports you, yet when you confess your love to the girl, she rejects it and says that she has a secret lover in her heart already, you suspect that it’s your male best friend.",
+        "include": "JAP>0&LBTQ>0"
+    },
+    "62007": {
+        "id": 62007,
+        "event": "You visit a lesbian bar for the first time in your life. There you meet a lot of friends. However, you find it hard to introduce yourself as a ‘boi’ or ‘femme,’ which makes you a bit awkward.",
+        "include": "JAP>0&LBTQ>0"
+    },
+    "62008": {
+        "id": 62008,
+        "event": "When your friends talk about their futures, most of them want ger married, bear children, give up work and be a housewife, it is not the kind of life you want. Your mom starts to ask you about whether you have a boyfriend which embarrasses you.",
+        "include": "JAP>0&LBTQ>0"
+    },
+    "62009": {
+        "id": 62009,
+        "event": "You are warned that coming out to your offices could potentially result in immediate termination of your contracts because there is no anti-discrimination legislation.",
+        "include": "JAP>0&LBTQ>0"
+    },
+    "62010": {
+        "id": 62010,
+        "event": "Japan legalizes same-sex marriage, there are some protests in rural areas, but the rainbow flags are flying around in big cities like Tokyo.",
+        "include": "JAP>0&LBTQ>0"
+    },
+    "62011": {
+        "id": 62011,
+        "event": "You travel to Taiwan.",
+        "include": "JAP>0&LBTQ>0"
+    },
+    "62012": {
+        "id": 62012,
+        "event": "Japan population decrease to 119.2 million.",
+        "include": "JAP>0&LBTQ>0"
+    },
+    "62013": {
+        "id": 62013,
+        "event": "You had your first designer baby and become a working mom.",
+        "include": "JAP>0&LBTQ>0"
+    },
+    "62014": {
+        "id": 62014,
+        "event": "Japan population decrease to 59.72 million.",
+        "include": "JAP>0&LBTQ>0"
+    },
+
+    "71001": {
+        "id": 71001,
+        "event": "You start to wear a black veil over your head. Last spring suicide attackers killed dozens of your classmates, but you still returned to school because you want to continue to study and become a nurse, because this is the only way out.",
+        "include": "AF>0&LBTQ=0"
+    },
+    "71002": {
+        "id": 71002,
+        "event": "You are told that this is your last year at school.",
+        "include": "AF>0&LBTQ=0"
+    },
+    "71003": {
+        "id": 71003,
+        "event": "You are required to wear a burka, which covers the whole body and head. There is only a piece of netting that lets you see. Your mom warns you that you must never take it off because Taliban will shoot you if you don’t wear burka.",
+        "include": "AF>0&LBTQ=0"
+    },
+    "71004": {
+        "id": 71004,
+        "event": "You bought a book which has a woman’s picture on the cover in the black market because women are banned from being photographed and appearing on printed press. It’s written in English which you don’t understand but you hide it and read it every night.",
+        "include": "AF>0&LBTQ=0"
+    },
+    "71005": {
+        "id": 71005,
+        "event": "You are married to a man assigned by your parents. You hate having sex because it is painful, especially the first time when your husband penetrates you.",
+        "include": "AF>0&LBTQ=0"
+    },
+    "71006": {
+        "id": 71006,
+        "event": "You are raped while being pregnant, when your husband suspects that you are in contact with other men, he whips you and calls you a ‘stupid, ugly whore’. You are shameful of yourself.",
+        "include": "AF>0&LBTQ=0"
+    },
+    "71007": {
+        "id": 71007,
+        "event": "You give birth to your first kid.",
+        "include": "AF>0&LBTQ=0"
+    },
+    "71008": {
+        "id": 71008,
+        "event": "You are arrested because you lean over the balcony to get some fresh air and you are reported because it’s banned for women to do so.",
+        "include": "AF>0&LBTQ=0"
+    },
+    "71009": {
+        "id": 71009,
+        "event": "You try to run away from your husband due to domestic violence, but you are caught and locked in a dark room with curtains closed for months.",
+        "include": "AF>0&LBTQ=0"
+    },
+    "71010": {
+        "id": 71010,
+        "event": "After praying, you set yourself on fire in front of your son due to your husband’s constant domestic abuse. You wake up in the hospital blanketed in third-degree burns and bandages. Your husband and your father-in-law call you and blame you. You wish you were dead.",
+        "include": "AF>0&LBTQ=0"
+    },
+    "71011": {
+        "id": 71011,
+        "event": "Your husband is arrested under feminist activists’ pressure; however, he is released by local authority soon. Your husband’s family forbid you to see your son.",
+        "include": "AF>0&LBTQ=0"
+    },
+    "71012": {
+        "id": 71012,
+        "event": "Your husband’s family lets you see your son under the condition that you are willing to support the family by solicit sex and beg on the street with your son.",
+        "include": "AF>0&LBTQ=0"
+    },
+    "71013": {
+        "id": 71013,
+        "event": "Your sister is stoned to death because she is accused of having sex outside her forced marriage.",
+        "include": "AF>0&LBTQ=0"
+    },
+    "71014": {
+        "id": 71014,
+        "event": "You decide to paint your nails because you know your fingers will be cut off if your nails are seen in public, but you would rather to lose your fingers than being a slave in your husband’s family.",
+        "include": "AF>0&LBTQ=0"
+    },
+    "71015": {
+        "id": 71015,
+        "event": "You get divorced, and you know you will never be able to see your son again.",
+        "include": "AF>0&LBTQ=0"
+    },
+
+    "72001": {
+        "id": 72001,
+        "event": "You start to wear a black veil over your head. Last spring suicide attackers killed dozens of your classmates, but you still returned to school because you want to continue to study and become a nurse, because this is the only way out.",
+        "include": "AF>0&LBTQ>0"
+    },
+
+    "72002": {
+        "id": 72002,
+        "event": "You are told that this is your last year at school.",
+        "include": "AF>0&LBTQ>0"
+    },
+    "72003": {
+        "id": 72003,
+        "event": "You are required to wear a burka, which covers the whole body and head. There is only a piece of netting that lets you see. Your mom warns you that you must never take it off because Taliban will shoot you if you don’t wear burka.",
+        "include": "AF>0&LBTQ>0"
+    },
+    "72004": {
+        "id": 72004,
+        "event": "You bought a book which has a woman’s picture on the cover in the black market because women are banned from being photographed and appearing on printed press. It’s written in English which you don’t understand but you hide it and read it every night.",
+        "include": "AF>0&LBTQ>0"
+    },
+    "72005": {
+        "id": 72005,
+        "event": "You realize that you dislike men, and you might be more attracted to women. But your parents are already arranging marriage for you.",
+        "include": "AF>0&LBTQ>0"
+    },
+    "72006": {
+        "id": 72006,
+        "event": "You are raped while being pregnant, when your husband suspects that you are in contact with other men, he whips you and calls you a ‘stupid, ugly whore’. You are shameful of yourself.",
+        "include": "AF>0&LBTQ>0"
+    },
+    "72007": {
+        "id": 72007,
+        "event": "You give birth to your first kid.",
+        "include": "AF>0&LBTQ>0"
+    },
+    "72008": {
+        "id": 72008,
+        "event": "You are arrested because you lean over the balcony to get some fresh air and you are reported because it’s banned for women to do so.",
+        "include": "AF>0&LBTQ>0"
+    },
+    "72009": {
+        "id": 72009,
+        "event": "You confess to your closest female friend that ‘the feelings a boy normally has towards a girl, I have those feelings for you.’ For a while she withdrew, but later you two became a couple. You managed to meet up once or twice a week, but the relationship remained strictly hidden.",
+        "include": "AF>0&LBTQ>0"
+    },
+    "72010": {
+        "id": 72010,
+        "event": "After praying, you set yourself on fire in front of your son due to your husband’s constant domestic abuse. You wake up in the hospital blanketed in third-degree burns and bandages. Your husband and your father-in-law call you and blame you. You wish you were dead.",
+        "include": "AF>0&LBTQ>0"
+    },
+    "72011": {
+        "id": 72011,
+        "event": "Your husband is arrested under feminist activists’ pressure; however, he is released by local authority soon. Your husband’s family forbid you to see your son.",
+        "include": "AF>0&LBTQ>0"
+    },
+    "72012": {
+        "id": 72012,
+        "event": "Your husband’s family lets you see your son under the condition that you are willing to support the family by solicit sex and beg on the street with your son.",
+        "include": "AF>0&LBTQ>0"
+    },
+    "72013": {
+        "id": 72013,
+        "event": "You and your secret partner’s communal friend is being hanged because she is found to be a lesbian. You and your partner decide it’s too dangerous to be seeing each other now.",
+        "include": "AF>0&LBTQ>0"
+    },
+    "72014": {
+        "id": 72014,
+        "event": "You decide to paint your nails because you know your fingers will be cut off if your nails are seen in public, but you would rather to lose your fingers than being a slave in your husband’s family.",
+        "include": "AF>0&LBTQ>0"
+    },
+    "72015": {
+        "id": 72015,
+        "event": "You get divorced, and you know you will never be able to see your son again.",
+        "include": "AF>0&LBTQ>0"
     }
 }

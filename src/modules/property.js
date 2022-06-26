@@ -16,12 +16,12 @@ class Property {
         EVT: "EVT", // 事件 event EVT
         TMS: "TMS", // 次数 times TMS
         LBTQ: "LBTQ", // 性向 LBTQ
-        AFG: "AFG", // 国别 afghanistan AFG
-        EGP: "EGP", // 国别 egypt EGP
+        AFG: "AF", // 国别 afghanistan AFG
+        EGP: "EGY", // 国别 egypt EGP
         IND: "IND", // 国别 india IND
-        CHN: "CHN", // 国别 china CHN
-        JPN: "JPN", // 国别 japan JPN
-        USA: "USA", // 国别 USA USA
+        CHN: "CH", // 国别 china CHN
+        JPN: "JAP", // 国别 japan JPN
+        USA: "US", // 国别 USA USA
 
         // Auto calc
         LAGE: "LAGE", // 最低年龄 Low Age

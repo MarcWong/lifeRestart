@@ -3,7 +3,14 @@ export default class Mode extends ui.view.DefaultTheme.ModeUI {
         super();
         const types =
             this.#types = core.PropertyTypes;
-
+        this.#nationalityAllocate = {
+            [types.AFG]: 0,
+            [types.CHN]: 0,
+            [types.EGP]: 0,
+            [types.IND]: 0,
+            [types.JPN]: 0,
+            [types.USA]: 0,
+        }
         this.btnAfg.on(Laya.Event.CLICK, this, this.onClickAfg);
         this.btnChn.on(Laya.Event.CLICK, this, this.onClickChn);
         this.btnEgp.on(Laya.Event.CLICK, this, this.onClickEgp);
@@ -12,28 +19,29 @@ export default class Mode extends ui.view.DefaultTheme.ModeUI {
         this.btnUsa.on(Laya.Event.CLICK, this, this.onClickUsa);
     }
     #types;
+    #nationalityAllocate;
     onClickAfg() {
-        this.onClickNext('AFG')
+        this.onClickNext(this.#types.AFG)
     }
     onClickChn() {
-        this.onClickNext('CHN')
+        this.onClickNext(this.#types.CHN)
     }
     onClickEgp() {
-        this.onClickNext('EGP')
+        this.onClickNext(this.#types.EGP)
     }
     onClickInd() {
-        this.onClickNext('IND')
+        this.onClickNext(this.#types.IND)
     }
     onClickJpn() {
-        this.onClickNext('JPN')
+        this.onClickNext(this.#types.JPN)
     }
     onClickUsa() {
-        this.onClickNext('USA')
+        this.onClickNext(this.#types.USA)
     }
     onClickNext (NAT) {
-        core.addNationality(NAT)
-        console.log(core.propertys)
-
-        $ui.switchView(UI.pages.TALENT);
+        this.#nationalityAllocate[NAT] = 1
+        console.log(this.#nationalityAllocate)
+        const nationality = this.#nationalityAllocate
+        $ui.switchView(UI.pages.SEXORIENTATION, { nationality, enableExtend: true });
     }
 }

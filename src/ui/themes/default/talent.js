@@ -8,7 +8,8 @@ export default class Talent extends ui.view.DefaultTheme.TalentUI {
     }
 
     #selected = new Set();
-    init() {
+    init({ property }) {
+        this.property = property;
         this.pageDrawCard.visible = true;
         this.pageResult.visible = false;
         this.btnNext.label = 'UI_Talent_Select_Uncomplete';
@@ -29,7 +30,7 @@ export default class Talent extends ui.view.DefaultTheme.TalentUI {
         }
 
         const talents = [...this.#selected].map(index => this.listTalents.array[index]);
-        $ui.switchView(UI.pages.PROPERTY, { talents, enableExtend: true });
+        $ui.switchView(UI.pages.PROPERTY, { talents, property: this.property, enableExtend: true });
     }
 
     renderTalent(box, index) {

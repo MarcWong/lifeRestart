@@ -11,6 +11,7 @@ const pages = {
     SAVELOAD: 'SAVELOAD',
     MODE: 'MODE',
     REBORN: 'REBORN',
+    SEXORIENTATION: 'SEXORIENTATION',
     CELEBRITY: 'CELEBRITY'
 };
 
@@ -33,6 +34,7 @@ const dark = {
         [pages.SAVELOAD]: 'saveload',
         [pages.MODE]: 'default/mode',
         [pages.REBORN]: 'default/reborn',
+        [pages.SEXORIENTATION]: 'default/sexorientation',
         [pages.CELEBRITY]: 'default/celebrity',
     },
     popups: {
