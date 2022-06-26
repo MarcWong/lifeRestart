@@ -5,12 +5,7 @@
         "effect": {
             "LIF": -1
         },
-        "NoRandom": 1,
-        "branch": [
-            "(TLT?[90009])&(EVT![20001]):20001",
-            "(TLT?[1147])&(EVT![20000]):20000",
-            "(TLT?[2024])&(EVT?[10679,10680,10681])&(EVT![11504]):11504"
-        ]
+        "NoRandom": 1
     },
     "10001": {
         "id": 10001,
@@ -335,5 +330,15 @@
     "11040": {
         "id": 11040,
         "event": "The human sensory experiences including the night vision, the ability to smell, the ability to hear low pitches and dream experiences become designable products in the supermarket. Due to our declining memory, the Memory Cloud Drive become the best seller of the year."
+    },
+    "42101": {
+        "id": 42101,
+        "event": "You feel that you might be something other than heterosexual or straight.",
+        "include": "INDIA>0&LBTQ>0&MNY<5"
+    },
+    "42102": {
+        "id": 42102,
+        "event": "You  other than heterosexual or straight.",
+        "include": "INDIA>0&LBTQ>0&MNY<5"
     }
 }
