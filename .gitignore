@@ -109,3 +109,5 @@ utils/xlsxTransform-*
 /.idea
 
 __localStorage.json
+
+.DS_Store

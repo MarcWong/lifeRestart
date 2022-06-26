@@ -62,10 +62,10 @@ location.search.substr(1).split('&').forEach(item => {
 });
 
 core.config({
-    defaultPropertyPoints: 20, // default number of points for a property
+    defaultPropertyPoints: 13, // default number of points for a property
     talentSelectLimit: 3, // max number of talents that can be selected
-    propertyAllocateLimit: [0, 10], // scoop of properties that can be allocated,
-    defaultPropertys: { SPR: 5 }, // default properties
+    propertyAllocateLimit: [0, 13], // scoop of properties that can be allocated,
+    defaultPropertys: { SPR: 3 }, // default properties
     talentConfig: { // config for talent
         talentPullCount: 10, // number of talents to pull from the talent pool
         talentRate: { 1:100, 2:10, 3:1, total: 1000 }, // rate of talent pull

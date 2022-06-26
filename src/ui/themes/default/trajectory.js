@@ -82,6 +82,7 @@ export default class Trajectory extends ui.view.DefaultTheme.TrajectoryUI {
     }
 
     onNext() {
+        console.log(core.propertys)
         if(this.#isEnd) return;
 
         const { age, content, isEnd } = core.next();
@@ -110,7 +111,7 @@ export default class Trajectory extends ui.view.DefaultTheme.TrajectoryUI {
             ({type, description, grade, name, postEvent}) => {
                 switch(type) {
                     case 'TLT':
-                        return `天赋【${name}】发动：${description}`;
+                        return `Talent {${name}}: ${description}`;
                     case 'EVT':
                         return description + (postEvent?`\n${postEvent}`:'');
                 }

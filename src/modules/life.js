@@ -308,6 +308,11 @@ class Life {
         this.#achievement.achieve(this.AchievementOpportunity.END);
     }
     get specialThanks() { return this.#specialThanks; }
+
+    addNationality(NAT) {
+        console.log(NAT)
+        this.#property.set(NAT, 1);
+    }
 }
 
 export default Life;

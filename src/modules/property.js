@@ -15,6 +15,13 @@ class Property {
         TLT: "TLT", // 天赋 talent TLT
         EVT: "EVT", // 事件 event EVT
         TMS: "TMS", // 次数 times TMS
+        LBTQ: "LBTQ", // 性向 LBTQ
+        AFG: "AFG", // 国别 afghanistan AFG
+        EGP: "EGP", // 国别 egypt EGP
+        IND: "IND", // 国别 india IND
+        CHN: "CHN", // 国别 china CHN
+        JPN: "JPN", // 国别 japan JPN
+        USA: "USA", // 国别 USA USA
 
         // Auto calc
         LAGE: "LAGE", // 最低年龄 Low Age
@@ -117,17 +124,25 @@ class Property {
             [this.TYPES.MNY]: 0,
             [this.TYPES.SPR]: 0,
 
+            [this.TYPES.LBTQ]: -1,
+            [this.TYPES.AFG]: 0,
+            [this.TYPES.IND]: 0,
+            [this.TYPES.EGP]: 0,
+            [this.TYPES.CHN]: 0,
+            [this.TYPES.JPN]: 0,
+            [this.TYPES.USA]: 0,
+
             [this.TYPES.LIF]: 1,
 
             [this.TYPES.TLT]: [],
             [this.TYPES.EVT]: [],
 
-            [this.TYPES.LAGE]: Infinity,
-            [this.TYPES.LCHR]: Infinity,
-            [this.TYPES.LINT]: Infinity,
-            [this.TYPES.LSTR]: Infinity,
-            [this.TYPES.LSPR]: Infinity,
-            [this.TYPES.LMNY]: Infinity,
+            [this.TYPES.LAGE]: 120,
+            [this.TYPES.LCHR]: 13,
+            [this.TYPES.LINT]: 13,
+            [this.TYPES.LSTR]: 13,
+            [this.TYPES.LSPR]: 13,
+            [this.TYPES.LMNY]: 13,
 
             [this.TYPES.HAGE]: -Infinity,
             [this.TYPES.HCHR]: -Infinity,
@@ -164,6 +179,13 @@ class Property {
             case this.TYPES.STR:
             case this.TYPES.MNY:
             case this.TYPES.SPR:
+            case this.TYPES.LBTQ: // 性向
+            case this.TYPES.AFG:
+            case this.TYPES.CHN:
+            case this.TYPES.EGP:
+            case this.TYPES.IND:
+            case this.TYPES.JPN:
+            case this.TYPES.USA:
             case this.TYPES.LIF:
             case this.TYPES.TLT:
             case this.TYPES.EVT:
@@ -280,6 +302,12 @@ class Property {
             [this.TYPES.STR]: this.get(this.TYPES.STR),
             [this.TYPES.MNY]: this.get(this.TYPES.MNY),
             [this.TYPES.SPR]: this.get(this.TYPES.SPR),
+            [this.TYPES.AFG]: this.get(this.TYPES.AFG),
+            [this.TYPES.EGP]: this.get(this.TYPES.EGP),
+            [this.TYPES.IND]: this.get(this.TYPES.IND),
+            [this.TYPES.CHN]: this.get(this.TYPES.CHN),
+            [this.TYPES.JPN]: this.get(this.TYPES.JPN),
+            [this.TYPES.USA]: this.get(this.TYPES.USA),
         });
     }
 
@@ -297,6 +325,13 @@ class Property {
             case this.TYPES.MNY:
             case this.TYPES.SPR:
             case this.TYPES.LIF:
+            case this.TYPES.LBTQ: // 性向
+            case this.TYPES.AFG:
+            case this.TYPES.CHN:
+            case this.TYPES.EGP:
+            case this.TYPES.IND:
+            case this.TYPES.JPN:
+            case this.TYPES.USA:
                 this.hl(prop, this.#data[prop] += Number(value));
                 return;
             case this.TYPES.TLT:

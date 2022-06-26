@@ -331,6 +331,145 @@
         "id": 11040,
         "event": "The human sensory experiences including the night vision, the ability to smell, the ability to hear low pitches and dream experiences become designable products in the supermarket. Due to our declining memory, the Memory Cloud Drive become the best seller of the year."
     },
+
+    "21001": {
+        "id": 21001,
+        "event": "Frequent superstorms overwhelmed New York City’s wastewater treatment system, leading to raw sewage spilling into the East River, rendering it unsuitable for human contact.",
+        "include": "US>0&LBTQ=0"
+    },
+    
+    "21002": {
+        "id": 21002,
+        "event": "Millions of people in the US participated in the Great Climate March, which is inspired by food and biofuel price hikes that followed drought and widespread crop failure across the USA.",
+        "include": "US>0&LBTQ=0"
+    },
+
+    "21003": {
+        "id": 21003,
+        "event": "You secretly love a boy, only finding out after a few months that he is homosexual.",
+        "include": "US>0&LBTQ=0"
+    },
+
+    "21004": {
+        "id": 21004,
+        "event": "“Fear of the foreign” is at an all-time high, some US universities start to debate whether they should ban all foreign students from entering their countries following Australia and New Zealand’s ban on foreign students.",
+        "include": "US>0&LBTQ=0"
+    },
+
+    "21005": {
+        "id": 21005,
+        "event": "You are diagnosed vaginitis, due to sex addiction, you have had intercourses with too many men, you don’t know who to blame.",
+        "include": "US>0&LBTQ=0"
+    },
+
+    "21006": {
+        "id": 21006,
+        "event": "You are diagnosed major depression, eating disorder and drug addiction. You are sent to a drug rehab. Under proper health regulation you start to adopt a healthier diet.",
+        "include": "US>0&LBTQ=0"
+    },
+
+    "21007": {
+        "id": 21007,
+        "event": "You are married.",
+        "include": "US>0&LBTQ=0"
+    },
+
+    "21008": {
+        "id": 21008,
+        "event": "You and your partner decide to have a baby, but you refuse to bear the pain of giving birth. You give money to an agency and the agent pair you up with a Ukrainian young woman, this is the safest and the most common practice in the US as surrogacy has been legal for decades in Ukraine.",
+        "include": "US>0&LBTQ=0"
+    },
+
+    "21009": {
+        "id": 21009,
+        "event": "You get a divorce.",
+        "include": "US>0&LBTQ=0"
+    },
+
+    "21010": {
+        "id": 21010,
+        "event": "You become a ‘Double-sided Tape’ because you follow the trend and married a female in your second marriage.",
+        "include": "US>0&LBTQ=0"
+    },
+
+    "21011": {
+        "id": 21011,
+        "event": "You get a second divorce, the ‘Double-sided Tape’ life didn’t work out for you.",
+        "include": "US>0&LBTQ=0"
+    },
+
+    "21012": {
+        "id": 21012,
+        "event": "You join “Women Help Women” society, which aims at helping millions of American single women who suffer from loneliness after Menopause.",
+        "include": "US>0&LBTQ=0"
+    },
+
+    "21013": {
+        "id": 21013,
+        "event": "America fails to assimilate immigrants and becomes a culturally divided nation, eventually America collapses into several sovereign states.",
+        "include": "US>0&LBTQ=0"
+    },
+
+    "22001": {
+        "id": 22001,
+        "event": "Frequent superstorms overwhelmed New York City’s wastewater treatment system, leading to raw sewage spilling into the East River, rendering it unsuitable for human contact.",
+        "include": "US>0&LBTQ>0"
+    },
+
+    "22002": {
+        "id": 22002,
+        "event": "Millions of people in the US participated in the Great Climate March, which is inspired by food and biofuel price hikes that followed drought and widespread crop failure across the USA.",
+        "include": "US>0&LBTQ>0"
+    },
+    "22003": {
+        "id": 22003,
+        "event": "You feel that you might be something other than heterosexual or straight.",
+        "include": "US>0&LBTQ>0"
+    },
+    "22004": {
+        "id": 22004,
+        "event": "You’ve been the target of slurs or jokes because you told a close friend about your sexual orientation, and they betrayed you.",
+        "include": "US>0&LBTQ>0"
+    },
+    "22005": {
+        "id": 22005,
+        "event": "“Fear of the foreign” is at an all-time high, some US universities start to debate whether they should ban all foreign students from entering their countries following Australia and New Zealand’s ban on foreign students.",
+        "include": "US>0&LBTQ>0"
+    },
+    "22006": {
+        "id": 22006,
+        "event": "You decide to tell your mother that you are different, you are who you are, and you hope that they would accept you. After a momentary shock, your mom embraces you.",
+        "include": "US>0&LBTQ>0"
+    },
+    "22007": {
+        "id": 22007,
+        "event": "You are diagnosed major depression, eating disorder and drug addiction. You are sent to a drug rehab.",
+        "include": "US>0&LBTQ>0"
+    },
+    "22008": {
+        "id": 22008,
+        "event": "You get married happily with the partner you desire, many friends and family come to your ceremony.",
+        "include": "US>0&LBTQ>0"
+    },
+    "22009": {
+        "id": 22009,
+        "event": "You and your partner decide to travel around the world to film a documentary about LGBTQ community and support the local gender equality reforms wherever needed.",
+        "include": "US>0&LBTQ>0"
+    },
+    "22010": {
+        "id": 22010,
+        "event": "You and your partner decide to have a baby, but you refuse to bear the pain of giving birth. You give money to an agency and the agent pair you up with a Ukrainian young woman, this is the safest and the most common practice in the US as surrogacy has been legal for decades in Ukraine.",
+        "include": "US>0&LBTQ>0"
+    },
+    "22011": {
+        "id": 22011,
+        "event": "America fails to assimilate immigrants and becomes a culturally divided nation, eventually America collapses into several sovereign states.",
+        "include": "US>0&LBTQ>0"
+    },
+
+
+
+
     "42101": {
         "id": 42101,
         "event": "You feel that you might be something other than heterosexual or straight.",
