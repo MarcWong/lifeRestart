@@ -11,7 +11,7 @@
 		GameConfig.screenMode="none";
 		GameConfig.alignV="top";
 		GameConfig.alignH="left";
-		GameConfig.startScene= Laya.runtime.ViewBase;
+		GameConfig.startScene= ui.view.DefaultTheme.SexOrientationUI;
 		GameConfig.sceneRoot= "";
 		GameConfig.debug=false;
 		GameConfig.stat=false;

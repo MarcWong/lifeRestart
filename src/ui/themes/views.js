@@ -325,6 +325,7 @@ const dark = {
                 alpha: 0.8,
             },
             font_default: {
+                fontFamily: 'Agency FB',
                 color: '#eeeeee',
             }
         },
@@ -367,6 +368,12 @@ const dark = {
                     btnIdn: 'btn_main',
                     btnJpn: 'btn_main',
                     btnUsa: 'btn_main'
+                }
+            },
+            [pages.SEXORIENTATION]: {
+                vars: {
+                    btnStraight: 'btn_main',
+                    btnLBTQ: 'btn_main'
                 }
             },
             [pages.TALENT]: {
