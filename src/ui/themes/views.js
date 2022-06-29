@@ -285,14 +285,13 @@ const dark = {
         },
         class: {
             btn_main: {
-                defaultColor: '#393e46',
-                defaultStroke: '#eeeeee',
-                defaultLabel: '#eeeeee',
-                hoverColor: '#ff7878',
-                hoverStroke: '#eeeeee',
-                hoverLabel: '#eeeeee',
+                defaultColor: '#ffffff',
+                defaultLabel: '#000000',
+                bgColor: '#ffffff',
+                hoverColor: '#cccccc',
+                hoverLabel: '#000000',
                 lineWidth: 2,
-                radius: 4,
+                radius: 40,
             },
             btn_main2: {
                 defaultColor: '#ffa07a',
@@ -316,6 +315,14 @@ const dark = {
             },
             title: {
                 color: '#ffffff',
+            },
+            text_main: {
+                defaultColor: '#ffffff',
+                defaultLabel: '#000000',
+                bgColor: '#ffffff',
+                lineWidth: 0,
+                radius: 4,
+                alpha: 0.8,
             },
             font_default: {
                 color: '#eeeeee',
@@ -348,6 +355,18 @@ const dark = {
             [pages.REBORN]: {
                 vars: {
                     btnContinue: 'btn_main',
+                    boxReborn: 'text_main',
+                }
+            },
+            [pages.MODE]: {
+                vars: {
+                    textCountry: 'text_main',
+                    btnAfg: 'btn_main',
+                    btnChn: 'btn_main',
+                    btnEgp: 'btn_main',
+                    btnIdn: 'btn_main',
+                    btnJpn: 'btn_main',
+                    btnUsa: 'btn_main'
                 }
             },
             [pages.TALENT]: {
@@ -512,12 +531,6 @@ const dark = {
                 names: {
                     font_default: 'font_default',
                     btn: 'btn_main',
-                }
-            },
-            [pages.CELEBRITY]: {
-                vars: {
-                    btnRetry: 'btn_main',
-                    btnNext: 'btn_main2',
                 }
             },
         },
