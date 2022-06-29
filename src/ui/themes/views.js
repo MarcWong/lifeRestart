@@ -11,8 +11,7 @@ const pages = {
     SAVELOAD: 'SAVELOAD',
     MODE: 'MODE',
     REBORN: 'REBORN',
-    SEXORIENTATION: 'SEXORIENTATION',
-    CELEBRITY: 'CELEBRITY'
+    SEXORIENTATION: 'SEXORIENTATION'
 };
 
 const popups = {
@@ -28,17 +27,14 @@ const dark = {
         [pages.PROPERTY]: "default/property",
         [pages.TRAJECTORY]: "default/trajectory",
         [pages.SUMMARY]: "default/summary",
-        [pages.ACHIEVEMENT]: "default/achievement",
         [pages.THANKS]: "default/thanks",
         [pages.THEMES]: 'themes',
         [pages.SAVELOAD]: 'saveload',
         [pages.MODE]: 'default/mode',
         [pages.REBORN]: 'default/reborn',
-        [pages.SEXORIENTATION]: 'default/sexorientation',
-        [pages.CELEBRITY]: 'default/celebrity',
+        [pages.SEXORIENTATION]: 'default/sexorientation'
     },
     popups: {
-        [popups.ACHIEVEMENT]: "default/popup/achievementPopup",
         [popups.MESSAGE]: "message",
     },
     configs: {
@@ -294,14 +290,13 @@ const dark = {
                 radius: 40,
             },
             btn_main2: {
-                defaultColor: '#ffa07a',
-                defaultStroke: '#f8f8f8',
-                defaultLabel: '#3b3b3b',
-                hoverColor: '#ff7878',
-                hoverStroke: '#f8f8f8',
-                hoverLabel: '#eeeeee',
+                defaultColor: '#ffffff',
+                defaultLabel: '#000000',
+                bgColor: '#999999',
+                hoverColor: '#cccccc',
+                hoverLabel: '#000000',
                 lineWidth: 2,
-                radius: 4,
+                radius: 100,
             },
             btn_small: {
                 defaultColor: '#5865f2',
@@ -372,14 +367,13 @@ const dark = {
             },
             [pages.SEXORIENTATION]: {
                 vars: {
-                    btnStraight: 'btn_main',
-                    btnLBTQ: 'btn_main'
+                    btnStraight: 'btn_main2',
+                    btnLBTQ: 'btn_main2'
                 }
             },
             [pages.TALENT]: {
                 vars: {
-                    btnDrawCard: 'btn_main',
-                    btnNext: 'btn_main',
+                    btnDrawCard: 'btn_main2',
                     title: 'title',
                 }
             },

@@ -49,6 +49,8 @@ export default class Trajectory extends ui.view.DefaultTheme.TrajectoryUI {
 
     init({propertyAllocate, talents, enableExtend}) {
         console.log('trajectory init', propertyAllocate)
+
+        const newProperty = this.initProperty(propertyAllocate);
         this.#enableExtend = enableExtend;
         this.boxParticle.visible = false;
         this.boxSpeed.visible = true;
@@ -56,7 +58,8 @@ export default class Trajectory extends ui.view.DefaultTheme.TrajectoryUI {
         this.#trajectoryItems = [];
         this.#isEnd = false;
         this.#talents = talents;
-        core.start(propertyAllocate);
+        core.start(newProperty);
+        console.log(core.propertys)
         this.updateProperty();
         this.onNext();
     }
@@ -71,6 +74,30 @@ export default class Trajectory extends ui.view.DefaultTheme.TrajectoryUI {
         this.#trajectoryItems = null;
     }
 
+    initProperty(propertyAllocate) {
+        const types = core.PropertyTypes;
+        var max = 0;
+        var newProperty = propertyAllocate;
+        if (propertyAllocate[types.CHR] > 0)
+            max = propertyAllocate[types.CHR]
+        if (propertyAllocate[types.INT] > 0)
+            max = propertyAllocate[types.INT]
+        if (propertyAllocate[types.STR] > 0)
+            max = propertyAllocate[types.STR]
+        if (propertyAllocate[types.MNY] > 0)
+            max = propertyAllocate[types.MNY]
+        if (propertyAllocate[types.SPR] > 0)
+            max = propertyAllocate[types.SPR]
+        if (max > 7) {
+            newProperty[types.CHR] += 5;
+            newProperty[types.INT] += 5;
+            newProperty[types.STR] += 5;
+            newProperty[types.MNY] += 5;
+            newProperty[types.SPR] += 5;
+        }
+        return newProperty
+    }
+
     updateProperty() {
         const types = core.PropertyTypes;
         const propertys = core.propertys;
@@ -83,7 +110,6 @@ export default class Trajectory extends ui.view.DefaultTheme.TrajectoryUI {
     }
 
     onNext() {
-        console.log(core.propertys)
         if(this.#isEnd) return;
 
         const { age, content, isEnd } = core.next();
@@ -107,7 +133,7 @@ export default class Trajectory extends ui.view.DefaultTheme.TrajectoryUI {
 
     renderTrajectory(age, content) {
         const item = this.#createTrajectoryItem();
-        item.labAge.text = ''+age;
+        item.labAge.text = (2022 + age) + '\n Age: ' + age;
         item.labContent.text = content.map(
             ({type, description, grade, name, postEvent}) => {
                 switch(type) {

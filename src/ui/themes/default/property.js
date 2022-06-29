@@ -20,11 +20,6 @@ export default class Property extends ui.view.DefaultTheme.PropertyUI {
         this.btnSpiritIncrease.on(Laya.Event.CLICK, this, this.onPropertyAllocate, [types.SPR, 1]);
         this.btnSpiritReduce.on(Laya.Event.CLICK, this, this.onPropertyAllocate, [types.SPR, -1]);
 
-        //this.inputCharm.on(Laya.Event.INPUT, this, this.onPropertyAllocateInput, [types.CHR]);
-        //this.inputIntelligence.on(Laya.Event.INPUT, this, this.onPropertyAllocateInput, [types.INT]);
-        //this.inputStrength.on(Laya.Event.INPUT, this, this.onPropertyAllocateInput, [types.STR]);
-        //this.inputMoney.on(Laya.Event.INPUT, this, this.onPropertyAllocateInput, [types.MNY]);
-
         const selectAll = ({currentTarget: item}) => { item.text=''; };
         this.inputCharm.on(Laya.Event.MOUSE_DOWN, this, selectAll);
         this.inputIntelligence.on(Laya.Event.MOUSE_DOWN, this, selectAll);

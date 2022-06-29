@@ -34,7 +34,6 @@ export default ({
     UI_Achievement: 'Achievements',
     UI_Cyber_Theme_Art_Design: 'UI 设计 by 晰晰',
 
-    UI_Title_Talent: '天赋抽卡',
     UI_Talent_Draw: '10连抽！',
     UI_Talent_Select_Uncomplete: '请选取 3 个天赋',
 
@@ -136,16 +135,6 @@ export default ({
     UI_PasteSuccessDecodeFailed: '粘贴剪贴板存档内容成功，但剪贴板内容读档失败',
     UI_PasteFailedDecodeSuccess: '粘贴剪贴板存档内容失败，使用输入的内容读档成功',
     UI_PasteFailedDecodeFailed: '粘贴剪贴板存档内容失败，使用输入的内容读档失败',
-
-    UI_Title_Celebrity: '你的前世是...',
-    UI_CustomMode: '经典模式',
-    UI_CustomModeDescription: '10连抽天赋\n自由分配属性',
-    UI_CelebrityMode: '名人模式',
-    UI_CelebrityModeDescription: '前世是古代名人\n重开到了现代',
-    UI_AllNot: '↻都不是',
-    UI_UniqueWaTaShi: '独一无二的我',
-    UI_UniqueWaTaShiContent: '\n6000万玩家中独一无二的角色卡\n所有属性 所有天赋 随机生成\n 每人只能生成一次',
-    UI_GenerateNow: '立即生成',
 
     M_NoRank: '别卷了，没有排行榜',
     M_PleaseSelectOne: '请选择一个名人',

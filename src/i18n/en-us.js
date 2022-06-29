@@ -32,8 +32,7 @@ export default ({
     UI_Achievement: 'Achv',
     UI_Cyber_Theme_Art_Design: 'UI Design by 晰晰',
 
-    UI_Title_Talent: 'Talent Draw',
-    UI_Talent_Draw: '!10 Pulls!',
+    UI_Talent_Draw: 'Draw',
     UI_Talent_Select_Uncomplete: 'Choose 3 Talents, Please.',
 
     UI_Title_Property: 'Property Allocate',
@@ -134,17 +133,6 @@ export default ({
 
     UI_LoadSuccess: 'Load Success!',
     UI_LoadFailed: 'Load Failed!',
-
-    UI_Title_Celebrity: 'Past life was...',
-    UI_CustomMode: 'Custom',
-    UI_CustomModeDescription: '10 Talent\nCustom property',
-    UI_CelebrityMode: 'Celebrity',
-    UI_CelebrityModeDescription: 'Past life is celebrity\nRebirth to modern',
-    UI_AllNot: '↻All Not',
-    UI_UniqueWaTaShi: 'Unique of mine',
-    UI_UniqueWaTaShiContent: '\nUnique character card different from other 60 million player\nAll property, All talent, All random\nAll has only one chance',
-    UI_GenerateNow: 'Generate Now',
-
 
     M_NoRank: 'There is no rank',
     M_PleaseSelectOne: 'Please Select One',

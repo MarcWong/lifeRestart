@@ -12,9 +12,10 @@ P 2BA0101A title_right@3x.png
 R E1602E15 titlebar@3x.png
 D images/background
 R B79E7F5D 01.png
-R 061ED9DB 02.png
-R 3AD44605 03.png
-R A0B89500 04.png
+R 0B6E5617 02.png
+R 4E37F71A 03.png
+R 94338B38 04.png
+R 17C4B7AE 05.png
 D images/border
 P A2B33396 achievement@3x.png
 R 45A1A604 achievement_complete@3x.png
