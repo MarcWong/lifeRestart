@@ -7,14 +7,11 @@
         },
         "NoRandom": 1
     },
-    "10001": {
-        "id": 10001,
-        "event": "You are born as a girl."
-    },
+
     "810001": {
         "id": 810001,
         "event": "You are born as a girl. You have congenital anomalies.",
-        "include": "(MNY<1&(US>0|CH>0|EGY>0|JAP>0))|(MNY>4&IND>0)",
+        "include": "(MNY<1&(US>0|CH>0|EGY>0|JAP>0))",
         "branch": [
             "MNY<1:10000"
         ]
@@ -22,176 +19,2212 @@
     "810101": {
         "id": 810101,
         "event": "You are a girl. You are born into an extremely poor family in a rural area.",
-        "include": "(MNY<2&(US>0|CH>0|EGY>0|JAP>0))|(MNY>4&IND>0)"
+        "include": "(MNY>0&MNY<2&(US>0|CH>0|EGY>0|JAP>0))"
     },
 
     "810102": {
         "id": 810102,
         "event": "You get an infection, and your parents couldn’t afford to cure you in the hospital.",
-        "include": "(MNY<2&(US>0|CH>0|EGY>0|JAP>0))|(MNY>4&IND>0)",
+        "include": "(MNY>0&MNY<2&(US>0|CH>0|EGY>0|JAP>0))",
         "branch": [
-            "MNY<2:10000"
+            "MNY>0&MNY<2:10000"
         ]
     },
     "810201": {
         "id": 810201,
         "event": "You are a girl. You are born into a very poor family.",
-        "include": "(MNY<3&(US>0|CH>0|EGY>0|JAP>0))|(MNY>4&IND>0)"
+        "include": "(MNY>1&MNY<3&(US>0|CH>0|EGY>0|JAP>0))"
     },
     "810202": {
         "id": 810202,
         "event": "You often starve.",
-        "include": "(MNY<3&(US>0|CH>0|EGY>0|JAP>0))|(MNY>4&IND>0)"
+        "include": "(MNY>1&MNY<3&(US>0|CH>0|EGY>0|JAP>0))"
     },
     "810203": {
         "id": 810203,
         "event": "You are sent to the hospital because of congenital heart disease, and your parents cannot afford your operation.",
-        "include": "(MNY<3&(US>0|CH>0|EGY>0|JAP>0))|(MNY>4&IND>0)",
+        "include": "(MNY>1&MNY<3&(US>0|CH>0|EGY>0|JAP>0))",
         "branch": [
-            "MNY<3:10000"
+            "MNY>1&MNY<3:10000"
         ]
     },
     "810301": {
         "id": 810301,
         "event": "You are a girl. You are born into a low-income family in a rural area.",
-        "include": "(MNY<4&(US>0|CH>0|EGY>0|JAP>0))|(MNY>4&IND>0)"
+        "include": "(MNY>2&MNY<4&(US>0|CH>0|EGY>0|JAP>0))"
     },
     "810302": {
         "id": 810302,
         "event": "There is no kindergarten, so you stay at home and start to help your family with farming.",
-        "include": "(MNY<4&(US>0|CH>0|EGY>0|JAP>0))|(MNY>4&IND>0)"
+        "include": "(MNY>2&MNY<4&(US>0|CH>0|EGY>0|JAP>0))"
     },
     "810303": {
         "id": 810303,
         "event": "You enter the only local primary school in your area. You suffer from bad grades. Your parents work in another city far from you and they only come home once a year.",
-        "include": "(MNY<4&(US>0|CH>0|EGY>0|JAP>0))|(MNY>4&IND>0)"
+        "include": "(MNY>2&MNY<4&(US>0|CH>0|EGY>0|JAP>0))"
     },
     "810304": {
         "id": 810304,
         "event": "You are bullied because of your low-income family and your low grades. However, your parents have no time to stand up for you.",
-        "include": "(MNY<4&(US>0|CH>0|EGY>0|JAP>0))|(MNY>4&IND>0)"
+        "include": "(MNY>2&MNY<4&(US>0|CH>0|EGY>0|JAP>0))"
     },
     "810305": {
         "id": 810305,
         "event": "When other people have graduate from college, you have been working for years doing simple repetitive jobs.",
-        "include": "(MNY<4&(US>0|CH>0|EGY>0|JAP>0))|(MNY>4&IND>0)"
+        "include": "(MNY>2&MNY<4&(US>0|CH>0|EGY>0|JAP>0))"
     },
     "810306": {
         "id": 810306,
         "event": "You have been replaced by a machine and you are fired.",
-        "include": "(MNY<4&(US>0|CH>0|EGY>0|JAP>0))|(MNY>4&IND>0)"
+        "include": "(MNY>2&MNY<4&(US>0|CH>0|EGY>0|JAP>0))"
     },
     "810307": {
         "id": 810307,
         "event": "You start to learn new techniques that cannot be replaced by machines.",
-        "include": "(MNY<4&(US>0|CH>0|EGY>0|JAP>0))|(MNY>4&IND>0)"
+        "include": "(MNY>2&MNY<4&(US>0|CH>0|EGY>0|JAP>0))"
     },
     "810308": {
         "id": 810308,
         "event": "You are still doing the basic service jobs that cannot be replaced by machines and AI.",
-        "include": "(MNY<4&(US>0|CH>0|EGY>0|JAP>0))|(MNY>4&IND>0)"
+        "include": "(MNY>2&MNY<4&(US>0|CH>0|EGY>0|JAP>0))"
     },
     "810309": {
         "id": 810309,
         "event": "You must retire because no one wants you anymore, but you don’t have money.",
-        "include": "(MNY<4&(US>0|CH>0|EGY>0|JAP>0))|(MNY>4&IND>0)"
+        "include": "(MNY>2&MNY<4&(US>0|CH>0|EGY>0|JAP>0))"
     },
     "810310": {
         "id": 810310,
         "event": "You cannot afford the hospital.",
-        "include": "(MNY<4&(US>0|CH>0|EGY>0|JAP>0))|(MNY>4&IND>0)",
+        "include": "(MNY>2&MNY<4&(US>0|CH>0|EGY>0|JAP>0)))",
         "branch": [
-            "MNY<4:10000"
+            "MNY>2&MNY<4:10000"
         ]
     },
     
+    "810401": {
+        "id": 810401,
+        "event": "You are a girl. You are born into a lower-middle class family.",
+        "include": "(MNY>3&MNY<5&(US>0|CH>0|EGY>0|JAP>0))"
+    },
+    "810402": {
+        "id": 810402,
+        "event": "Your parents are always at work, and you have no choice but to stay at home with your disabled grandparent.",
+        "include": "(MNY>3&MNY<5&(US>0|CH>0|EGY>0|JAP>0))"
+    },
+    "810403": {
+        "id": 810403,
+        "event": "You work hard to get good grades, but you are always below the average.",
+        "include": "(MNY>3&MNY<5&(US>0|CH>0|EGY>0|JAP>0))"
+    },
+    "810404": {
+        "id": 810404,
+        "event": "You are bullied at school because of your low-income family and your low grades. However, your parents have no time to stand up for you.",
+        "include": "(MNY>3&MNY<5&(US>0|CH>0|EGY>0|JAP>0))"
+    },
+    "810405": {
+        "id": 810405,
+        "event": "When other people have graduate from college, you have been working for years doing simple repetitive jobs.",
+        "include": "(MNY>3&MNY<5&(US>0|CH>0|EGY>0|JAP>0))"
+    },
+    "810406": {
+        "id": 810406,
+        "event": "You have been replaced by a machine and you are fired.",
+        "include": "(MNY>3&MNY<5&(US>0|CH>0|EGY>0|JAP>0))"
+    },
+    "810407": {
+        "id": 810407,
+        "event": "You start to learn new techniques that cannot be replaced by machines.",
+        "include": "(MNY>3&MNY<5&(US>0|CH>0|EGY>0|JAP>0))"
+    },
+    "810408": {
+        "id": 810408,
+        "event": "You are still doing the basic service jobs that cannot be replaced by machines and AI.",
+        "include": "(MNY>3&MNY<5&(US>0|CH>0|EGY>0|JAP>0))"
+    },
+    "810409": {
+        "id": 810409,
+        "event": "You must retire because no one wants you anymore, but you don’t have money.",
+        "include": "(MNY>3&MNY<5&(US>0|CH>0|EGY>0|JAP>0))"
+    },
+    "810410": {
+        "id": 810410,
+        "event": "You cannot afford the hospital.",
+        "include": "(MNY>3&MNY<5&(US>0|CH>0|EGY>0|JAP>0))",
+        "branch": [
+            "MNY>3&MNY<5:10000"
+        ]
+    },
 
+    "810501": {
+        "id": 810501,
+        "event": "You are a girl. You are born into a middleclass family.",
+        "include": "(MNY>4&MNY<6&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "810502": {
+        "id": 810502,
+        "event": "You enter a normal kindergarten.",
+        "include": "(MNY>4&MNY<6&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "810503": {
+        "id": 810503,
+        "event": "You are very busy, after class you must go to many extracurricular classes.",
+        "include": "(MNY>4&MNY<6&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "810504": {
+        "id": 810504,
+        "event": "You are defeated by another student in an important contest.",
+        "include": "(MNY>4&MNY<6&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "810505": {
+        "id": 810505,
+        "event": "You graduate from a university but find it hard to find a job.",
+        "include": "(MNY>4&MNY<6&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "810506": {
+        "id": 810506,
+        "event": "You start to make a living on digital and virtual platforms.",
+        "include": "(MNY>4&MNY<6&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "810507": {
+        "id": 810507,
+        "event": "You transformed parts of your bodies to better functioning prosthesis including your heart and brain which ensure longer lifespans.",
+        "include": "(MNY>4&MNY<6&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "810508": {
+        "id": 810508,
+        "event": "You want to start a second career, but you failed.",
+        "include": "(MNY>4&MNY<6&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "810509": {
+        "id": 810509,
+        "event": "You retired with very little money.",
+        "include": "(MNY>4&MNY<6&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "810510": {
+        "id": 810510,
+        "event": "You are thrown onto the streets because you cannot pay the rent.",
+        "include": "(MNY>4&MNY<6&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
 
-    
+    "810601": {
+        "id": 810601,
+        "event": "You are a girl. You are born into an upper-middle class family.",
+        "include": "(MNY>5&MNY<8&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "810602": {
+        "id": 810602,
+        "event": "You enter an expensive kindergarten.",
+        "include": "(MNY>5&MNY<8&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "810603": {
+        "id": 810603,
+        "event": "You are very busy, after class you must go to many extracurricular classes.",
+        "include": "(MNY>5&MNY<8&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "810604": {
+        "id": 810604,
+        "event": "You win an important contest that will help you get into a prestigious middle school.",
+        "include": "(MNY>5&MNY<8&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "810605": {
+        "id": 810605,
+        "event": "You graduated from a top university and got accepted to a top ranked MA program.",
+        "include": "(MNY>5&MNY<8&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "810606": {
+        "id": 810606,
+        "event": "Although you find it hard to obtain a job, you eventually got one.",
+        "include": "(MNY>5&MNY<8&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "810607": {
+        "id": 810607,
+        "event": "You transformed parts of your bodies to better functioning prosthesis including your heart and brain which ensure longer lifespans.",
+        "include": "(MNY>5&MNY<8&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "810608": {
+        "id": 810608,
+        "event": "You worked in the same position for 20 years and you know that you will not retire at a higher rank.",
+        "include": "(MNY>5&MNY<8&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "810609": {
+        "id": 810609,
+        "event": "You retire and stay at home.",
+        "include": "(MNY>5&MNY<8&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "810610": {
+        "id": 810610,
+        "event": "You move into a nursing home.",
+        "include": "(MNY>5&MNY<8&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
 
-    "10003": {
-        "id": 10003,
-        "event": "You are born as a girl. You have birth defects.",
-        "include": "STR<1",
+    "810801": {
+        "id": 810801,
+        "event": "You are a girl. You are born into an upper-class family.",
+        "include": "(MNY>7&MNY<10&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "810802": {
+        "id": 810802,
+        "event": "You are a girl. You are born into an upper-class family.",
+        "include": "(MNY>7&MNY<10&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "810803": {
+        "id": 810803,
+        "event": "You are a girl. You are born into an upper-class family.",
+        "include": "(MNY>7&MNY<10&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "810804": {
+        "id": 810804,
+        "event": "You are a girl. You are born into an upper-class family.",
+        "include": "(MNY>7&MNY<10&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "810805": {
+        "id": 810805,
+        "event": "You are a girl. You are born into an upper-class family.",
+        "include": "(MNY>7&MNY<10&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "810806": {
+        "id": 810806,
+        "event": "You are a girl. You are born into an upper-class family.",
+        "include": "(MNY>7&MNY<10&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "810807": {
+        "id": 810807,
+        "event": "You are a girl. You are born into an upper-class family.",
+        "include": "(MNY>7&MNY<10&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "810808": {
+        "id": 810808,
+        "event": "You are a girl. You are born into an upper-class family.",
+        "include": "(MNY>7&MNY<10&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "810809": {
+        "id": 810809,
+        "event": "You are a girl. You are born into an upper-class family.",
+        "include": "(MNY>7&MNY<10&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "810810": {
+        "id": 810810,
+        "event": "You are a girl. You are born into an upper-class family.",
+        "include": "(MNY>7&MNY<10&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+
+    "811001": {
+        "id": 811001,
+        "event": "You are a girl. You are born into a very rich family.",
+        "include": "(MNY>9&MNY<12&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "811002": {
+        "id": 811002,
+        "event": "You start in-home tutoring.",
+        "include": "(MNY>9&MNY<12&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "811003": {
+        "id": 811003,
+        "event": "You are very popular in your private international school.",
+        "include": "(MNY>9&MNY<12&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "811004": {
+        "id": 811004,
+        "event": "Your parents bought an asteroid named after your name.",
+        "include": "(MNY>9&MNY<12&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "811005": {
+        "id": 811005,
+        "event": "You graduated from a world top 30 university and got a job at your family’s business.",
+        "include": "(MNY>9&MNY<12&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "811006": {
+        "id": 811006,
+        "event": "You made a big mistake and lost all the profit your branch had earned.",
+        "include": "(MNY>9&MNY<12&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "811007": {
+        "id": 811007,
+        "event": "You transformed parts of your bodies to better functioning prosthesis including your heart and brain which ensure longer lifespans.",
+        "include": "(MNY>9&MNY<12&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "811008": {
+        "id": 811008,
+        "event": "Though your branch contributes more than 50% of the whole profit, your father still gave his chair to your brother.",
+        "include": "(MNY>9&MNY<12&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "811009": {
+        "id": 811009,
+        "event": "You retire and live a well-off life in your big house.",
+        "include": "(MNY>9&MNY<12&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "811010": {
+        "id": 811010,
+        "event": "You hosted your 80th birthday party in your big house.",
+        "include": "(MNY>9&MNY<12&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+
+    "811201": {
+        "id": 811201,
+        "event": "You are a girl. You are born into the richest family of the country.",
+        "include": "(MNY>11&MNY<14&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "811202": {
+        "id": 811202,
+        "event": "You start in-home tutoring with the most expensive tutor.",
+        "include": "(MNY>11&MNY<14&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "811203": {
+        "id": 811203,
+        "event": "You become the most popular kid in the private international school.",
+        "include": "(MNY>11&MNY<14&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "811204": {
+        "id": 811204,
+        "event": "You beat another girl in an important national contest because your grandfather funded the contest.",
+        "include": "(MNY>11&MNY<14&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "811205": {
+        "id": 811205,
+        "event": "You graduate from a world top 10 college, but you want to prove yourself.",
+        "include": "(MNY>11&MNY<14&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "811206": {
+        "id": 811206,
+        "event": "Your own business runs smoothly with the secret help from your family.",
+        "include": "(MNY>11&MNY<14&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "811207": {
+        "id": 811207,
+        "event": "Your family bankrupted, the government confiscate your business and that’s when you find out that you have never been independent.",
+        "include": "(MNY>11&MNY<14&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "811208": {
+        "id": 811208,
+        "event": "You can only do simple jobs to earn a living, but you must watch people much younger than you get promoted easily.",
+        "include": "(MNY>11&MNY<14&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "811209": {
+        "id": 811209,
+        "event": "You cannot retire and you must work hard to earn a living.",
+        "include": "(MNY>11&MNY<14&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "811210": {
+        "id": 811210,
+        "event": "You had to retire because no one wants you anymore. You live in a cheap shabby apartment offered by the government.",
+        "include": "(MNY>11&MNY<14&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+
+    "820001": {
+        "id": 820001,
+        "event": "You have birth defects.",
+        "include": "(STR<1&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))",
         "branch": [
             "STR<1:10000"
         ]
     },
-    "10004": {
-        "id": 10004,
+    "820101": {
+        "id": 820101,
         "event": "You almost died from childbirth, and you are diagnosed congenital heart disease.",
-        "include": "STR<2"
+        "include": "(STR>0&STR<2&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
     },
-    "10005": {
-        "id": 10005,
-        "event": "Because you are born disabled, the hospital is your second home.",
-        "include": "STR>0 & STR<3"
-    },
-    "10006": {
-        "id": 10006,
-        "event": "You are diagnosed asthma.",
-        "include": "STR>2 & STR<5"
-    },
-    "10007": {
-        "id": 10007,
-        "event": "You are diagnosed neonatal jaundice. Luckily, you recovered.",
-        "include": "STR>3 & STR<6"
-    },
-    "10008": {
-        "id": 10008,
-        "event": "You get an infection, but your parents couldn't afford your operation in the hospital.",
-        "include": "STR<2",
+    "820102": {
+        "id": 820102,
+        "event": "You had a heart attack, and the ambulance came too late.",
+        "include": "(STR>0&STR<2&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))",
         "branch": [
-            "STR<2:10000"
+            "STR>0&STR<2:10000"
         ]
     },
-    "10009": {
-        "id": 10009,
-        "event": "You grew up without any disease.",
-        "include": "STR>2"
+    "820201": {
+        "id": 820201,
+        "event": "Because you are born disabled, the hospital is your second home.",
+        "include": "(STR>1&STR<3&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
     },
-    "10010": {
-        "id": 10010,
-        "event": "You are born into an extremely poor family in a rural area. You often starve.",
-        "include": "MNY<3"
+    "820202": {
+        "id": 820202,
+        "event": "Your parents take you to a renowned hospital, yet the doctor shakes his head.",
+        "include": "(STR>1&STR<3&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
     },
-    "10011": {
-        "id": 10011,
-        "event": "You are born into a low-income family in a rural area.",
-        "include": "MNY>2&MNY<5"
+    "820203": {
+        "id": 820203,
+        "event": "You are bullied at school because of your disability.",
+        "include": "(STR>1&STR<3&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
     },
-    "10012": {
-        "id": 10012,
-        "event": "You are born into a low-income family in a city.",
-        "include": "MNY>3&MNY<5"
+    "820204": {
+        "id": 820204,
+        "event": "You suffer from your first period.",
+        "include": "(STR>1&STR<3&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
     },
-    "10013": {
-        "id": 10013,
-        "event": "You are born into a middle class family in a city.",
-        "include": "MNY>4&MNY<7"
+    "820205": {
+        "id": 820205,
+        "event": "You are being introduced to marry a man who is also disabled.",
+        "include": "(STR>1&STR<3&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
     },
-    "10014": {
-        "id": 10014,
-        "event": "You are born into a middle-upper class family in a city.",
-        "include": "MNY>6&MNY<9"
+    "820206": {
+        "id": 820206,
+        "event": "You almost died from the after effects of childbirth.",
+        "include": "(STR>1&STR<3&(CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
     },
-    "10015": {
-        "id": 10015,
-        "event": "You are born into an upper-class family in the captical of your country.",
-        "include": "MNY>8&MNY<11"
+    "820207": {
+        "id": 820207,
+        "event": "You suffer from joint pain and swelling every day when you wake up.",
+        "include": "(STR>1&STR<3&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
     },
-    "10016": {
-        "id": 10016,
-        "event": "You are born into a very rich family in the capital of your country.",
-        "include": "MNY>10&MNY<13"
+    "820208": {
+        "id": 820208,
+        "event": "You are diagnosed cancer.",
+        "include": "(STR>1&STR<3&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
     },
-    "10017": {
-        "id": 10017,
-        "event": "You are born into the richest family of the country.",
-        "include": "MNY>12"
+    "820209": {
+        "id": 820209,
+        "event": "Your treatment fails.",
+        "include": "(STR>1&STR<3&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))",
+        "branch": [
+            "STR>1&STR<3:10000"
+        ]
     },
 
+    "820301": {
+        "id": 820301,
+        "event": "You are diagnosed asthma.",
+        "include": "(STR>2&STR<4&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "820302": {
+        "id": 820302,
+        "event": "Your first teeth fell off.",
+        "include": "(STR>2&STR<4&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "820303": {
+        "id": 820303,
+        "event": "You are saved from an asthma attack.",
+        "include": "(STR>2&STR<4&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "820304": {
+        "id": 820304,
+        "event": "You suffer from your first period.",
+        "include": "(STR>2&STR<4&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "820305": {
+        "id": 820305,
+        "event": "You finished your HPV vaccinations, and you start to have wrinkles.",
+        "include": "(STR>2&STR<4&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "820306": {
+        "id": 820306,
+        "event": "You suffered from the after effects of childbirth.",
+        "include": "(STR>2&STR<4&(CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "820307": {
+        "id": 820307,
+        "event": "You are diagnosed cancer.",
+        "include": "(STR>2&STR<4&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "820308": {
+        "id": 820308,
+        "event": "Your recovered from cancer.",
+        "include": "(STR>2&STR<4&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "820309": {
+        "id": 820309,
+        "event": "Most of your teeth fell of and you had them all replaced.",
+        "include": "(STR>2&STR<4&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "820310": {
+        "id": 820310,
+        "event": "You are seriously ill because of a new worldwide pandemic.",
+        "include": "(STR>2&STR<4&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))",
+        "branch": [
+            "STR>2&STR<4:10000"
+        ]
+    },
+    "820401": {
+        "id": 820401,
+        "event": "You are diagnosed neonatal jaundice. Luckily, you recovered.",
+        "include": "(STR>3&STR<6&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "820402": {
+        "id": 820402,
+        "event": "You get fever but you recovered.",
+        "include": "(STR>3&STR<6&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "820403": {
+        "id": 820403,
+        "event": "You broke your leg. You recovered.",
+        "include": "(STR>3&STR<6&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "820404": {
+        "id": 820404,
+        "event": "You suffer from your first period.",
+        "include": "(STR>3&STR<6&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "820405": {
+        "id": 820405,
+        "event": "You finished your HPV vaccinations, and you start to have wrinkles.",
+        "include": "(STR>3&STR<6&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "820406": {
+        "id": 820406,
+        "event": "You cannot control urination since you gave birth to your child, you also suffer from anemia, gestational diabetes, and high blood pressure from pregnancy.",
+        "include": "(STR>3&STR<6&(CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "820407": {
+        "id": 820407,
+        "event": "You suffer from joint pain and swelling every day when you wake up.",
+        "include": "(STR>3&STR<6&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "820408": {
+        "id": 820408,
+        "event": "You stop having periods.",
+        "include": "(STR>3&STR<6&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "820409": {
+        "id": 820409,
+        "event": "YYou are diagnosed cancer and start to get medical treatments.",
+        "include": "(STR>3&STR<6&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "820410": {
+        "id": 820410,
+        "event": "You recovered from cancer, but you are diagnosed Alzheimer’s disease.",
+        "include": "(STR>3&STR<6&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "820411": {
+        "id": 820411,
+        "event": "You accidentally fall from your balcony.",
+        "include": "(STR>3&STR<6&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))",
+        "branch": [
+            "STR>3&STR<6:10000"
+        ]
+    },
+
+    "820602": {
+        "id": 820602,
+        "event": "Your first teeth fell off.",
+        "include": "(STR>5&STR<8&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "820603": {
+        "id": 820603,
+        "event": "You get the first place at a competitive sports competition.",
+        "include": "(STR>5&STR<8&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+
+    "820604": {
+        "id": 820604,
+        "event": "You suffer from your first period.",
+        "include": "(STR>5&STR<8&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+
+    "820605": {
+        "id": 820605,
+        "event": "You finished your HPV vaccinations, and you start to have wrinkles.",
+        "include": "(STR>5&STR<8&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+
+    "820606": {
+        "id": 820606,
+        "event": "You cannot control urination since you gave birth to your child, you also suffer from anemia, gestational diabetes, and high blood pressure from pregnancy.",
+        "include": "(STR>5&STR<8&(CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+
+    "820607": {
+        "id": 820607,
+        "event": "You suffer from joint pain and swelling every day when you wake up.",
+        "include": "(STR>5&STR<8&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+
+    "820608": {
+        "id": 820608,
+        "event": "You stop having periods.",
+        "include": "(STR>5&STR<8&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+
+    "820609": {
+        "id": 820609,
+        "event": "You feel that your vision and your memories are not working properly.",
+        "include": "(STR>5&STR<8&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+
+    "820610": {
+        "id": 820610,
+        "event": "You are diagnosed Alzheimer’s disease.",
+        "include": "(STR>5&STR<8&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+
+    "820611": {
+        "id": 820611,
+        "event": "You accidentally fall from your balcony.",
+        "include": "(STR>5&STR<8&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))",
+        "branch": [
+            "STR>5&STR<8:10000"
+        ]
+    },
+    "820802": {
+        "id": 820802,
+        "event": "Your first teeth fell off.",
+        "include": "(STR>7&STR<10&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "820803": {
+        "id": 820803,
+        "event": "You get the first place at a competitive sports competition.",
+        "include": "(STR>7&STR<10&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "820804": {
+        "id": 820804,
+        "event": "You suffer from your first period.",
+        "include": "(STR>7&STR<10&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "820805": {
+        "id": 820805,
+        "event": "You finished your HPV vaccinations, and you start to have wrinkles.",
+        "include": "(STR>7&STR<10&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "820806": {
+        "id": 820806,
+        "event": "Everyone thinks that you are 10 years younger than you actually are.",
+        "include": "(STR>7&STR<10&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "820807": {
+        "id": 820807,
+        "event": "You become a yoga master.",
+        "include": "(STR>7&STR<10&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "820808": {
+        "id": 820808,
+        "event": "You stop having periods.",
+        "include": "(STR>7&STR<10&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "820809": {
+        "id": 820809,
+        "event": "Your vision, hearing and sense of taste and smell are declining. You also start to have heart problems.",
+        "include": "(STR>7&STR<10&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "820810": {
+        "id": 820810,
+        "event": "Your heart problems worsen, and your bones are getting weaker and weaker.",
+        "include": "(STR>7&STR<10&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "820811": {
+        "id": 820811,
+        "event": "You cannot get off from bed.",
+        "include": "(STR>7&STR<10&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "820812": {
+        "id": 820812,
+        "event": "You become seriously ill because of an infection.",
+        "include": "(STR>7&STR<10&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))",
+        "branch": [
+            "STR>7&STR<10:10000"
+        ]
+    },
+    "821002": {
+        "id": 821002,
+        "event": "You start to practice competitive sports.",
+        "include": "(STR>9&STR<12&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "821003": {
+        "id": 821003,
+        "event": "You get a national youth champion award.",
+        "include": "(STR>9&STR<12&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "821004": {
+        "id": 821004,
+        "event": "You suffer from your first period.",
+        "include": "(STR>9&STR<12&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "821005": {
+        "id": 821005,
+        "event": "You finished your HPV vaccinations, and you start to have wrinkles.",
+        "include": "(STR>9&STR<12&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "821006": {
+        "id": 821006,
+        "event": "Everyone thinks that you are 10 years younger than you actually are.",
+        "include": "(STR>9&STR<12&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "821007": {
+        "id": 821007,
+        "event": "You become a yoga master.",
+        "include": "(STR>9&STR<12&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "821008": {
+        "id": 821008,
+        "event": "You stop having periods.",
+        "include": "(STR>9&STR<12&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "821009": {
+        "id": 821009,
+        "event": "Your hair starts to turn grey.",
+        "include": "(STR>9&STR<12&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "821010": {
+        "id": 821010,
+        "event": "Your vision, hearing and sense of taste and smell are declining.",
+        "include": "(STR>9&STR<12&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "821011": {
+        "id": 821011,
+        "event": "When other people suffer from diseases you are still climbing high altitude mountains.",
+        "include": "(STR>9&STR<12&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "821012": {
+        "id": 821012,
+        "event": "You fall off from a high place.",
+        "include": "(STR>9&STR<12&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))",
+        "branch": [
+            "STR>9&STR<12:10000"
+        ]
+    },
+
+    "821202": {
+        "id": 821202,
+        "event": "You start to practice competitive sports.",
+        "include": "(STR>11&STR<14&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "821203": {
+        "id": 821203,
+        "event": "You get a national youth champion award.",
+        "include": "(STR>11&STR<14&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "821204": {
+        "id": 821204,
+        "event": "You suffer from your first period.",
+        "include": "(STR>11&STR<14&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "821205": {
+        "id": 821205,
+        "event": "You finished your HPV vaccinations, and you start to have wrinkles.",
+        "include": "(STR>11&STR<14&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "821206": {
+        "id": 821206,
+        "event": "Everyone thinks that you are 10 years younger than you actually are.",
+        "include": "(STR>11&STR<14&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "821207": {
+        "id": 821207,
+        "event": "You become a yoga master.",
+        "include": "(STR>11&STR<14&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "821208": {
+        "id": 821208,
+        "event": "You stop having periods.",
+        "include": "(STR>11&STR<14&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "821209": {
+        "id": 821209,
+        "event": "Your hair starts to turn grey.",
+        "include": "(STR>11&STR<14&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "821210": {
+        "id": 821210,
+        "event": "Your vision and hearing start to get blurry.",
+        "include": "(STR>11&STR<14&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "821211": {
+        "id": 821211,
+        "event": "When other people suffer from diseases you are still climbing high altitude mountains.",
+        "include": "(STR>11&STR<14&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "821212": {
+        "id": 821212,
+        "event": "You still go to the gym every other day.",
+        "include": "(STR>11&STR<14&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "821213": {
+        "id": 821213,
+        "event": "Your vision, hearing and sense of taste and smell are declining. You also start to have heart problems.",
+        "include": "(STR>11&STR<14&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))",
+        "branch": [
+            "STR>11&STR<14:10000"
+        ]
+    },
+
+    "830001": {
+        "id": 830001,
+        "event": "You are so ugly that you always get bullied in school.",
+        "include": "(CHR=0&CHR<2&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "830002": {
+        "id": 830002,
+        "event": "You are still bullied in middle school.",
+        "include": "(CHR=0&CHR<2&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "830003": {
+        "id": 830003,
+        "event": "You are not bullied badly in high school, but you are aware that you don’t get equal opportunities as other girls.",
+        "include": "(CHR=0&CHR<2&(US>0(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "830004": {
+        "id": 830004,
+        "event": "You decide to get plastic surgery and your surgery failed.",
+        "include": "(CHR=0&CHR<2&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "830005": {
+        "id": 830005,
+        "event": "You spent all your money trying to recover your appearance but in vain.",
+        "include": "(CHR=0&CHR<2&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "830006": {
+        "id": 830006,
+        "event": "You finally decide to make peace with your looks but because of your look and the money you have spent, you have built up a lot of depts.",
+        "include": "(CHR=0&CHR<2&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "830007": {
+        "id": 830007,
+        "event": "You finally paid off your depts for plastic surgeries and recovery surgeries.",
+        "include": "(CHR=0&CHR<2&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "830008": {
+        "id": 830008,
+        "event": "You get yourself a prostitute. This is the first time you realize that sex can be enjoyable.",
+        "include": "(CHR=0&CHR<2&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+
+    "830201": {
+        "id": 830201,
+        "event": "You are neither popular nor bullied, because of your average look you are always invisible.",
+        "include": "(CHR>1&CHR<3&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "830202": {
+        "id": 830202,
+        "event": "You start to become overweight.",
+        "include": "(CHR>1&CHR<3&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "830203": {
+        "id": 830203,
+        "event": "You envy the good-looking girls in class, and you lost weight over the summer, a man turns to look at you for the first time.",
+        "include": "(CHR>1&CHR<3&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "830204": {
+        "id": 830204,
+        "event": "You decide to get plastic surgery and your surgery is a success.",
+        "include": "(CHR>1&CHR<3&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "830205": {
+        "id": 830205,
+        "event": "You start a parttime job as a vlogger, because of your beauty, you have many followers.",
+        "include": "(CHR>1&CHR<3&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "830206": {
+        "id": 830206,
+        "event": "You suffer from aftereffects of the plastic surgery, and your face start to become saggy.",
+        "include": "(CHR>1&CHR<3&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "830207": {
+        "id": 830207,
+        "event": "You start to try anti-aging surgeries.",
+        "include": "(CHR>1&CHR<3&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "830208": {
+        "id": 830208,
+        "event": "You get yourself a prostitute. This is the first time you realize that sex can be enjoyable.",
+        "include": "(CHR>1&CHR<3&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+
+    "830301": {
+        "id": 830301,
+        "event": "You have an above average look, and you have a small gang of girls as friends.",
+        "include": "(CHR>2&CHR<5&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "830302": {
+        "id": 830302,
+        "event": "You start to notice that your breasts are growing, and more boys pay more attention to you.",
+        "include": "(CHR>2&CHR<5&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "830303": {
+        "id": 830303,
+        "event": "You start to wear heels, do nails, and buy your own clothes.",
+        "include": "(CHR>2&CHR<5&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "830304": {
+        "id": 830304,
+        "event": "You notice that men often want to take advantage of you.",
+        "include": "(CHR>2&CHR<5&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "830305": {
+        "id": 830305,
+        "event": "You realize people never take you seriously because you are a woman.",
+        "include": "(CHR>2&CHR<5&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "830306": {
+        "id": 830306,
+        "event": "You start to seriously think about plastic surgery.",
+        "include": "(CHR>2&CHR<5&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "830307": {
+        "id": 830307,
+        "event": "You start to try anti-aging surgeries.",
+        "include": "(CHR>2&CHR<5&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "830308": {
+        "id": 830308,
+        "event": "You get yourself a prostitute. This is the first time you realize that sex can be enjoyable.",
+        "include": "(CHR>2&CHR<5&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+
+    "830501": {
+        "id": 830501,
+        "event": "You are very pretty, and you are always the teacher’s favorite.",
+        "include": "(CHR>4&CHR<7&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "830502": {
+        "id": 830502,
+        "event": "You start to notice that your breasts are growing, and more boys pay more attention to you.",
+        "include": "(CHR>4&CHR<7&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "830503": {
+        "id": 830503,
+        "event": "You are famous in school because of your beauty and many boys pursue you.",
+        "include": "(CHR>4&CHR<7&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "830504": {
+        "id": 830504,
+        "event": "You notice that men often look at you flirtatiously and want to take advantage of you.",
+        "include": "(CHR>4&CHR<7&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "830505": {
+        "id": 830505,
+        "event": "You start a parttime job as a vlogger, because of your beauty, you have many followers.",
+        "include": "(CHR>4&CHR<7&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "830506": {
+        "id": 830506,
+        "event": "When you come across rich men, most of them want to date you and take advantage of you.",
+        "include": "(CHR>4&CHR<7&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "830507": {
+        "id": 830507,
+        "event": "People still ask you for IDs because you look way younger than you are.",
+        "include": "(CHR>4&CHR<7&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "830508": {
+        "id": 830508,
+        "event": "With your beauty, you still have many pursuers even at the age of 45.",
+        "include": "(CHR>4&CHR<7&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+
+    "830701": {
+        "id": 830701,
+        "event": "You are very pretty, and you are always the teacher’s favorite.",
+        "include": "(CHR>6&CHR<11&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "830702": {
+        "id": 830702,
+        "event": "You are the most beautiful and the most popular girl at school.",
+        "include": "(CHR>6&CHR<11&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "830703": {
+        "id": 830703,
+        "event": "You are famous in school because of your beauty and many boys pursue you.",
+        "include": "(CHR>6&CHR<11&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "830704": {
+        "id": 830704,
+        "event": "You think you are not pretty enough. You get anxious because of social media and decide to get plastic surgery.",
+        "include": "(CHR>6&CHR<11&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "830705": {
+        "id": 830705,
+        "event": "You find people never take you seriously, they are nice to you because of your beautiful look.",
+        "include": "(CHR>6&CHR<11&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "830706": {
+        "id": 830706,
+        "event": "You start to think about ways that you can use your beauty to earn more money.",
+        "include": "(CHR>6&CHR<11&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "830707": {
+        "id": 830707,
+        "event": "Your beauty becomes your product as you objectify yourself to earn money.",
+        "include": "(CHR>6&CHR<11&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "830708": {
+        "id": 830708,
+        "event": "With your beauty, you still have many pursuers even at the age of 45.",
+        "include": "(CHR>6&CHR<11&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+
+    "831101": {
+        "id": 831101,
+        "event": "You are so exceptionally pretty that you become a child star.",
+        "include": "(CHR>10&CHR<14&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "831102": {
+        "id": 831102,
+        "event": "You have already stared in many movies, and you find it hard to balance school and work.",
+        "include": "(CHR>10&CHR<14&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "831103": {
+        "id": 831103,
+        "event": "You become a superstar.",
+        "include": "(CHR>10&CHR<14&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "831104": {
+        "id": 831104,
+        "event": "You have a big scandal, but it is resolved by your company.",
+        "include": "(CHR>10&CHR<14&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "831105": {
+        "id": 831105,
+        "event": "You start to get plastic surgeries to keep your appearance in good shape.",
+        "include": "(CHR>10&CHR<14&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "831106": {
+        "id": 831106,
+        "event": "New stars gradually take your place and you have less and less opportunities.",
+        "include": "(CHR>10&CHR<14&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "831107": {
+        "id": 831107,
+        "event": "Your appearance gets speedily worse because you don’t have enough money to keep doing plastic surgery.",
+        "include": "(CHR>10&CHR<14&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "831108": {
+        "id": 831108,
+        "event": "Your face becomes unrecognizable.",
+        "include": "(CHR>10&CHR<14&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+
+    "840001": {
+        "id": 840001,
+        "event": "You start to go to school, and you are often bullied because of your stupidity.",
+        "include": "(INT<1&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "840002": {
+        "id": 840002,
+        "event": "You struggle with everything in your life, and you are ashamed of yourself.",
+        "include": "(INT<1&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "840003": {
+        "id": 840003,
+        "event": "You frequently ask for money from your parents.",
+        "include": "(INT<1&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "840004": {
+        "id": 840004,
+        "event": "You don’t understand why so many people get depression and anxiety because you are not worried at all.",
+        "include": "(INT<1&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+
+    "840101": {
+        "id": 840101,
+        "event": "You start to go to school, and you often receive F grades.",
+        "include": "(INT>0&INT<2&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "840102": {
+        "id": 840102,
+        "event": "You struggle to finish schoolwork and catch up with your peers.",
+        "include": "(INT>0&INT<2&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "840103": {
+        "id": 840103,
+        "event": "You frequently ask for money from your parents.",
+        "include": "(INT>0&INT<2&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "840104": {
+        "id": 840104,
+        "event": "You don’t understand why so many people get depression and anxiety because you are not worried at all.",
+        "include": "(INT>0&INT<2&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "840105": {
+        "id": 840105,
+        "event": "You lost lots of money because you are cheated by a fraud company.",
+        "include": "(INT>0&INT<2&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+
+    "840201": {
+        "id": 840201,
+        "event": "You start to go to school, and you often get bad grades.",
+        "include": "(INT>1&INT<3&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "840202": {
+        "id": 840202,
+        "event": "You find some subjects are harder than the other subjects.",
+        "include": "(INT>1&INT<3&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "840203": {
+        "id": 840203,
+        "event": "When your peers express their pressure about life and future, you don’t feel very worried.",
+        "include": "(INT>1&INT<3&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "840204": {
+        "id": 840204,
+        "event": "You find life miserable and meaningless.",
+        "include": "(INT>1&INT<3&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "840205": {
+        "id": 840205,
+        "event": "Discontent with your life, you decide to pursue another degree.",
+        "include": "(INT>1&INT<3&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "840206": {
+        "id": 840206,
+        "event": "The degree you just got is not enough for the rapidly changing world.",
+        "include": "(INT>1&INT<3&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "840207": {
+        "id": 840207,
+        "event": "You try to learn new technologies and new skills, but you cannot keep up.",
+        "include": "(INT>1&INT<3&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+
+    "840301": {
+        "id": 840301,
+        "event": "You start to go to school.",
+        "include": "(INT>2&INT<5&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "840302": {
+        "id": 840302,
+        "event": "You find your schoolwork is too easy for you and you can easily get all ‘A’s.",
+        "include": "(INT>2&INT<5&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "840303": {
+        "id": 840303,
+        "event": "You have read and learnt many things, for some reason the more you know, the lonelier you feel. You also become more cynical.",
+        "include": "(INT>2&INT<5&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "840304": {
+        "id": 840304,
+        "event": "You are diagnosed depression.",
+        "include": "(INT>2&INT<5&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "840305": {
+        "id": 840305,
+        "event": "You help the police catch a fraud gang when they tried to cheat you.",
+        "include": "(INT>2&INT<5&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "840306": {
+        "id": 840306,
+        "event": "You have been working hard but you find that your job is too simple for your brain.",
+        "include": "(INT>2&INT<5&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "840307": {
+        "id": 840307,
+        "event": "You try to learn new technologies and new skills, but you cannot keep up.",
+        "include": "(INT>2&INT<5&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "840308": {
+        "id": 840308,
+        "event": "Your depression gets worse.",
+        "include": "(INT>2&INT<5&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+
+    "840501": {
+        "id": 840501,
+        "event": "You start to go to school, and you are the smartest kid in class.",
+        "include": "(INT>4&INT<7&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "840502": {
+        "id": 840502,
+        "event": "You can play 2 instruments and speak 3 languages fluently.",
+        "include": "(INT>4&INT<7&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "840503": {
+        "id": 840503,
+        "event": "You have read and learnt many things, for some reason the more you know, the lonelier you feel. You also become more cynical.",
+        "include": "(INT>4&INT<7&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "840504": {
+        "id": 840504,
+        "event": "You are diagnosed depression.",
+        "include": "(INT>4&INT<7&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "840505": {
+        "id": 840505,
+        "event": "You have been working hard but you find that your job is too simple for your brain.",
+        "include": "(INT>4&INT<7&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "840506": {
+        "id": 840506,
+        "event": "You try to learn new things to get promoted, even at this age you still learn things fast.",
+        "include": "(INT>4&INT<7&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "840507": {
+        "id": 840507,
+        "event": "You try to apply for jobs in the most frontier industry.",
+        "include": "(INT>4&INT<7&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "840508": {
+        "id": 840508,
+        "event": "You start fresh in the most frontier industry, but you find it hard to compete with young people.",
+        "include": "(INT>4&INT<7&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+
+    "840701": {
+        "id": 840701,
+        "event": "You start to go to school, and you always get the best grades in your school, everyone calls you a prodigy.",
+        "include": "(INT>6&INT<10&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "840702": {
+        "id": 840702,
+        "event": "You can play 2 instruments and speak 3 languages fluently.",
+        "include": "(INT>6&INT<10&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "840703": {
+        "id": 840703,
+        "event": "The more you know about the world, the lonelier you feel. You become isolated and you are diagnosed depression.",
+        "include": "(INT>6&INT<10&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "840704": {
+        "id": 840704,
+        "event": "You start to pursue PHD.",
+        "include": "(INT>6&INT<10&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "840705": {
+        "id": 840705,
+        "event": "You published a book.",
+        "include": "(INT>6&INT<10&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "840706": {
+        "id": 840706,
+        "event": "Your depression gets worse.",
+        "include": "(INT>6&INT<10&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "840707": {
+        "id": 840707,
+        "event": "People often seek advice from you.",
+        "include": "(INT>6&INT<10&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "840708": {
+        "id": 840708,
+        "event": "You branch out into new academic domains and cutting-edge technologies.",
+        "include": "(INT>6&INT<10&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "840709": {
+        "id": 840709,
+        "event": "You attempt to stop your depression medication and make peace with yourself.",
+        "include": "(INT>6&INT<10&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+
+    "841001": {
+        "id": 841001,
+        "event": "You become famous as a child prodigy for exceptionally high IQ.",
+        "include": "(INT>9&INT<14&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "841002": {
+        "id": 841002,
+        "event": "Your tested IQ score reaches 140+, and you master 6 languages.",
+        "include": "(INT>9&INT<14&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "841003": {
+        "id": 841003,
+        "event": "You start to pursue PHD.",
+        "include": "(INT>9&INT<14&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "841004": {
+        "id": 841004,
+        "event": "You published a book and is highly rated.",
+        "include": "(INT>9&INT<14&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "841005": {
+        "id": 841005,
+        "event": "You published a second book but it’s being criticized as ‘mediocre.’",
+        "include": "(INT>9&INT<14&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "841006": {
+        "id": 841006,
+        "event": "Many governmental officials seek advice from you.",
+        "include": "(INT>9&INT<14&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "841007": {
+        "id": 841007,
+        "event": "You branch out into new academic domains and cutting-edge technologies.",
+        "include": "(INT>9&INT<14&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "841008": {
+        "id": 841008,
+        "event": "You published an autobiography.",
+        "include": "(INT>9&INT<14&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "841009": {
+        "id": 841009,
+        "event": "You win an important prize for your previous academic achievements.",
+        "include": "(INT>9&INT<14&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+
+    "850001": {
+        "id": 850001,
+        "event": "You shy away from people, but you love animals.",
+        "include": "(SPR=0&SPR<2&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "850002": {
+        "id": 850002,
+        "event": "You are always bullied or isolated.",
+        "include": "(SPR=0&SPR<2&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "850003": {
+        "id": 850003,
+        "event": "You are afraid of establishing relationships and connections with people.",
+        "include": "(SPR=0&SPR<2&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "850004": {
+        "id": 850004,
+        "event": "You find it hard to communicate with other people, and you rely on AI to communicate with other people.",
+        "include": "(SPR=0&SPR<2&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+
+    "850201": {
+        "id": 850201,
+        "event": "You don’t understand how to interact with people.",
+        "include": "(SPR>1&SPR<4&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "850202": {
+        "id": 850202,
+        "event": "You are almost ‘invisible,’ no one thinks of you when something happens.",
+        "include": "(SPR>1&SPR<4&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "850203": {
+        "id": 850203,
+        "event": "You struggle to establish solid relationships with people, and no one invites you to any parties or remembers you at all if you attend any.",
+        "include": "(SPR>1&SPR<4&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "850204": {
+        "id": 850204,
+        "event": "You find it hard to communicate with other people, and you rely on AI to communicate with other people.",
+        "include": "(SPR>1&SPR<4&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+
+    "850401": {
+        "id": 850401,
+        "event": "You are always praised to be a clever child.",
+        "include": "(SPR>3&SPR<7&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "850402": {
+        "id": 850402,
+        "event": "You came close to being bullied once but you solved the crisis and even become friends with the bullies.",
+        "include": "(SPR>3&SPR<7&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "850403": {
+        "id": 850403,
+        "event": "You are confident about yourself, and you are always the one who knows everyone at any party you’re invited to.",
+        "include": "(SPR>3&SPR<7&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "850404": {
+        "id": 850404,
+        "event": "People around you always trust you with their stories and secrets. You find it empowering to be their listener. You use this information to solve some of your own problems.",
+        "include": "(SPR>3&SPR<7&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+
+    "850701": {
+        "id": 850701,
+        "event": "You are always praised to be a clever child.",
+        "include": "(SPR>6&SPR<10&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "850702": {
+        "id": 850702,
+        "event": "You are liked by everyone, and you get the most Christmas gifts from your classmates.",
+        "include": "(SPR>6&SPR<10&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "850703": {
+        "id": 850703,
+        "event": "You are confident about yourself, and you always manage to make yourself the center of attention on any occasion.",
+        "include": "(SPR>6&SPR<10&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "850704": {
+        "id": 850704,
+        "event": "People around you always trust you with their stories and secrets. You find it empowering to be their listener. You use this information to solve some of your own problems.",
+        "include": "(SPR>6&SPR<10&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+
+    "851001": {
+        "id": 851001,
+        "event": "You already have your own tactics of interacting with different people.",
+        "include": "(SPR>9&SPR<14&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "851002": {
+        "id": 851002,
+        "event": "You are the head of a girl’s gang, no one at school dares to challenge you.",
+        "include": "(SPR>9&SPR<14&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "851003": {
+        "id": 851003,
+        "event": "You are confident about yourself, and you always manage to get the best out of any opportunity that you come across.",
+        "include": "(SPR>9&SPR<14&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+    "851004": {
+        "id": 851004,
+        "event": "You are always the person to go to whenever someone runs into trouble. You can always find the right person to resolve the issues. Everyone praise you for helping them.",
+        "include": "(SPR>9&SPR<14&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+    },
+
+    "910001": {
+        "id": 910001,
+        "event": "You are a girl. You are diagnosed congenital anomalies.",
+        "include": "(MNY<1&(AF>0|(MNY<5&IND>0))",
+        "branch": [
+            "MNY<1:10000"
+        ]
+    },
+    "910101": {
+        "id": 910101,
+        "event": "You are a girl. You are born into an extremely poor family in a rural area. You often starve.",
+        "include": "(MNY>0&MNY<3&(AF>0|(MNY<5&IND>0))"
+    },
+    "910102": {
+        "id": 910102,
+        "event": "You are seriously ill, you cannot afford the treatment.",
+        "include": "(MNY>0&MNY<3&(AF>0|(MNY<5&IND>0))",
+        "branch": [
+            "MNY>0&MNY<3:10000"
+        ]
+    },
+    "910301": {
+        "id": 910301,
+        "event": "You are a girl. You are born into a low-income family in a rural area.",
+        "include": "(MNY>2&MNY<5&(AF>0|(MNY<5&IND>0))"
+    },
+    "910302": {
+        "id": 910302,
+        "event": "You have been doing simple, women-only jobs. However, you are fired because you job is being replaced by a machine.",
+        "include": "(MNY>2&MNY<5&(AF>0|(MNY<5&IND>0))"
+    },
+    "910303": {
+        "id": 910303,
+        "event": "You try to learn new techniques that cannot be replaced by machines.",
+        "include": "(MNY>2&MNY<5&(AF>0|(MNY<5&IND>0))"
+    },
+    "910304": {
+        "id": 910304,
+        "event": "You must retire because no one wants you anymore, but you don’t have money.",
+        "include": "(MNY>2&MNY<5&(AF>0|(MNY<5&IND>0))"
+    },
+    "910305": {
+        "id": 910305,
+        "event": "You are seriously ill, you cannot afford the treatment.",
+        "include": "(MNY>2&MNY<5&(AF>0|(MNY<5&IND>0))",
+        "branch": [
+            "MNY>2&MNY<5:10000"
+        ]
+    },
+
+    "910501": {
+        "id": 910501,
+        "event": "You are a girl. You are born into a middleclass family.",
+        "include": "(MNY>4&MNY<6&(AF>0)"
+    },
+    "910502": {
+        "id": 910502,
+        "event": "Although you find it hard to obtain a job, you eventually got one.",
+        "include": "(MNY>4&MNY<6&(AF>0)"
+    },
+    "910503": {
+        "id": 910503,
+        "event": "You are fired, and you start thinking about moving to the US or the UK for a better future.",
+        "include": "(MNY>4&MNY<6&(AF>0)"
+    },
+    "910504": {
+        "id": 910504,
+        "event": "You retired with very little money.",
+        "include": "(MNY>4&MNY<6&(AF>0)"
+    },
+    "910505": {
+        "id": 910505,
+        "event": "You are thrown onto the streets because you cannot pay the rent.",
+        "include": "(MNY>4&MNY<6&(AF>0)"
+    },
+
+    "910601": {
+        "id": 910601,
+        "event": "You are a girl. You are born into an upper-middle class family.",
+        "include": "(MNY>5&MNY<8&(AF>0)"
+    },
+    "910602": {
+        "id": 910602,
+        "event": "You decide to leave the country and immigrate to the UK. There you find a job and your colleagues respect you.",
+        "include": "(MNY>5&MNY<8&(AF>0)"
+    },
+    "910603": {
+        "id": 910603,
+        "event": "You meet a man from Afghanistan, he shames you publicly for not wearing a burka to cover your body.",
+        "include": "(MNY>5&MNY<8&(AF>0)"
+    },
+    "910604": {
+        "id": 910604,
+        "event": "You retire and stay at home.",
+        "include": "(MNY>5&MNY<8&(AF>0)"
+    },
+    "910605": {
+        "id": 910605,
+        "event": "You move into a nursing home.",
+        "include": "(MNY>5&MNY<8&(AF>0)"
+    },
+
+    "910801": {
+        "id": 910801,
+        "event": "You are a girl. You are born into an upper-class family.",
+        "include": "(MNY>7&MNY<14&(AF>0)"
+    },
+    "910802": {
+        "id": 910802,
+        "event": "You decide to leave the country and immigrate to the UK. There you find a job and your colleagues respect you.",
+        "include": "(MNY>7&MNY<14&(AF>0)"
+    },
+    "910803": {
+        "id": 910803,
+        "event": "You transformed parts of your bodies to better functioning prosthesis including your heart and brain which ensure longer lifespans.",
+        "include": "(MNY>7&MNY<14&(AF>0)"
+    },
+    "910804": {
+        "id": 910804,
+        "event": "You retire and stay at home.",
+        "include": "(MNY>7&MNY<14&(AF>0)"
+    },
+    "910805": {
+        "id": 910805,
+        "event": "You move into a nursing home.",
+        "include": "(MNY>7&MNY<14&(AF>0)"
+    },
+
+    "920001": {
+        "id": 920001,
+        "event": "You have birth defects.",
+        "include": "(STR<1&(AF>0|(MNY<5&IND>0))",
+        "branch": [
+            "STR<1:10000"
+        ]
+    },
+    "920101": {
+        "id": 920101,
+        "event": "You almost died from childbirth, and you are diagnosed congenital heart disease.",
+        "include": "(STR>0&STR<2&(AF>0|(MNY<5&IND>0))"
+    },
+
+    "920102": {
+        "id": 920102,
+        "event": "You had a heart attack, and the ambulance came too late.",
+        "include": "(STR>0&STR<2&(AF>0|(MNY<5&IND>0))",
+        "branch": [
+            "STR>0&STR<2:10000"
+        ]
+    },
+    "920201": {
+        "id": 920201,
+        "event": "Because you are born disabled, the hospital is your second home.",
+        "include": "(STR>1&STR<3&(AF>0|(MNY<5&IND>0))"
+    },
+    "920202": {
+        "id": 920202,
+        "event": "Your parents take you to a renowned hospital, yet the doctor shakes his head.",
+        "include": "(STR>1&STR<3&(AF>0|(MNY<5&IND>0))"
+    },
+    "920203": {
+        "id": 920203,
+        "event": "You cannot control urination since you gave birth to your child, you also suffer from anemia, gestational diabetes, and high blood pressure from pregnancy.",
+        "include": "(STR>1&STR<3&(AF>0|(MNY<5&IND>0))"
+    },
+    "920204": {
+        "id": 920204,
+        "event": "You suffer from joint pain and swelling every day when you wake up.",
+        "include": "(STR>1&STR<3&(AF>0|(MNY<5&IND>0))"
+    },
+    "920205": {
+        "id": 920205,
+        "event": "You are diagnosed cancer.",
+        "include": "(STR>1&STR<3&(AF>0|(MNY<5&IND>0))"
+    },
+    "920206": {
+        "id": 920206,
+        "event": "Your treatment fails",
+        "include": "(STR>1&STR<3&(AF>0|(MNY<5&IND>0))",
+        "branch": [
+            "STR>1&STR<3:10000"
+        ]
+    },
+    "920301": {
+        "id": 920301,
+        "event": "You are diagnosed asthma.",
+        "include": "(STR>2&STR<4&(AF>0|(MNY<5&IND>0))"
+    },
+    "920302": {
+        "id": 920302,
+        "event": "Your first teeth fell off.",
+        "include": "(STR>2&STR<4&(AF>0|(MNY<5&IND>0))"
+    },
+    "920303": {
+        "id": 920303,
+        "event": "You cannot control urination since you gave birth to your child, you also suffer from anemia, gestational diabetes, and high blood pressure from pregnancy.",
+        "include": "(STR>2&STR<4&(AF>0|(MNY<5&IND>0))"
+    },
+    "920304": {
+        "id": 920304,
+        "event": "You are diagnosed cancer.",
+        "include": "(STR>2&STR<4&(AF>0|(MNY<5&IND>0))"
+    },
+    "920305": {
+        "id": 920305,
+        "event": "Your recovered from cancer.",
+        "include": "(STR>2&STR<4&(AF>0|(MNY<5&IND>0))"
+    },
+    "920306": {
+        "id": 920306,
+        "event": "Most of your teeth fell of and you had them all replaced.",
+        "include": "(STR>2&STR<4&(AF>0|(MNY<5&IND>0))"
+    },
+    "920307": {
+        "id": 920307,
+        "event": "You are seriously ill because of a new worldwide pandemic.",
+        "include": "(STR>2&STR<4&(AF>0|(MNY<5&IND>0))",
+        "branch": [
+            "STR>2&STR<4:10000"
+        ]
+    },
+    "920401": {
+        "id": 920401,
+        "event": "You are diagnosed neonatal jaundice. Luckily, you recovered.",
+        "include": "(STR>3&STR<6&(AF>0|(MNY<5&IND>0))"
+    },
+    "920402": {
+        "id": 920402,
+        "event": "You get fever but you recovered.",
+        "include": "(STR>3&STR<6&(AF>0|(MNY<5&IND>0))"
+    },
+    "920403": {
+        "id": 920403,
+        "event": "You cannot control urination since you gave birth to your child, you also suffer from anemia, gestational diabetes, and high blood pressure from pregnancy.",
+        "include": "(STR>3&STR<6&(AF>0|(MNY<5&IND>0))"
+    },
+    "920404": {
+        "id": 920404,
+        "event": "You suffer from joint pain and swelling every day when you wake up.",
+        "include": "(STR>3&STR<6&(AF>0|(MNY<5&IND>0))"
+    },
+    "920405": {
+        "id": 920405,
+        "event": "You stop having periods.",
+        "include": "(STR>3&STR<6&(AF>0|(MNY<5&IND>0))"
+    },
+    "920406": {
+        "id": 920406,
+        "event": "You are diagnosed cancer and start to get medical treatments.",
+        "include": "(STR>3&STR<6&(AF>0|(MNY<5&IND>0))"
+    },
+    "920407": {
+        "id": 920407,
+        "event": "You recovered from cancer, but you are diagnosed Alzheimer’s disease.",
+        "include": "(STR>3&STR<6&(AF>0|(MNY<5&IND>0))"
+    },
+    "920408": {
+        "id": 920408,
+        "event": "You fall off from your balcony.",
+        "include": "(STR>3&STR<6&(AF>0|(MNY<5&IND>0))",
+        "branch": [
+            "STR>3&STR<6:10000"
+        ]
+    },
+
+    "920601": {
+        "id": 920601,
+        "event": "Your first teeth fell off.",
+        "include": "(STR>5&STR<8&(AF>0|(MNY<5&IND>0))"
+    },
+    "920602": {
+        "id": 920602,
+        "event": "You cannot control urination since you gave birth to your child, you also suffer from anemia, gestational diabetes, and high blood pressure from pregnancy.",
+        "include": "(STR>5&STR<8&(AF>0|(MNY<5&IND>0))"
+    },
+    "920603": {
+        "id": 920603,
+        "event": "You suffer from joint pain and swelling every day when you wake up.",
+        "include": "(STR>5&STR<8&(AF>0|(MNY<5&IND>0))"
+    },
+    "920604": {
+        "id": 920604,
+        "event": "You stop having periods.",
+        "include": "(STR>5&STR<8&(AF>0|(MNY<5&IND>0))"
+    },
+    "920605": {
+        "id": 920605,
+        "event": "You feel that your vision and your memories are not working properly.",
+        "include": "(STR>5&STR<8&(AF>0|(MNY<5&IND>0))"
+    },
+    "920606": {
+        "id": 920606,
+        "event": "You are diagnosed Alzheimer’s disease.",
+        "include": "(STR>5&STR<8&(AF>0|(MNY<5&IND>0))"
+    },
+    "920607": {
+        "id": 920607,
+        "event": "You fall off from your balcony.",
+        "include": "(STR>5&STR<8&(AF>0|(MNY<5&IND>0))",
+        "branch": [
+            "STR>5&STR<8:10000"
+        ]
+    },
+
+    "920801": {
+        "id": 920801,
+        "event": "Your first teeth fell off.",
+        "include": "(STR>7&STR<10&(AF>0|(MNY<5&IND>0))"
+    },
+    "920802": {
+        "id": 920802,
+        "event": "Everyone thinks that you are 10 years younger than you actually are.",
+        "include": "(STR>7&STR<10&(AF>0|(MNY<5&IND>0))"
+    },
+    "920803": {
+        "id": 920803,
+        "event": "You become a yoga master.",
+        "include": "(STR>7&STR<10&(AF>0|(MNY<5&IND>0))"
+    },
+    "920804": {
+        "id": 920804,
+        "event": "You stop having periods.",
+        "include": "(STR>7&STR<10&(AF>0|(MNY<5&IND>0))"
+    },
+    "920805": {
+        "id": 920805,
+        "event": "Your vision and hearing start to get blurry and you start to have heart problems.",
+        "include": "(STR>7&STR<10&(AF>0|(MNY<5&IND>0))"
+    },
+    "920806": {
+        "id": 920806,
+        "event": "Your heart problems worsen, and your bones are getting weaker and weaker.",
+        "include": "(STR>7&STR<10&(AF>0|(MNY<5&IND>0))"
+    },
+    "920807": {
+        "id": 920807,
+        "event": "You cannot get off from bed.",
+        "include": "(STR>7&STR<10&(AF>0|(MNY<5&IND>0))"
+    },
+    "920808": {
+        "id": 920808,
+        "event": "You get an infection and you become seriously ill.",
+        "include": "(STR>7&STR<10&(AF>0|(MNY<5&IND>0))",
+        "branch": [
+            "STR>7&STR<10:10000"
+        ]
+    },
+
+    "921001": {
+        "id": 921001,
+        "event": "You start to practice competitive sports.",
+        "include": "(STR>9&STR<14&(AF>0|(MNY<5&IND>0))"
+    },
+    "921002": {
+        "id": 921002,
+        "event": "Everyone thinks that you are 10 years younger than you actually are.",
+        "include": "(STR>9&STR<14&(AF>0|(MNY<5&IND>0))"
+    },
+    "921003": {
+        "id": 921003,
+        "event": "You become a yoga master.",
+        "include": "(STR>9&STR<14&(AF>0|(MNY<5&IND>0))"
+    },
+    "921004": {
+        "id": 921004,
+        "event": "You stop having periods.",
+        "include": "(STR>9&STR<14&(AF>0|(MNY<5&IND>0))"
+    },
+    "921005": {
+        "id": 921005,
+        "event": "Your hair starts to turn grey.",
+        "include": "(STR>9&STR<14&(AF>0|(MNY<5&IND>0))"
+    },
+    "921006": {
+        "id": 921006,
+        "event": "Your vision and hearing start to get blurry.",
+        "include": "(STR>9&STR<14&(AF>0|(MNY<5&IND>0))"
+    },
+    "921007": {
+        "id": 921007,
+        "event": "When other people suffer from diseases you are still climbing high altitude mountains.",
+        "include": "(STR>9&STR<14&(AF>0|(MNY<5&IND>0))"
+    },
+    "921008": {
+        "id": 921008,
+        "event": "You fell off from a high place and passed out.",
+        "include": "(STR>9&STR<14&(AF>0|(MNY<5&IND>0))",
+        "branch": [
+            "STR>9&STR<14:10000"
+        ]
+    },
     
+    "930001": {
+        "id": 930001,
+        "event": "You are so ugly that you always get bullied when playing with other girls.",
+        "include": "(CHR<2&(AF>0|(MNY<5&IND>0))"
+    },
+    "930002": {
+        "id": 930002,
+        "event": "You decide to get plastic surgery and your surgery failed.",
+        "include": "(CHR<2&(AF>0|(MNY<5&IND>0))"
+    },
+    "930003": {
+        "id": 930003,
+        "event": "You spent all your money trying to recover your appearance but in vain.",
+        "include": "(CHR<2&(AF>0|(MNY<5&IND>0))"
+    },
+    "930004": {
+        "id": 930004,
+        "event": "You finally decide to make peace with your looks but because of your look and the money you have spent, you have built up a lot of depts.",
+        "include": "(CHR<2&(AF>0|(MNY<5&IND>0))"
+    },
+    "930005": {
+        "id": 930005,
+        "event": "You finally paid off your depts for plastic surgeries and recovery surgeries.",
+        "include": "(CHR<2&(AF>0|(MNY<5&IND>0))"
+    },
+
+    "930201": {
+        "id": 930201,
+        "event": "You have an average look.",
+        "include": "(CHR>1&CHR<3&(AF>0|(MNY<5&IND>0))"
+    },
+    "930202": {
+        "id": 930202,
+        "event": "You decide to get plastic surgery and your surgery is a success.",
+        "include": "(CHR>1&CHR<3&(AF>0|(MNY<5&IND>0))"
+    },
+    "930203": {
+        "id": 930203,
+        "event": "You start a parttime job as a vlogger, because of your beauty, you have many followers.",
+        "include": "(CHR>1&CHR<3&(AF>0|(MNY<5&IND>0))"
+    },
+    "930204": {
+        "id": 930204,
+        "event": "You suffer from aftereffects of the plastic surgery, and your face start to become saggy.",
+        "include": "(CHR>1&CHR<3&(AF>0|(MNY<5&IND>0))"
+    },
+    "930205": {
+        "id": 930205,
+        "event": "You start to try anti-aging surgeries.",
+        "include": "(CHR>1&CHR<3&(AF>0|(MNY<5&IND>0))"
+    },
+
+    "930301": {
+        "id": 930301,
+        "event": "You have an above average look.",
+        "include": "(CHR>2&CHR<5&(AF>0|(MNY<5&IND>0))"
+    },
+    "930302": {
+        "id": 930302,
+        "event": "You hate the fact that men often want to take advantage of you.",
+        "include": "(CHR>2&CHR<5&(AF>0|(MNY<5&IND>0))"
+    },
+    "930303": {
+        "id": 930303,
+        "event": "You realize people never take you seriously because you are a woman.",
+        "include": "(CHR>2&CHR<5&(AF>0|(MNY<5&IND>0))"
+    },
+    "930304": {
+        "id": 930304,
+        "event": "You start to seriously think about plastic surgery.",
+        "include": "(CHR>2&CHR<5&(AF>0|(MNY<5&IND>0))"
+    },
+    "930305": {
+        "id": 930305,
+        "event": "You start to try anti-aging surgeries.",
+        "include": "(CHR>2&CHR<5&(AF>0|(MNY<5&IND>0))"
+    },
+
+    "930501": {
+        "id": 930501,
+        "event": "You are very pretty, and you are always everyone’s favorite.",
+        "include": "(CHR>4&CHR<7&(AF>0|(MNY<5&IND>0))"
+    },
+    "930502": {
+        "id": 930502,
+        "event": "You hate the fact that men often want to take advantage of you.",
+        "include": "(CHR>4&CHR<7&(AF>0|(MNY<5&IND>0))"
+    },
+    "930503": {
+        "id": 930503,
+        "event": "You start a parttime job as a vlogger, because of your beauty, you have many followers.",
+        "include": "(CHR>4&CHR<7&(AF>0|(MNY<5&IND>0))"
+    },
+    "930504": {
+        "id": 930504,
+        "event": "When you come across rich men, most of them want to date you and take advantage of you.",
+        "include": "(CHR>4&CHR<7&(AF>0|(MNY<5&IND>0))"
+    },
+    "930505": {
+        "id": 930505,
+        "event": "People still ask you for IDs because you look way younger than you are.",
+        "include": "(CHR>4&CHR<7&(AF>0|(MNY<5&IND>0))"
+    },
+
+    "930701": {
+        "id": 930701,
+        "event": "You are very pretty, and you are always everyone’s favorite.",
+        "include": "(CHR>6&CHR<11&(AF>0|(MNY<5&IND>0))"
+    },
+    "930702": {
+        "id": 930702,
+        "event": "You think you are not pretty enough. You get anxious because of social media.",
+        "include": "(CHR>6&CHR<11&(AF>0|(MNY<5&IND>0))"
+    },
+    "930703": {
+        "id": 930703,
+        "event": "You find people never take you seriously, they are nice to you because of your beautiful look.",
+        "include": "(CHR>6&CHR<11&(AF>0|(MNY<5&IND>0))"
+    },
+    "930704": {
+        "id": 930704,
+        "event": "You hate your beauty because it just brings you way more trouble, harassment and abuse over the years.",
+        "include": "(CHR>6&CHR<11&(AF>0|(MNY<5&IND>0))"
+    },
+    "930705": {
+        "id": 930705,
+        "event": "People still ask you for IDs because you look way younger than you are.",
+        "include": "(CHR>6&CHR<11&(AF>0|(MNY<5&IND>0))"
+    },
+
+    "931101": {
+        "id": 931101,
+        "event": "You are so exceptionally pretty, and many commercials want you.",
+        "include": "(CHR>10&CHR<14&(AF>0|(MNY<5&IND>0))"
+    },
+    "931102": {
+        "id": 931102,
+        "event": "You miss the times when you were a ‘child star,’ having all the attention under the spotlight. Now you are nobody.",
+        "include": "(CHR>10&CHR<14&(AF>0|(MNY<5&IND>0))"
+    },
+    "931103": {
+        "id": 931103,
+        "event": "You find people never take you seriously, they are nice to you because of your beautiful look.",
+        "include": "(CHR>10&CHR<14&(AF>0|(MNY<5&IND>0))"
+    },
+    "931104": {
+        "id": 931104,
+        "event": "You hate your beauty because it just brings you way more trouble, harassment and abuse over the years.",
+        "include": "(CHR>10&CHR<14&(AF>0|(MNY<5&IND>0))"
+    },
+    "931105": {
+        "id": 931105,
+        "event": "People still ask you for IDs because you look way younger than you are.",
+        "include": "(CHR>10&CHR<14&(AF>0|(MNY<5&IND>0))"
+    },
+
+    "940001": {
+        "id": 940001,
+        "event": "You start to go to school, and you are often bullied because of your stupidity.",
+        "include": "(INT<1&(AF>0|(MNY<5&IND>0))"
+    },
+    "940002": {
+        "id": 940002,
+        "event": "You don’t understand why so many people get depression and anxiety because you are not worried at all.",
+        "include": "(INT<1&(AF>0|(MNY<5&IND>0))"
+    },
+    "940101": {
+        "id": 940101,
+        "event": "You start to go to school, and you often receive F grades.",
+        "include": "(INT>0&INT<2&(AF>0|(MNY<5&IND>0))"
+    },
+    "940102": {
+        "id": 940102,
+        "event": "You don’t understand why so many people get depression and anxiety because you are not worried at all.",
+        "include": "(INT>0&INT<2&(AF>0|(MNY<5&IND>0))"
+    },
+    "940103": {
+        "id": 940103,
+        "event": "You lost lots of money because you are cheated by a fraud.",
+        "include": "(INT>0&INT<2&(AF>0|(MNY<5&IND>0))"
+    },
+    "940201": {
+        "id": 940201,
+        "event": "You start to go to school, and you often get bad grades.",
+        "include": "(INT>1&INT<3&(AF>0|(MNY<5&IND>0))"
+    },
+    "940202": {
+        "id": 940202,
+        "event": "When your peers express their pressure about life and future, you don’t feel very worried.",
+        "include": "(INT>1&INT<3&(AF>0|(MNY<5&IND>0))"
+    },
+    "940203": {
+        "id": 940203,
+        "event": "You find life miserable and meaningless.",
+        "include": "(INT>1&INT<3&(AF>0|(MNY<5&IND>0))"
+    },
+    "940204": {
+        "id": 940204,
+        "event": "You try to learn new technologies and new skills online, but you cannot keep up.",
+        "include": "(INT>1&INT<3&(AF>0|(MNY<5&IND>0))"
+    },
+
+    "940301": {
+        "id": 940301,
+        "event": "You start to go to school.",
+        "include": "(INT>2&INT<5&(AF>0|(MNY<5&IND>0))"
+    },
+    "940302": {
+        "id": 940302,
+        "event": "You are diagnosed depression.",
+        "include": "(INT>2&INT<5&(AF>0|(MNY<5&IND>0))"
+    },
+    "940303": {
+        "id": 940303,
+        "event": "You try to self-taught things through reading, even at this age you still learn things fast.",
+        "include": "(INT>2&INT<5&(AF>0|(MNY<5&IND>0))"
+    },
+    "940304": {
+        "id": 940304,
+        "event": "You try to learn new technologies and new skills online, but you cannot keep up.",
+        "include": "(INT>2&INT<5&(AF>0|(MNY<5&IND>0))"
+    },
+    "940305": {
+        "id": 940305,
+        "event": "Your depression gets worse.",
+        "include": "(INT>2&INT<5&(AF>0|(MNY<5&IND>0))"
+    },
+
+    "940501": {
+        "id": 940501,
+        "event": "You start to go to school, and you are the smartest kid in class.",
+        "include": "(INT>4&INT<8&(AF>0|(MNY<5&IND>0))"
+    },
+    "940502": {
+        "id": 940502,
+        "event": "You are diagnosed depression.",
+        "include": "(INT>4&INT<8&(AF>0|(MNY<5&IND>0))"
+    },
+    "940503": {
+        "id": 940503,
+        "event": "You try to self-taught things through reading, even at this age you still learn things fast.",
+        "include": "(INT>4&INT<8&(AF>0|(MNY<5&IND>0))"
+    },
+    "940504": {
+        "id": 940504,
+        "event": "Your female friends often seek advice from you.",
+        "include": "(INT>4&INT<8&(AF>0|(MNY<5&IND>0))"
+    },
+    "940505": {
+        "id": 940505,
+        "event": "Your depression gets worse.",
+        "include": "(INT>4&INT<8&(AF>0|(MNY<5&IND>0))"
+    },
+    "940801": {
+        "id": 940801,
+        "event": "You start to go to school, and you always get the best grades in your school, everyone calls you a prodigy.",
+        "include": "(INT>7&INT<14&(AF>0|(MNY<5&IND>0))"
+    },
+    "940802": {
+        "id": 940802,
+        "event": "You published your diary in the UK. You are also diagnosed depression.",
+        "include": "(INT>7&INT<14&(AF>0|(MNY<5&IND>0))"
+    },
+    "940803": {
+        "id": 940803,
+        "event": "Your depression gets worse.",
+        "include": "(INT>7&INT<14&(AF>0|(MNY<5&IND>0))"
+    },
+    "940804": {
+        "id": 940804,
+        "event": "Your female friends often seek advice from you.",
+        "include": "(INT>7&INT<14&(AF>0|(MNY<5&IND>0))"
+    },
+    "940805": {
+        "id": 940805,
+        "event": "You start to self-taught a lot of things online including the most cutting-edge technologies.",
+        "include": "(INT>7&INT<14&(AF>0|(MNY<5&IND>0))"
+    },
+    "940806": {
+        "id": 940806,
+        "event": "You attempt to stop your depression medication and make peace with yourself.",
+        "include": "(INT>7&INT<14&(AF>0|(MNY<5&IND>0))"
+    },
+
+    "950001": {
+        "id": 950001,
+        "event": "You shy away from people, but you love animals.",
+        "include": "(SPR<2&(AF>0|(MNY<5&IND>0))"
+    },
+    "950002": {
+        "id": 950002,
+        "event": "You are always bullied or isolated.",
+        "include": "(SPR<2&(AF>0|(MNY<5&IND>0))"
+    },
+    "950003": {
+        "id": 950003,
+        "event": "You are afraid of establishing relationships and connections with people.",
+        "include": "(SPR<2&(AF>0|(MNY<5&IND>0))"
+    },
+    "950004": {
+        "id": 950004,
+        "event": "You find it hard to communicate with other people, and you rely on AI to communicate with other people.",
+        "include": "(SPR<2&(AF>0|(MNY<5&IND>0))"
+    },
+
+    "950201": {
+        "id": 950201,
+        "event": "You don’t understand how to interact with people.",
+        "include": "(SPR>1&SPR<4&(AF>0|(MNY<5&IND>0))"
+    },
+    "950202": {
+        "id": 950202,
+        "event": "You are almost ‘invisible,’ no one thinks of you when something happens.",
+        "include": "(SPR>1&SPR<4&(AF>0|(MNY<5&IND>0))"
+    },
+    "950203": {
+        "id": 950203,
+        "event": "You struggle to establish solid relationships with people, and no one invites you to any parties or remembers you at all if you attend any.",
+        "include": "(SPR>1&SPR<4&(AF>0|(MNY<5&IND>0))"
+    },
+    "950204": {
+        "id": 950204,
+        "event": "You find it hard to communicate with other people, and you rely on AI to communicate with other people.",
+        "include": "(SPR>1&SPR<4&(AF>0|(MNY<5&IND>0))"
+    },
+
+    "950401": {
+        "id": 950401,
+        "event": "You are always praised to be a clever child.",
+        "include": "(SPR>3&SPR<7&(AF>0|(MNY<5&IND>0))"
+    },
+    "950402": {
+        "id": 950402,
+        "event": "You came close to being bullied once but you solved the crisis and even become friends with the bullies.",
+        "include": "(SPR>3&SPR<7&(AF>0|(MNY<5&IND>0))"
+    },
+    "950403": {
+        "id": 950403,
+        "event": "You are confident about yourself, and you always manage to make yourself the center of attention on any occasion.",
+        "include": "(SPR>3&SPR<7&(AF>0|(MNY<5&IND>0))"
+    },
+    "950404": {
+        "id": 950404,
+        "event": "People around you always trust you with their stories and secrets. You find it empowering to be their listener. You use this information to solve some of your own problems.",
+        "include": "(SPR>3&SPR<7&(AF>0|(MNY<5&IND>0))"
+    },
+
+    "950701": {
+        "id": 950701,
+        "event": "You are always praised to be a clever child.",
+        "include": "(SPR>6&SPR<10&(AF>0|(MNY<5&IND>0))"
+    },
+    "950702": {
+        "id": 950702,
+        "event": "You are liked by everyone.",
+        "include": "(SPR>6&SPR<10&(AF>0|(MNY<5&IND>0))"
+    },
+    "950703": {
+        "id": 950703,
+        "event": "You are confident about yourself, and you always manage to get the best out of any opportunity that you come across.",
+        "include": "(SPR>6&SPR<10&(AF>0|(MNY<5&IND>0))"
+    },
+    "950704": {
+        "id": 950704,
+        "event": "People around you always trust you with their stories and secrets. You find it empowering to be their listener. You use this information to solve some of your own problems.",
+        "include": "(SPR>6&SPR<10&(AF>0|(MNY<5&IND>0))"
+    },
+
+    "951001": {
+        "id": 951001,
+        "event": "You already have your own tactics of interacting with different people.",
+        "include": "(SPR>9&SPR<14&(AF>0|(MNY<5&IND>0))"
+    },
+    "951002": {
+        "id": 951002,
+        "event": "You are the head of a girl’s gang, no one dares to challenge you.",
+        "include": "(SPR>9&SPR<14&(AF>0|(MNY<5&IND>0))"
+    },
+    "951003": {
+        "id": 951003,
+        "event": "You are confident about yourself, and you always manage to get the best out of any opportunity that you come across.",
+        "include": "(SPR>9&SPR<14&(AF>0|(MNY<5&IND>0))"
+    },
+    "951004": {
+        "id": 951004,
+        "event": "You are always the person to go to whenever someone runs into trouble. You can always find the right person to resolve the issues. Everyone praises you for helping them.",
+        "include": "(SPR>9&SPR<14&(AF>0|(MNY<5&IND>0))"
+    },
+
+
 
 
     "11000": {
@@ -437,6 +2470,12 @@
         "include": "US>0&LBTQ=0"
     },
 
+    "21014": {
+        "id": 21014,
+        "event": "Your mom takes you to the hospital and had you injected the newest contraception product into your body just in case, because your state had illegalized abortion. You don’t want to get pregnant anyways. The fertility rate in the US has gone down rapidly since the overturn of Roe v. Wade in 2022.",
+        "include": "US>0&LBTQ=0"
+    },
+
     "22001": {
         "id": 22001,
         "event": "Frequent superstorms overwhelmed New York City’s wastewater treatment system, leading to raw sewage spilling into the East River, rendering it unsuitable for human contact.",
@@ -491,6 +2530,12 @@
     "22011": {
         "id": 22011,
         "event": "America fails to assimilate immigrants and becomes a culturally divided nation, eventually America collapses into several sovereign states.",
+        "include": "US>0&LBTQ>0"
+    },
+
+    "22012": {
+        "id": 22012,
+        "event": "Your mom takes you to the hospital and had you injected the newest contraception product into your body just in case, because your state had illegalized abortion. You don’t want to get pregnant anyways. The fertility rate in the US has gone down rapidly since the overturn of Roe v. Wade in 2022.",
         "include": "US>0&LBTQ>0"
     },
 
@@ -1161,4 +3206,5 @@
         "event": "You get divorced, and you know you will never be able to see your son again.",
         "include": "AF>0&LBTQ>0"
     }
+
 }
