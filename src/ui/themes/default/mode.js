@@ -29,7 +29,7 @@ export default class Mode extends ui.view.DefaultTheme.ModeUI {
         this.onClickNext(this.#types.USA)
     }
     onClickNext (NAT) {
-        nationality = {
+        var nationality = {
             [this.#types.AFG]: 0,
             [this.#types.CHN]: 0,
             [this.#types.EGP]: 0,

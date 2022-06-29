@@ -2,11 +2,11 @@
     "x":0,
     "type":"View",
     "selectedBox":1,
-    "selecteID":13,
+    "selecteID":4,
     "searchKey":"View",
     "props":{"width":1125,"sceneColor":"#000000","height":2436},
     "nodeParent":-1,
-    "maxID":32,
+    "maxID":36,
     "label":"View",
     "isOpen":true,
     "isDirectory":true,
@@ -18,7 +18,7 @@
             "x":15,
             "type":"Box",
             "searchKey":"Box,btnStraight,btnStraight",
-            "props":{"width":600,"var":"btnStraight","runtime":"Laya.runtime.ColorfulBox","name":"btnStraight","height":269,"centerY":-850,"centerX":0},
+            "props":{"zOrder":1,"width":600,"var":"btnStraight","runtime":"Laya.runtime.ColorfulBox","name":"btnStraight","height":193,"centerY":-472,"centerX":0,"bgColor":"#ffffff"},
             "nodeParent":1,
             "label":"btnStraight",
             "isOpen":true,
@@ -31,7 +31,7 @@
                     "x":30,
                     "type":"Label",
                     "searchKey":"Label,font_default",
-                    "props":{"top":50,"text":"Straight","name":"font_default","fontSize":80,"font":"SimHei","color":"#f3302d","centerX":0,"bold":true},
+                    "props":{"top":50,"text":"Straight","name":"font_default","fontSize":80,"font":"SimHei","color":"#000000","centerX":0,"bold":true,"bgColor":"#ffffff"},
                     "nodeParent":2,
                     "label":"font_default",
                     "isDirectory":false,
@@ -46,7 +46,7 @@
             "x":15,
             "type":"Box",
             "searchKey":"Box,btnLBTQ,btnLBTQ",
-            "props":{"width":600,"var":"btnLBTQ","runtime":"Laya.runtime.ColorfulBox","name":"btnLBTQ","height":170,"centerY":-277,"centerX":0},
+            "props":{"zOrder":1,"width":600,"var":"btnLBTQ","runtime":"Laya.runtime.ColorfulBox","name":"btnLBTQ","height":170,"centerY":-254,"centerX":0,"bgColor":"#ffffff"},
             "nodeParent":1,
             "label":"btnLBTQ",
             "isOpen":true,
@@ -59,7 +59,7 @@
                     "x":30,
                     "type":"Label",
                     "searchKey":"Label,font_default",
-                    "props":{"top":50,"text":"btnLBTQ","name":"font_default","fontSize":80,"font":"SimHei","color":"#f16a68","centerX":0,"bold":true},
+                    "props":{"top":50,"text":"LBTQ","name":"font_default","fontSize":80,"font":"SimHei","color":"#000000","centerX":0,"bold":true,"bgColor":"#ffffff"},
                     "nodeParent":12,
                     "label":"font_default",
                     "isDirectory":false,
@@ -69,6 +69,50 @@
                     "child":[
                         ]
                 }]
+        },
+        {
+            "x":15,
+            "type":"Label",
+            "searchKey":"Label,title",
+            "props":{"zOrder":1,"y":10,"x":10,"width":620,"text":"♀Samsara","name":"title","height":100,"fontSize":130,"font":"SimHei","color":"#000000","centerY":-1067,"centerX":0,"bold":true,"anchorY":0.5,"anchorX":0.5},
+            "nodeParent":1,
+            "label":"title",
+            "isOpen":true,
+            "isDirectory":false,
+            "isAniNode":true,
+            "hasChild":false,
+            "compId":33,
+            "child":[
+                ]
+        },
+        {
+            "x":15,
+            "type":"Label",
+            "searchKey":"Label,title",
+            "props":{"zOrder":1,"y":10,"x":10,"width":983,"text":"What's your choice of sextual orientation?","name":"title","height":100,"fontSize":80,"font":"SimHei","color":"#000000","centerY":-848,"centerX":0,"bold":true,"bgColor":"#ece1e1","anchorY":0.5,"anchorX":0.5,"alpha":0.8},
+            "nodeParent":1,
+            "label":"title",
+            "isOpen":true,
+            "isDirectory":false,
+            "isAniNode":true,
+            "hasChild":false,
+            "compId":34,
+            "child":[
+                ]
+        },
+        {
+            "x":15,
+            "type":"Image",
+            "searchKey":"Image",
+            "props":{"top":0,"skin":"images/background/04.png","right":0,"left":0,"bottom":0},
+            "nodeParent":1,
+            "label":"Image",
+            "isDirectory":false,
+            "isAniNode":true,
+            "hasChild":false,
+            "compId":35,
+            "child":[
+                ]
         }],
     "animations":[
         {
