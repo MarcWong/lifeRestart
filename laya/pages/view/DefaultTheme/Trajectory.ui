@@ -1,7 +1,8 @@
 {
+    "x":0,
     "type":"View",
-    "selectedBox":102,
-    "selecteID":18,
+    "selectedBox":91,
+    "selecteID":92,
     "searchKey":"View",
     "props":{"width":1125,"sceneColor":"#000000","runtime":"Laya.runtime.ViewBase","height":2436},
     "nodeParent":-1,
@@ -14,6 +15,7 @@
     "compId":1,
     "child":[
         {
+            "x":15,
             "type":"Box",
             "searchKey":"Box",
             "props":{"top":80,"right":20,"left":20,"height":120},
@@ -304,6 +306,7 @@
             "$HIDDEN":false
         },
         {
+            "x":15,
             "type":"Box",
             "searchKey":"Box,boxTrajectory,boxTrajectory",
             "props":{"x":20,"var":"boxTrajectory","top":240,"runtime":"Laya.runtime.ColorfulBox","right":20,"name":"boxTrajectory","left":20,"bottom":250},
@@ -316,6 +319,7 @@
             "compId":102,
             "child":[
                 {
+                    "x":30,
                     "type":"Panel",
                     "searchKey":"Panel,panelTrajectory,panelTrajectory",
                     "props":{"var":"panelTrajectory","vScrollBarSkin":" ","top":0,"right":0,"name":"panelTrajectory","left":0,"bottom":0},
@@ -328,6 +332,7 @@
                     "compId":18,
                     "child":[
                         {
+                            "x":45,
                             "type":"VBox",
                             "searchKey":"VBox,vboxTrajectory,vboxTrajectory",
                             "props":{"y":15,"var":"vboxTrajectory","space":20,"right":-6,"name":"vboxTrajectory","left":-6},
@@ -340,6 +345,7 @@
                             "compId":17,
                             "child":[
                                 {
+                                    "x":60,
                                     "type":"Box",
                                     "searchKey":"Box,boxTrajectoryItem",
                                     "props":{"runtime":"Laya.runtime.ColorfulBox","right":0,"name":"boxTrajectoryItem","left":0},
@@ -352,6 +358,7 @@
                                     "compId":88,
                                     "child":[
                                         {
+                                            "x":75,
                                             "type":"HBox",
                                             "searchKey":"HBox,hboxAge",
                                             "props":{"y":25,"x":200,"name":"hboxAge","anchorX":1,"align":"middle"},
@@ -364,6 +371,7 @@
                                             "compId":91,
                                             "child":[
                                                 {
+                                                    "x":90,
                                                     "type":"Label",
                                                     "searchKey":"Label,labAge",
                                                     "props":{"x":0,"text":"3000","name":"labAge","fontSize":50,"font":"SimHei","color":"#cfea5c","anchorX":0},
@@ -377,19 +385,7 @@
                                                         ]
                                                 },
                                                 {
-                                                    "type":"Label",
-                                                    "searchKey":"Label",
-                                                    "props":{"x":1,"text":"岁","fontSize":50,"font":"SimHei","color":"#cfea5c","anchorX":0},
-                                                    "nodeParent":91,
-                                                    "label":"Label",
-                                                    "isDirectory":false,
-                                                    "isAniNode":true,
-                                                    "hasChild":false,
-                                                    "compId":94,
-                                                    "child":[
-                                                        ]
-                                                },
-                                                {
+                                                    "x":90,
                                                     "type":"Label",
                                                     "searchKey":"Label",
                                                     "props":{"x":2,"text":"：","fontSize":50,"font":"SimHei","color":"#cfea5c","anchorX":0},
@@ -404,6 +400,7 @@
                                                 }]
                                         },
                                         {
+                                            "x":75,
                                             "type":"Label",
                                             "searchKey":"Label,labContent",
                                             "props":{"y":25,"wordWrap":true,"text":"你的父母开始辅导你数学和英语，智力+1","right":0,"name":"labContent","left":220,"leading":25,"fontSize":50,"font":"SimHei","color":"#ffffff"},
@@ -422,6 +419,7 @@
                 }]
         },
         {
+            "x":15,
             "type":"Box",
             "searchKey":"Box",
             "props":{"right":0,"left":0,"height":1,"bottom":-1},
@@ -434,6 +432,7 @@
             "compId":14,
             "child":[
                 {
+                    "x":30,
                     "type":"Box",
                     "searchKey":"Box,btnSummary,btnSummary",
                     "props":{"width":600,"var":"btnSummary","runtime":"Laya.runtime.ColorfulBox","name":"btnSummary","height":150,"centerX":0,"bottom":80},
@@ -446,6 +445,7 @@
                     "compId":151,
                     "child":[
                         {
+                            "x":45,
                             "type":"Label",
                             "searchKey":"Label,label",
                             "props":{"text":"UI_Goto_Summary","name":"label","fontSize":60,"font":"SimHei","color":"#ffffff","centerY":0,"centerX":0},
@@ -460,6 +460,7 @@
                         }]
                 },
                 {
+                    "x":30,
                     "type":"Box",
                     "searchKey":"Box,boxSpeed,boxSpeed",
                     "props":{"y":-155,"var":"boxSpeed","runtime":"Laya.runtime.ColorFilterItem","right":100,"name":"boxSpeed","left":100,"height":150,"anchorY":0.5,"anchorX":0.5},
@@ -472,6 +473,7 @@
                     "compId":104,
                     "child":[
                         {
+                            "x":45,
                             "type":"ProgressBar",
                             "searchKey":"ProgressBar,prgSpeed,prgSpeed",
                             "props":{"var":"prgSpeed","skin":"images/progress/progress_s.png","right":0,"name":"prgSpeed","left":0,"bottom":0},
@@ -485,6 +487,7 @@
                                 ]
                         },
                         {
+                            "x":45,
                             "type":"HScrollBar",
                             "searchKey":"HScrollBar,scbSpeed,scbSpeed",
                             "props":{"var":"scbSpeed","skin":"images/slider/hslider_s.png","right":0,"name":"scbSpeed","min":0,"max":1000,"left":0,"height":60,"bottom":0},
@@ -498,6 +501,7 @@
                                 ]
                         },
                         {
+                            "x":45,
                             "type":"Label",
                             "searchKey":"Label",
                             "props":{"text":"UI_Manual","fontSize":50,"color":"#ffffff","bottom":70},
@@ -511,6 +515,7 @@
                                 ]
                         },
                         {
+                            "x":45,
                             "type":"Label",
                             "searchKey":"Label",
                             "props":{"text":"UI_Auto","right":0,"fontSize":50,"font":"SimHei","color":"#ffffff","bottom":70},
@@ -528,6 +533,7 @@
             "$HIDDEN":false
         },
         {
+            "x":15,
             "type":"Box",
             "searchKey":"Box,boxParticle,boxParticle",
             "props":{"width":10,"var":"boxParticle","name":"boxParticle","height":10,"centerY":0,"centerX":0},

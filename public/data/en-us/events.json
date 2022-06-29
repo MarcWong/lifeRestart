@@ -838,42 +838,42 @@
     "830001": {
         "id": 830001,
         "event": "You are so ugly that you always get bullied in school.",
-        "include": "(CHR=0&CHR<2&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+        "include": "(CHR<2&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
     },
     "830002": {
         "id": 830002,
         "event": "You are still bullied in middle school.",
-        "include": "(CHR=0&CHR<2&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+        "include": "(CHR<2&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
     },
     "830003": {
         "id": 830003,
         "event": "You are not bullied badly in high school, but you are aware that you don’t get equal opportunities as other girls.",
-        "include": "(CHR=0&CHR<2&(US>0(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+        "include": "(CHR<2&(US>0(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
     },
     "830004": {
         "id": 830004,
         "event": "You decide to get plastic surgery and your surgery failed.",
-        "include": "(CHR=0&CHR<2&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+        "include": "(CHR<2&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
     },
     "830005": {
         "id": 830005,
         "event": "You spent all your money trying to recover your appearance but in vain.",
-        "include": "(CHR=0&CHR<2&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+        "include": "(CHR<2&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
     },
     "830006": {
         "id": 830006,
         "event": "You finally decide to make peace with your looks but because of your look and the money you have spent, you have built up a lot of depts.",
-        "include": "(CHR=0&CHR<2&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+        "include": "(CHR<2&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
     },
     "830007": {
         "id": 830007,
         "event": "You finally paid off your depts for plastic surgeries and recovery surgeries.",
-        "include": "(CHR=0&CHR<2&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+        "include": "(CHR<2&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
     },
     "830008": {
         "id": 830008,
         "event": "You get yourself a prostitute. This is the first time you realize that sex can be enjoyable.",
-        "include": "(CHR=0&CHR<2&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+        "include": "(CHR<2&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
     },
 
     "830201": {
@@ -1341,22 +1341,22 @@
     "850001": {
         "id": 850001,
         "event": "You shy away from people, but you love animals.",
-        "include": "(SPR=0&SPR<2&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+        "include": "(SPR<2&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
     },
     "850002": {
         "id": 850002,
         "event": "You are always bullied or isolated.",
-        "include": "(SPR=0&SPR<2&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+        "include": "(&SPR<2&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
     },
     "850003": {
         "id": 850003,
         "event": "You are afraid of establishing relationships and connections with people.",
-        "include": "(SPR=0&SPR<2&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+        "include": "(SPR<2&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
     },
     "850004": {
         "id": 850004,
         "event": "You find it hard to communicate with other people, and you rely on AI to communicate with other people.",
-        "include": "(SPR=0&SPR<2&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+        "include": "(SPR<2&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
     },
 
     "850201": {
@@ -3206,5 +3206,6 @@
         "event": "You get divorced, and you know you will never be able to see your son again.",
         "include": "AF>0&LBTQ>0"
     }
+
 
 }

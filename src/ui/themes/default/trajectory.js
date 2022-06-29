@@ -78,23 +78,29 @@ export default class Trajectory extends ui.view.DefaultTheme.TrajectoryUI {
         const types = core.PropertyTypes;
         var max = 0;
         var newProperty = propertyAllocate;
-        if (propertyAllocate[types.CHR] > 0)
+        if (propertyAllocate[types.CHR] > max)
             max = propertyAllocate[types.CHR]
-        if (propertyAllocate[types.INT] > 0)
+        if (propertyAllocate[types.INT] > max)
             max = propertyAllocate[types.INT]
-        if (propertyAllocate[types.STR] > 0)
+        if (propertyAllocate[types.STR] > max)
             max = propertyAllocate[types.STR]
-        if (propertyAllocate[types.MNY] > 0)
+        if (propertyAllocate[types.MNY] > max)
             max = propertyAllocate[types.MNY]
-        if (propertyAllocate[types.SPR] > 0)
+        if (propertyAllocate[types.SPR] > max)
             max = propertyAllocate[types.SPR]
         if (max > 7) {
-            newProperty[types.CHR] += 5;
-            newProperty[types.INT] += 5;
-            newProperty[types.STR] += 5;
-            newProperty[types.MNY] += 5;
-            newProperty[types.SPR] += 5;
+            if (newProperty[types.CHR] < 8)
+                newProperty[types.CHR] = newProperty[types.CHR] < 4 ? newProperty[types.CHR] + 5 : 8;
+            if (newProperty[types.INT] < 8)
+                newProperty[types.INT] = newProperty[types.INT] < 4 ? newProperty[types.INT] + 5 : 8;
+            if (newProperty[types.STR] < 8)
+                newProperty[types.STR] = newProperty[types.STR] < 4 ? newProperty[types.STR] + 5 : 8;
+            if (newProperty[types.MNY] < 8)
+                newProperty[types.MNY] = newProperty[types.MNY] < 4 ? newProperty[types.MNY] + 5 : 8;
+            if (newProperty[types.SPR] < 8)
+                newProperty[types.SPR] = newProperty[types.SPR] < 4 ? newProperty[types.SPR] + 5 : 8;
         }
+        console.log('max property:', max, newProperty)
         return newProperty
     }
 
