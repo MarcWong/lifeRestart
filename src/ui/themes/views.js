@@ -11,7 +11,8 @@ const pages = {
     SAVELOAD: 'SAVELOAD',
     MODE: 'MODE',
     REBORN: 'REBORN',
-    SEXORIENTATION: 'SEXORIENTATION'
+    SEXORIENTATION: 'SEXORIENTATION',
+    PROPERTYTEXT: 'PROPERTYTEXT',
 };
 
 const popups = {
@@ -32,7 +33,8 @@ const dark = {
         [pages.SAVELOAD]: 'saveload',
         [pages.MODE]: 'default/mode',
         [pages.REBORN]: 'default/reborn',
-        [pages.SEXORIENTATION]: 'default/sexorientation'
+        [pages.SEXORIENTATION]: 'default/sexorientation',
+        [pages.PROPERTYTEXT]: 'default/propertyText'
     },
     popups: {
         [popups.MESSAGE]: "message",
@@ -352,6 +354,11 @@ const dark = {
                 vars: {
                     btnContinue: 'btn_main',
                     boxReborn: 'text_main',
+                }
+            },
+            [pages.PROPERTYTEXT]: {
+                vars: {
+                    btnContinue: 'btn_main'
                 }
             },
             [pages.MODE]: {

@@ -20,6 +20,6 @@ export default class Talent extends ui.view.DefaultTheme.TalentUI {
                 selected.add(id)
         }
         const talents = [...selected].map(index => listTalents[index]);
-        $ui.switchView(UI.pages.PROPERTY, { talents, property: this.property, enableExtend: true });
+        $ui.switchView(UI.pages.PROPERTYTEXT, { talents, property: this.property, enableExtend: true });
     }
 }
