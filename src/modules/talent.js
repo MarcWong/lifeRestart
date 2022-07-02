@@ -115,7 +115,8 @@ class Talent {
             else talentList[grade].push({ grade, name, description, id });
         }
 
-        return new Array(this.#talentPullCount)
+        return talentList[0]
+        /*return new Array(this.#talentPullCount)
             .fill(1).map((v, i) => {
                 if (!i && include) return include;
                 let grade = 0;
@@ -124,6 +125,7 @@ class Talent {
                 const random = Math.floor(Math.random() * length) % length;
                 return talentList[grade].splice(random, 1)[0];
             });
+        */
     }
 
     random(count) {

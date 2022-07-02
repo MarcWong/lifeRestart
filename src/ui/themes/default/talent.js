@@ -13,9 +13,15 @@ export default class Talent extends ui.view.DefaultTheme.TalentUI {
 
     onClickDrawCard() {
         const listTalents = core.talentRandom();
+        console.log('listTalents', listTalents)
         var selected = new Set();
         while (selected.size < 3) {
             var id = Math.floor(Math.random() * 10);
+            // some talents cannot be drawn at the same time
+            if (selected.has(5) && id == 7)
+                continue
+            if (selected.has(7) && id == 5)
+                continue
             if (!selected.has(id))
                 selected.add(id)
         }

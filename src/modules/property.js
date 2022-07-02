@@ -8,7 +8,7 @@ class Property {
         AGE: "AGE", // 年龄 age AGE
         CHR: "CHR", // 颜值 charm CHR
         INT: "INT", // 智力 intelligence INT
-        STR: "STR", // 体质 strength STR
+        STR: "STR", // 情商 EQ STR
         MNY: "MNY", // 家境 money MNY
         SPR: "SPR", // 快乐 spirit SPR
         LIF: "LIF", // 生命 life LIFE
@@ -124,7 +124,7 @@ class Property {
             [this.TYPES.MNY]: 0,
             [this.TYPES.SPR]: 0,
 
-            [this.TYPES.LBTQ]: -1,
+            [this.TYPES.LBTQ]: 0,
             [this.TYPES.AFG]: 0,
             [this.TYPES.IND]: 0,
             [this.TYPES.EGP]: 0,
@@ -308,6 +308,7 @@ class Property {
             [this.TYPES.CHN]: this.get(this.TYPES.CHN),
             [this.TYPES.JPN]: this.get(this.TYPES.JPN),
             [this.TYPES.USA]: this.get(this.TYPES.USA),
+            [this.TYPES.LBTQ]: this.get(this.TYPES.LBTQ),
         });
     }
 
@@ -398,6 +399,7 @@ class Property {
     }
 
     getAgeData(age) {
+        console.log('age data', this.#ageData[age])
         return this.#system.clone(this.#ageData[age]);
     }
 

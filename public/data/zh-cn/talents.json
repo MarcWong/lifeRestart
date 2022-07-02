@@ -45,6 +45,7 @@
         "id": "90006",
         "name": "Helen of Troy",
         "description": "You are Helen of Troy.",
+        "condition": "AGE?[5]",
         "grade": 0,
         "effect": {
             "CHR": 13
@@ -64,6 +65,7 @@
         "id": "90008",
         "name": "You are beautiful",
         "description": "You are very beautiful.",
+        "condition": "AGE?[5]",
         "grade": 0,
         "effect": {
             "CHR": 3
@@ -83,6 +85,7 @@
     "90010": {
         "id": "90010",
         "name": "Queen's gambit",
+        "condition": "AGE?[5]",
         "description": "You are very intelligent.",
         "grade": 0,
         "effect": {
