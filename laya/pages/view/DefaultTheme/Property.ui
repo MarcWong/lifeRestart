@@ -1949,7 +1949,8 @@
                                 }]
                         }]
                 }],
-            "$LOCKED":true
+            "$LOCKED":true,
+            "$HIDDEN":true
         },
         {
             "x":15,
