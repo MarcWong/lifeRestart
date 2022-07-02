@@ -52,8 +52,9 @@ export default class Trajectory extends ui.view.DefaultTheme.TrajectoryUI {
 
         const newProperty = this.initProperty(propertyAllocate);
         this.#enableExtend = enableExtend;
-        this.boxParticle.visible = false;
-        this.boxSpeed.visible = true;
+
+        this.boxSpeed.visible = false;
+        this.scbSpeed.value = 1;
         this.btnSummary.visible = false;
         this.#trajectoryItems = [];
         this.#isEnd = false;
@@ -100,7 +101,6 @@ export default class Trajectory extends ui.view.DefaultTheme.TrajectoryUI {
             if (newProperty[types.SPR] < 8)
                 newProperty[types.SPR] = newProperty[types.SPR] < 4 ? newProperty[types.SPR] + 5 : 8;
         }
-        console.log('max property:', max, newProperty)
         return newProperty
     }
 
@@ -128,12 +128,12 @@ export default class Trajectory extends ui.view.DefaultTheme.TrajectoryUI {
                 this.panelTrajectory.scrollTo(0, this.panelTrajectory.contentHeight);
             });
         }
+        console.log(content)
+        if (JSON.stringify(content) == "{}")
+            return;
         this.panelTrajectory.scrollTo(0, this.panelTrajectory.contentHeight);
         this.renderTrajectory(age, content);
 
-        if(age >= 100) {
-            this.boxParticle.visible = true;
-        }
         this.updateProperty();
     }
 
@@ -144,7 +144,7 @@ export default class Trajectory extends ui.view.DefaultTheme.TrajectoryUI {
             ({type, description, grade, name, postEvent}) => {
                 switch(type) {
                     case 'TLT':
-                        return `Talent {${name}}: ${description}`;
+                        return `Lucky Charm {${name}}: ${description}`;
                     case 'EVT':
                         return description + (postEvent?`\n${postEvent}`:'');
                 }

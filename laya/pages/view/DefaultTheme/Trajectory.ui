@@ -1,7 +1,7 @@
 {
     "x":0,
     "type":"View",
-    "selectedBox":1,
+    "selectedBox":88,
     "selecteID":90,
     "searchKey":"View",
     "props":{"width":1125,"sceneColor":"#000000","runtime":"Laya.runtime.ViewBase","height":2436},
@@ -374,7 +374,7 @@
                                                     "x":90,
                                                     "type":"Label",
                                                     "searchKey":"Label,labAge",
-                                                    "props":{"y":0,"x":11,"text":"3000","name":"labAge","fontSize":50,"font":"SimHei","color":"#cfea5c","anchorX":0},
+                                                    "props":{"y":0,"x":-142,"text":"3000","name":"labAge","fontSize":48,"font":"Agency FB","color":"#cfea5c","anchorX":0,"align":"right"},
                                                     "nodeParent":91,
                                                     "label":"labAge",
                                                     "isOpen":true,
@@ -384,27 +384,13 @@
                                                     "compId":90,
                                                     "child":[
                                                         ]
-                                                },
-                                                {
-                                                    "x":90,
-                                                    "type":"Label",
-                                                    "searchKey":"Label",
-                                                    "props":{"x":2,"text":"：","fontSize":50,"font":"SimHei","color":"#cfea5c","anchorX":0},
-                                                    "nodeParent":91,
-                                                    "label":"Label",
-                                                    "isDirectory":false,
-                                                    "isAniNode":true,
-                                                    "hasChild":false,
-                                                    "compId":92,
-                                                    "child":[
-                                                        ]
                                                 }]
                                         },
                                         {
                                             "x":75,
                                             "type":"Label",
                                             "searchKey":"Label,labContent",
-                                            "props":{"y":25,"wordWrap":true,"text":"你的父母开始辅导你数学和英语，智力+1","right":0,"name":"labContent","left":220,"leading":25,"fontSize":50,"font":"SimHei","color":"#ffffff"},
+                                            "props":{"y":25,"wordWrap":true,"text":"你的父母开始辅导你数学和英语，智力+1","right":0,"name":"labContent","left":220,"leading":25,"fontSize":50,"font":"Agency FB","color":"#ffffff"},
                                             "nodeParent":88,
                                             "label":"labContent",
                                             "isDirectory":false,
@@ -532,34 +518,6 @@
                 }],
             "$LOCKED":true,
             "$HIDDEN":false
-        },
-        {
-            "x":15,
-            "type":"Box",
-            "searchKey":"Box,boxParticle,boxParticle",
-            "props":{"width":10,"var":"boxParticle","name":"boxParticle","height":10,"centerY":0,"centerX":0},
-            "nodeParent":1,
-            "label":"boxParticle",
-            "isOpen":false,
-            "isDirectory":true,
-            "isAniNode":true,
-            "hasChild":true,
-            "compId":153,
-            "child":[
-                {
-                    "type":"Particle2D",
-                    "source":"particle/fly.part",
-                    "searchKey":"Particle2D",
-                    "props":{"y":5,"x":5,"url":"particle/fly.part","autoPlay":true},
-                    "nodeParent":153,
-                    "label":"Particle2D",
-                    "isDirectory":false,
-                    "isAniNode":true,
-                    "hasChild":false,
-                    "compId":154,
-                    "child":[
-                        ]
-                }]
         }],
     "animations":[
         {

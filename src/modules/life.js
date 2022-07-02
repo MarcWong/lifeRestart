@@ -138,9 +138,12 @@ class Life {
         console.log("age", age);
         console.log("event", event);
         console.log("selected event", this.random(event));
-        const eventContent = this.doEvent(this.random(event));
 
         const isEnd = this.#property.isEnd();
+        if (!this.random(event))
+            return { age, content:{}, isEnd };
+
+        const eventContent = this.doEvent(this.random(event));
 
         const content = [talentContent, eventContent].flat();
         //this.#achievement.achieve(this.AchievementOpportunity.TRAJECTORY);
