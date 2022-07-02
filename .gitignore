@@ -111,3 +111,4 @@ utils/xlsxTransform-*
 __localStorage.json
 
 .DS_Store
+*.tar

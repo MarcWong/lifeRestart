@@ -54,7 +54,7 @@ export default class Trajectory extends ui.view.DefaultTheme.TrajectoryUI {
         this.#enableExtend = enableExtend;
 
         this.boxSpeed.visible = false;
-        this.scbSpeed.value = 1;
+        this.scbSpeed.value = this.scbSpeed.max * 0.8; // init speed
         this.btnSummary.visible = false;
         this.#trajectoryItems = [];
         this.#isEnd = false;
@@ -128,7 +128,7 @@ export default class Trajectory extends ui.view.DefaultTheme.TrajectoryUI {
                 this.panelTrajectory.scrollTo(0, this.panelTrajectory.contentHeight);
             });
         }
-        console.log(content)
+
         if (JSON.stringify(content) == "{}")
             return;
         this.panelTrajectory.scrollTo(0, this.panelTrajectory.contentHeight);
