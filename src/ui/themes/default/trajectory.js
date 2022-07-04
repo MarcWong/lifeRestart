@@ -18,6 +18,110 @@ export default class Trajectory extends ui.view.DefaultTheme.TrajectoryUI {
         this.scbSpeed.on(Laya.Event.MOUSE_UP, this, () => this.onNext());
     }
 
+    AGE = {
+        0: 0,
+        1: 1,
+        2: 2,
+        3: 2,
+        4: 3,
+        5: 3,
+        6: 4,
+        7: 5,
+        8: 5,
+        9: 6,
+        10: 6,
+        11: 7,
+        12: 8,
+        13: 9,
+        14: 10,
+        15: 10,
+        16: 11,
+        17: 11,
+        18: 12,
+        19: 12,
+        20: 13,
+        21: 13,
+        22: 14,
+        23: 15,
+        24: 15,
+        25: 16,
+        26: 17,
+        27: 17,
+        28: 18,
+        29: 18,
+        30: 19,
+        31: 19,
+        32: 20,
+        33: 20,
+        34: 21,
+        35: 21,
+        36: 22,
+        37: 23,
+        38: 23,
+        39: 24,
+        40: 25,
+        41: 25,
+        42: 26,
+        43: 26,
+        44: 27,
+        45: 27,
+        46: 28,
+        47: 28,
+        48: 29,
+        49: 29,
+        50: 30,
+        51: 31,
+        52: 31,
+        53: 32,
+        54: 33,
+        55: 34,
+        56: 34,
+        57: 35,
+        58: 36,
+        59: 37,
+        60: 37,
+        61: 38,
+        62: 39,
+        63: 40,
+        64: 41,
+        65: 41,
+        66: 42,
+        67: 42,
+        68: 43,
+        69: 43,
+        70: 44,
+        71: 44,
+        72: 45,
+        73: 46,
+        74: 47,
+        75: 48,
+        76: 48,
+        77: 49,
+        78: 51,
+        79: 53,
+        80: 54,
+        81: 54,
+        82: 55,
+        83: 56,
+        84: 59,
+        85: 60,
+        86: 61,
+        87: 62,
+        88: 63,
+        89: 64,
+        90: 65,
+        91: 66,
+        92: 68,
+        93: 70,
+        94: 77,
+        95: 78,
+        96: 80,
+        97: 89,
+        98: 97,
+        102: 102,
+    }
+
+
     #speed;
     #auto;
 
@@ -141,8 +245,9 @@ export default class Trajectory extends ui.view.DefaultTheme.TrajectoryUI {
     }
 
     renderTrajectory(age, content) {
+        const realAge = this.AGE[age];
         const item = this.#createTrajectoryItem();
-        item.labAge.text = (2022 + age) + '\n Age: ' + age;
+        item.labAge.text = (2022 + realAge) + '\n Age: ' + realAge;
         item.labContent.text = content.map(
             ({type, description, grade, name, postEvent}) => {
                 switch(type) {
@@ -157,7 +262,7 @@ export default class Trajectory extends ui.view.DefaultTheme.TrajectoryUI {
         this.vboxTrajectory.addChild(item);
         this.#trajectoryItems.push(item);
         item.y = this.vboxTrajectory.height;
-        this.#printText += "Year " + (2022 + age) + ", age: " + age; "\n" + item.labContent.text + "\n";
+        this.#printText += "Year " + (2022 + realAge) + ", age: " + realAge; "\n" + item.labContent.text + "\n";
     }
 
     onSummary() {

@@ -88,6 +88,7 @@ class Property {
     }
 
     initial({age, total}) {
+        console.log('initial properties age: ', age)
         this.#ageData = age;
         for(const a in age) {
             let { event, talent } = age[a];
