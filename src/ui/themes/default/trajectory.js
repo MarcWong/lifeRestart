@@ -46,9 +46,11 @@ export default class Trajectory extends ui.view.DefaultTheme.TrajectoryUI {
     #trajectoryItems;
     #talents;
     #enableExtend;
+    #printText;
 
     init({propertyAllocate, talents, enableExtend}) {
         console.log('trajectory init', propertyAllocate)
+        this.#printText = "";
 
         const newProperty = this.initProperty(propertyAllocate);
         this.#enableExtend = enableExtend;
@@ -60,7 +62,6 @@ export default class Trajectory extends ui.view.DefaultTheme.TrajectoryUI {
         this.#isEnd = false;
         this.#talents = talents;
         core.start(newProperty);
-        console.log(core.propertys)
         this.updateProperty();
         this.onNext();
     }
@@ -73,6 +74,7 @@ export default class Trajectory extends ui.view.DefaultTheme.TrajectoryUI {
             item.destroy();
         });
         this.#trajectoryItems = null;
+        this.#printText = "";
     }
 
     initProperty(propertyAllocate) {
@@ -89,6 +91,7 @@ export default class Trajectory extends ui.view.DefaultTheme.TrajectoryUI {
             max = propertyAllocate[types.MNY]
         if (propertyAllocate[types.SPR] > max)
             max = propertyAllocate[types.SPR]
+        // if any property > 8, add 5 to all other properties
         if (max > 7) {
             if (newProperty[types.CHR] < 8)
                 newProperty[types.CHR] = newProperty[types.CHR] < 4 ? newProperty[types.CHR] + 5 : 8;
@@ -154,11 +157,13 @@ export default class Trajectory extends ui.view.DefaultTheme.TrajectoryUI {
         this.vboxTrajectory.addChild(item);
         this.#trajectoryItems.push(item);
         item.y = this.vboxTrajectory.height;
+        this.#printText += "Year " + (2022 + age) + ", age: " + age; "\n" + item.labContent.text + "\n";
     }
 
     onSummary() {
+        // trajectoryItems: this.#trajectoryItems
         const talents = this.#talents;
-        $ui.switchView(UI.pages.SUMMARY, {talents, enableExtend: this.#enableExtend});
+        $ui.switchView(UI.pages.SUMMARY, { talents, printText: this.#printText, enableExtend: this.#enableExtend});
     }
 
     get speed() {

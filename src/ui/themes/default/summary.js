@@ -4,10 +4,12 @@ export default class Summary extends ui.view.DefaultTheme.SummaryUI {
         this.listSummary.renderHandler = Laya.Handler.create(this, this.renderSummary, null, false);
         this.listSelectedTalents.renderHandler = Laya.Handler.create(this, this.renderTalent, null, false);
         this.btnAgain.on(Laya.Event.CLICK, this, this.onAgain);
+        this.btnPrint.on(Laya.Event.CLICK, this, this.onPrint);
     }
 
     #selectedTalent;
     #enableExtend;
+    #printText;
 
     onAgain() {
         core.talentExtend(this.#selectedTalent);
@@ -15,9 +17,23 @@ export default class Summary extends ui.view.DefaultTheme.SummaryUI {
         $ui.switchView(UI.pages.MAIN);
     }
 
-    init({talents, enableExtend}) {
+    onPrint() {
+        this.downloadTxt(this.#printText, "print.txt")
+    }
+
+
+    downloadTxt(text, fileName) {
+        let element = document.createElement('a')
+        element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(text))
+        element.setAttribute('download', fileName)
+        element.style.display = 'none'
+        element.click()
+    }
+
+    init({ talents, printText, enableExtend}) {
         const {summary, lastExtendTalent} = core;
         this.#enableExtend = enableExtend;
+        this.#printText = printText;
 
         this.listSummary.array = [
             [core.PropertyTypes.HCHR, $lang.UI_Property_Charm],

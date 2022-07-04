@@ -440,6 +440,7 @@ const dark = {
             [pages.SUMMARY]: {
                 vars: {
                     btnAgain: 'btn_main',
+                    btnPrint: 'btn_main',
                     title: 'title',
                 },
                 names: {
