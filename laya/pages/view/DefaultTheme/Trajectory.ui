@@ -1,12 +1,12 @@
 {
     "x":0,
     "type":"View",
-    "selectedBox":158,
-    "selecteID":171,
+    "selectedBox":86,
+    "selecteID":179,
     "searchKey":"View",
     "props":{"width":1125,"sceneColor":"#000000","runtime":"Laya.runtime.ViewBase","height":2436},
     "nodeParent":-1,
-    "maxID":175,
+    "maxID":180,
     "label":"View",
     "isOpen":true,
     "isDirectory":true,
@@ -87,10 +87,25 @@
                                             "props":{"var":"labCharm","text":"10","name":"label","fontSize":55,"font":"SimHei","color":"#55fffe","centerY":0,"centerX":0,"anchorY":0.5,"anchorX":0.5},
                                             "nodeParent":41,
                                             "label":"label",
+                                            "isOpen":true,
                                             "isDirectory":false,
                                             "isAniNode":true,
                                             "hasChild":false,
                                             "compId":40,
+                                            "child":[
+                                                ]
+                                        },
+                                        {
+                                            "x":75,
+                                            "type":"Label",
+                                            "searchKey":"Label,label,labCharmAdd",
+                                            "props":{"y":31,"x":191,"visible":false,"var":"labCharmAdd","text":"10","name":"label","fontSize":55,"font":"SimHei","color":"#55fffe","centerY":0,"centerX":80,"anchorY":0.5,"anchorX":0.5},
+                                            "nodeParent":41,
+                                            "label":"label",
+                                            "isDirectory":false,
+                                            "isAniNode":true,
+                                            "hasChild":false,
+                                            "compId":175,
                                             "child":[
                                                 ]
                                         }]
@@ -144,10 +159,25 @@
                                             "props":{"var":"labIntelligence","text":"10","name":"label","fontSize":55,"font":"SimHei","color":"#55fffe","centerY":0,"centerX":0,"anchorY":0.5,"anchorX":0.5},
                                             "nodeParent":55,
                                             "label":"label",
+                                            "isOpen":true,
                                             "isDirectory":false,
                                             "isAniNode":true,
                                             "hasChild":false,
                                             "compId":56,
+                                            "child":[
+                                                ]
+                                        },
+                                        {
+                                            "x":75,
+                                            "type":"Label",
+                                            "searchKey":"Label,label,labIntelligenceAdd",
+                                            "props":{"visible":false,"var":"labIntelligenceAdd","text":"10","name":"label","fontSize":55,"font":"SimHei","color":"#55fffe","centerY":2,"centerX":70,"anchorY":0.5,"anchorX":0.5},
+                                            "nodeParent":55,
+                                            "label":"label",
+                                            "isDirectory":false,
+                                            "isAniNode":true,
+                                            "hasChild":false,
+                                            "compId":176,
                                             "child":[
                                                 ]
                                         }]
@@ -201,10 +231,25 @@
                                             "props":{"var":"labStrength","text":"10","name":"label","fontSize":55,"font":"SimHei","color":"#55fffe","centerY":0,"centerX":0,"anchorY":0.5,"anchorX":0.5},
                                             "nodeParent":79,
                                             "label":"label",
+                                            "isOpen":true,
                                             "isDirectory":false,
                                             "isAniNode":true,
                                             "hasChild":false,
                                             "compId":80,
+                                            "child":[
+                                                ]
+                                        },
+                                        {
+                                            "x":75,
+                                            "type":"Label",
+                                            "searchKey":"Label,label,labStrengthAdd",
+                                            "props":{"visible":false,"var":"labStrengthAdd","text":"10","name":"label","fontSize":55,"font":"SimHei","color":"#55fffe","centerY":0,"centerX":65,"anchorY":0.5,"anchorX":0.5},
+                                            "nodeParent":79,
+                                            "label":"label",
+                                            "isDirectory":false,
+                                            "isAniNode":true,
+                                            "hasChild":false,
+                                            "compId":177,
                                             "child":[
                                                 ]
                                         }]
@@ -257,10 +302,25 @@
                                             "props":{"var":"labMoney","text":"10","name":"label","fontSize":55,"font":"SimHei","color":"#55fffe","centerY":0,"centerX":0,"anchorY":0.5,"anchorX":0.5},
                                             "nodeParent":48,
                                             "label":"label",
+                                            "isOpen":true,
                                             "isDirectory":false,
                                             "isAniNode":true,
                                             "hasChild":false,
                                             "compId":49,
+                                            "child":[
+                                                ]
+                                        },
+                                        {
+                                            "x":75,
+                                            "type":"Label",
+                                            "searchKey":"Label,label,labMoneyAdd",
+                                            "props":{"visible":false,"var":"labMoneyAdd","text":"10","name":"label","fontSize":55,"font":"SimHei","color":"#55fffe","centerY":0,"centerX":82,"anchorY":0.5,"anchorX":0.5},
+                                            "nodeParent":48,
+                                            "label":"label",
+                                            "isDirectory":false,
+                                            "isAniNode":true,
+                                            "hasChild":false,
+                                            "compId":178,
                                             "child":[
                                                 ]
                                         }]
@@ -313,10 +373,25 @@
                                             "props":{"var":"labSpirit","text":"10","name":"label","fontSize":55,"font":"SimHei","color":"#55fffe","centerY":0,"centerX":0,"anchorY":0.5,"anchorX":0.5},
                                             "nodeParent":86,
                                             "label":"label",
+                                            "isOpen":true,
                                             "isDirectory":false,
                                             "isAniNode":true,
                                             "hasChild":false,
                                             "compId":87,
+                                            "child":[
+                                                ]
+                                        },
+                                        {
+                                            "x":75,
+                                            "type":"Label",
+                                            "searchKey":"Label,label,labSpiritAdd",
+                                            "props":{"visible":false,"var":"labSpiritAdd","text":"10","name":"label","fontSize":55,"font":"SimHei","color":"#55fffe","centerY":2,"centerX":65,"anchorY":0.5,"anchorX":0.5},
+                                            "nodeParent":86,
+                                            "label":"label",
+                                            "isDirectory":false,
+                                            "isAniNode":true,
+                                            "hasChild":false,
+                                            "compId":179,
                                             "child":[
                                                 ]
                                         }]

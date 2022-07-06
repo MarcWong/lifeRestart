@@ -184,6 +184,7 @@ class Life {
                 name,
                 grade,
                 description,
+                effect
             })
             if(!effect) continue;
             this.#property.effect(effect);
@@ -200,6 +201,7 @@ class Life {
             description,
             postEvent,
             grade,
+            effect
         }
         if(next) return [content, this.doEvent(next)].flat();
         return [content];

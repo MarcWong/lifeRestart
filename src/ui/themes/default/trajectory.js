@@ -151,11 +151,19 @@ export default class Trajectory extends ui.view.DefaultTheme.TrajectoryUI {
     #talents;
     #enableExtend;
     #printText;
+    #effects;
 
     init({ propertyAllocate, talents, enableExtend }) {
         const types = core.PropertyTypes;
         console.log('trajectory init', propertyAllocate)
         this.#printText = "";
+        this.#effects = {
+            "CHR": 0,
+            "INT": 0,
+            "STR": 0,
+            "MNY": 0,
+            "SPR": 0
+        }
         const newProperty = this.initProperty(propertyAllocate);
         if (newProperty[types.AFG] == 1)
             this.labCountry.text = "Afganistan"
@@ -251,11 +259,11 @@ export default class Trajectory extends ui.view.DefaultTheme.TrajectoryUI {
         const types = core.PropertyTypes;
         const propertys = core.propertys;
 
-        this.labCharm.text = propertys[types.CHR];
-        this.labIntelligence.text = propertys[types.INT];
-        this.labStrength.text = propertys[types.STR];
-        this.labMoney.text = propertys[types.MNY];
-        this.labSpirit.text = propertys[types.SPR];
+        this.labCharm.text = propertys[types.CHR] - this.#effects["CHR"];
+        this.labIntelligence.text = propertys[types.INT] - this.#effects["INT"];
+        this.labStrength.text = propertys[types.STR] - this.#effects["STR"];
+        this.labMoney.text = propertys[types.MNY] - this.#effects["MNY"];
+        this.labSpirit.text = propertys[types.SPR] - this.#effects["SPR"];
     }
 
     onNext() {
@@ -291,7 +299,34 @@ export default class Trajectory extends ui.view.DefaultTheme.TrajectoryUI {
         const item = this.#createTrajectoryItem();
         item.labAge.text = (2022 + realAge) + '\n Age: ' + realAge;
         item.labContent.text = content.map(
-            ({type, description, grade, name, postEvent}) => {
+            ({ type, description, effect, name, postEvent}) => {
+                if (effect) {
+                    if (effect.CHR) {
+                        this.#effects["CHR"] = effect.CHR;
+                        this.labCharmAdd.visible = true;
+                        this.labCharmAdd.text = effect.CHR > 0 ? '+' + effect.CHR : effect.CHR;
+                    }
+                    if (effect.INT) {
+                        this.#effects["INT"] = effect.INT;
+                        this.labIntelligenceAdd.visible = true
+                        this.labIntelligenceAdd.text = effect.INT > 0 ? '+' + effect.INT : effect.INT;
+                    }
+                    if (effect.STR) {
+                        this.#effects["STR"] = effect.STR;
+                        this.labStrengthAdd.visible = true
+                        this.labStrengthAdd.text = effect.STR > 0 ? '+' + effect.STR : effect.STR;
+                    }
+                    if (effect.MNY) {
+                        this.#effects["MNY"] = effect.MNY;
+                        this.labMoneyAdd.visible = true
+                        this.labMoneyAdd.text = effect.MNY > 0 ? '+' + effect.MNY : effect.MNY;
+                    }
+                    if (effect.SPR) {
+                        this.#effects["SPR"] = effect.SPR;
+                        this.labSpiritAdd.visible = true
+                        this.labSpiritAdd.text = effect.SPR > 0 ? '+' + effect.SPR : effect.SPR;
+                    }
+                }
                 switch(type) {
                     case 'EVT':
                         return description + (postEvent ? `\n${postEvent}` : '');

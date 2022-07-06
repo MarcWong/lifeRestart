@@ -51,7 +51,7 @@
         "condition": "AGE?[8]",
         "grade": 0,
         "effect": {
-            "CHR": 13
+            "CHR": 10
         }
     },
     "90007": {
