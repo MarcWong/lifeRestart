@@ -234,17 +234,17 @@ export default class Trajectory extends ui.view.DefaultTheme.TrajectoryUI {
 
         // Printing text
         if (newProperty[types.AFG] == 1)
-            this.#printText += "Coundtry: Afganistan\n"
+            this.#printText += "Country: Afganistan\n"
         else if (newProperty[types.CHN] == 1)
-            this.#printText += "Coundtry: China\n"
+            this.#printText += "Country: China\n"
         else if (newProperty[types.EGP] == 1)
-            this.#printText += "Coundtry: Egypt\n"
+            this.#printText += "Country: Egypt\n"
         else if (newProperty[types.IND] == 1)
-            this.#printText += "Coundtry: India\n"
+            this.#printText += "Country: India\n"
         else if (newProperty[types.JPN] == 1)
-            this.#printText += "Coundtry: Japan\n"
+            this.#printText += "Country: Japan\n"
         else if (newProperty[types.USA] == 1)
-            this.#printText += "Coundtry: USA\n"
+            this.#printText += "Country: USA\n"
         this.#printText += "Sex orientation: "
         this.#printText += (newProperty[types.LBTQ] == 1 ? "LBTQ" : "Straight") + "\n"
         this.#printText += "Appearance: " + newProperty[types.CHR] + "\n"
