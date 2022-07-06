@@ -258,11 +258,13 @@ export default class Trajectory extends ui.view.DefaultTheme.TrajectoryUI {
                 }
             }
         ).join('\n');
+
         item.grade(content[content.length - 1].grade);
+
         this.vboxTrajectory.addChild(item);
         this.#trajectoryItems.push(item);
         item.y = this.vboxTrajectory.height;
-        this.#printText += "Year " + (2022 + realAge) + ", age: " + realAge; "\n" + item.labContent.text + "\n";
+        this.#printText += "Year " + (2022 + realAge) + ", age: " + realAge + "\n" + item.labContent.text + "\n";
     }
 
     onSummary() {

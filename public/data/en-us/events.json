@@ -7,7 +7,22 @@
         },
         "NoRandom": 1
     },
-
+    "10001": {
+        "id": 10001,
+        "event": "You become seriously ill.",
+        "include": "STR<2",
+        "branch": [
+            "STR<2:10000"
+        ]
+    },
+    "10002": {
+        "id": 10002,
+        "event": "You become seriously ill. You cannot afford the hospital.",
+        "include": "MNY<3",
+        "branch": [
+            "MNY<3:10000"
+        ]
+    },
     "810001": {
         "id": 810001,
         "event": "You are born as a girl. You have congenital anomalies.",
@@ -60,12 +75,12 @@
     },
     "810303": {
         "id": 810303,
-        "event": "You enter the only local primary school in your area. You suffer from bad grades. Your parents work in another city far from you and they only come home once a year.",
+        "event": "You enter the only local primary school in your area. Your parents work in another city far from you and they only come home once a year.",
         "include": "(MNY>2&MNY<4&(US>0|CH>0|EGY>0|JAP>0))"
     },
     "810304": {
         "id": 810304,
-        "event": "You are bullied because of your low-income family and your low grades. However, your parents have no time to stand up for you.",
+        "event": "You are bullied because of your low-income family. However, your parents have no time to stand up for you.",
         "include": "(MNY>2&MNY<4&(US>0|CH>0|EGY>0|JAP>0))"
     },
     "810305": {
@@ -114,12 +129,12 @@
     },
     "810403": {
         "id": 810403,
-        "event": "You work hard to get good grades, but you are always below the average.",
+        "event": "You work hard to get good grades.",
         "include": "(MNY>3&MNY<5&(US>0|CH>0|EGY>0|JAP>0))"
     },
     "810404": {
         "id": 810404,
-        "event": "You are bullied at school because of your low-income family and your low grades. However, your parents have no time to stand up for you.",
+        "event": "You are bullied at school because of your low-income family. However, your parents have no time to stand up for you.",
         "include": "(MNY>3&MNY<5&(US>0|CH>0|EGY>0|JAP>0))"
     },
     "810405": {
@@ -829,9 +844,8 @@
     "821213": {
         "id": 821213,
         "event": "Your vision, hearing and sense of taste and smell are declining. You also start to have heart problems.",
-        "include": "(STR>11&STR<14&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))",
         "branch": [
-            "STR>11&STR<14:10000"
+            "STR<14:10000"
         ]
     },
 

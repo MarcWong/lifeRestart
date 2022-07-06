@@ -51,7 +51,6 @@ class Life {
             i18nLoad('character'),
             commonLoad('specialthanks'),
         ]);
-        console.log('initial i18nLoad age: ', i18nLoad, age)
         this.#specialThanks = specialThanks;
 
         const total = {

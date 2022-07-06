@@ -88,7 +88,6 @@ class Property {
     }
 
     initial({age, total}) {
-        console.log('initial properties age: ', age)
         this.#ageData = age;
         for(const a in age) {
             let { event, talent } = age[a];
@@ -138,19 +137,19 @@ class Property {
             [this.TYPES.TLT]: [],
             [this.TYPES.EVT]: [],
 
-            [this.TYPES.LAGE]: 120,
-            [this.TYPES.LCHR]: 13,
-            [this.TYPES.LINT]: 13,
-            [this.TYPES.LSTR]: 13,
-            [this.TYPES.LSPR]: 13,
-            [this.TYPES.LMNY]: 13,
+            [this.TYPES.LAGE]: 0,
+            [this.TYPES.LCHR]: -13,
+            [this.TYPES.LINT]: -13,
+            [this.TYPES.LSTR]: -13,
+            [this.TYPES.LSPR]: -13,
+            [this.TYPES.LMNY]: -13,
 
-            [this.TYPES.HAGE]: -Infinity,
-            [this.TYPES.HCHR]: -Infinity,
-            [this.TYPES.HINT]: -Infinity,
-            [this.TYPES.HSTR]: -Infinity,
-            [this.TYPES.HMNY]: -Infinity,
-            [this.TYPES.HSPR]: -Infinity,
+            [this.TYPES.HAGE]: 120,
+            [this.TYPES.HCHR]: 13,
+            [this.TYPES.HINT]: 13,
+            [this.TYPES.HSTR]: 13,
+            [this.TYPES.HMNY]: 13,
+            [this.TYPES.HSPR]: 13,
         };
         for(const key in data)
             this.change(key, data[key]);
