@@ -15,7 +15,7 @@ export default class Trajectory extends ui.view.DefaultTheme.TrajectoryUI {
 
         this.panelTrajectory.vScrollBar.elasticDistance = 150;
         this.scbSpeed.on(Laya.Event.CHANGE, this, () => this.speed = this.scbSpeed.value);
-        // this.scbSpeed.on(Laya.Event.MOUSE_UP, this, () => this.onNext());
+        this.scbSpeed.on(Laya.Event.MOUSE_UP, this, () => this.onNext());
     }
 
     AGE = {
@@ -255,6 +255,7 @@ export default class Trajectory extends ui.view.DefaultTheme.TrajectoryUI {
             Laya.timer.frameOnce(1,this,()=>{
                 this.panelTrajectory.scrollTo(0, this.panelTrajectory.contentHeight);
             });
+            return
         }
 
         if (JSON.stringify(content) == "{}")
