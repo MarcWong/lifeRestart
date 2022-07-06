@@ -152,11 +152,26 @@ export default class Trajectory extends ui.view.DefaultTheme.TrajectoryUI {
     #enableExtend;
     #printText;
 
-    init({propertyAllocate, talents, enableExtend}) {
+    init({ propertyAllocate, talents, enableExtend }) {
+        const types = core.PropertyTypes;
         console.log('trajectory init', propertyAllocate)
         this.#printText = "";
-
         const newProperty = this.initProperty(propertyAllocate);
+        if (newProperty[types.AFG] == 1)
+            this.labCountry.text = "Afganistan"
+        else if (newProperty[types.CHN] == 1)
+            this.labCountry.text = "China"
+        else if (newProperty[types.EGP] == 1)
+            this.labCountry.text = "Egypt"
+        else if (newProperty[types.IND] == 1)
+            this.labCountry.text = "India"
+        else if (newProperty[types.JPN] == 1)
+            this.labCountry.text = "Japan"
+        else if (newProperty[types.USA] == 1)
+            this.labCountry.text = "USA"
+
+        this.labSex.text = newProperty[types.LBTQ] == 1 ? "LBTQ": "Straight"
+
         this.#enableExtend = enableExtend;
 
         this.boxSpeed.visible = false;
@@ -285,7 +300,6 @@ export default class Trajectory extends ui.view.DefaultTheme.TrajectoryUI {
                 }
             }
         ).join('\n');
-        console.log("text:", item.labContent.text)
         this.#printText += "Year " + (2022 + realAge) + ", age: " + realAge + "\n" + item.labContent.text + "\n";
 
         item.grade(content[content.length - 1].grade);

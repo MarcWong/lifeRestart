@@ -132,18 +132,21 @@ class Life {
     }
 
     next() {
+        if (this.#property.isEnd())
+            return { age: this.#property.AGE, content: {}, isEnd: this.#property.isEnd()};
+
         const {age, event, talent} = this.#property.ageNext();
 
         const talentContent = this.doTalent(talent);
-        console.log("age", age);
+        const selectedEvent = this.random(event);
+        console.log("age, selected event ", age, selectedEvent);
         console.log("event", event);
-        console.log("selected event", this.random(event));
 
         const isEnd = this.#property.isEnd();
-        if (!this.random(event))
+        if (!selectedEvent)
             return { age, content:{}, isEnd };
 
-        const eventContent = this.doEvent(this.random(event));
+        const eventContent = this.doEvent(selectedEvent);
 
         const content = [talentContent, eventContent].flat();
         //this.#achievement.achieve(this.AchievementOpportunity.TRAJECTORY);
@@ -313,7 +316,6 @@ class Life {
     get specialThanks() { return this.#specialThanks; }
 
     addNationality(NAT) {
-        console.log(NAT)
         this.#property.set(NAT, 1);
     }
 }
