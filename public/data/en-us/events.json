@@ -378,52 +378,52 @@
     "811201": {
         "id": 811201,
         "event": "You are a girl. You are born into the richest family of the country.",
-        "include": "(MNY>11&MNY<14&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+        "include": "(MNY>11&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
     },
     "811202": {
         "id": 811202,
         "event": "You start in-home tutoring with the most expensive tutor.",
-        "include": "(MNY>11&MNY<14&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+        "include": "(MNY>11&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
     },
     "811203": {
         "id": 811203,
         "event": "You become the most popular kid in the private international school.",
-        "include": "(MNY>11&MNY<14&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+        "include": "(MNY>11&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
     },
     "811204": {
         "id": 811204,
         "event": "You beat another girl in an important national contest because your grandfather funded the contest.",
-        "include": "(MNY>11&MNY<14&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+        "include": "(MNY>11&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
     },
     "811205": {
         "id": 811205,
         "event": "You graduate from a world top 10 college, but you want to prove yourself.",
-        "include": "(MNY>11&MNY<14&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+        "include": "(MNY>11&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
     },
     "811206": {
         "id": 811206,
         "event": "Your own business runs smoothly with the secret help from your family.",
-        "include": "(MNY>11&MNY<14&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+        "include": "(MNY>11&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
     },
     "811207": {
         "id": 811207,
         "event": "Your family bankrupted, the government confiscate your business and that’s when you find out that you have never been independent.",
-        "include": "(MNY>11&MNY<14&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+        "include": "(MNY>11&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
     },
     "811208": {
         "id": 811208,
         "event": "You can only do simple jobs to earn a living, but you must watch people much younger than you get promoted easily.",
-        "include": "(MNY>11&MNY<14&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+        "include": "(MNY>11&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
     },
     "811209": {
         "id": 811209,
         "event": "You cannot retire and you must work hard to earn a living.",
-        "include": "(MNY>11&MNY<14&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+        "include": "(MNY>11&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
     },
     "811210": {
         "id": 811210,
         "event": "You had to retire because no one wants you anymore. You live in a cheap shabby apartment offered by the government.",
-        "include": "(MNY>11&MNY<14&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+        "include": "(MNY>11&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
     },
 
     "820001": {
@@ -789,63 +789,63 @@
     "821202": {
         "id": 821202,
         "event": "You start to practice competitive sports.",
-        "include": "(STR>11&STR<14&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+        "include": "(STR>11&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
     },
     "821203": {
         "id": 821203,
         "event": "You get a national youth champion award.",
-        "include": "(STR>11&STR<14&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+        "include": "(STR>11&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
     },
     "821204": {
         "id": 821204,
         "event": "You suffer from your first period.",
-        "include": "(STR>11&STR<14&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+        "include": "(STR>11&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
     },
     "821205": {
         "id": 821205,
         "event": "You finished your HPV vaccinations, and you start to have wrinkles.",
-        "include": "(STR>11&STR<14&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+        "include": "(STR>11&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
     },
     "821206": {
         "id": 821206,
         "event": "Everyone thinks that you are 10 years younger than you actually are.",
-        "include": "(STR>11&STR<14&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+        "include": "(STR>11&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
     },
     "821207": {
         "id": 821207,
         "event": "You become a yoga master.",
-        "include": "(STR>11&STR<14&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+        "include": "(STR>11&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
     },
     "821208": {
         "id": 821208,
         "event": "You stop having periods.",
-        "include": "(STR>11&STR<14&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+        "include": "(STR>11&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
     },
     "821209": {
         "id": 821209,
         "event": "Your hair starts to turn grey.",
-        "include": "(STR>11&STR<14&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+        "include": "(STR>11&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
     },
     "821210": {
         "id": 821210,
         "event": "Your vision and hearing start to get blurry.",
-        "include": "(STR>11&STR<14&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+        "include": "(STR>11&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
     },
     "821211": {
         "id": 821211,
         "event": "When other people suffer from diseases you are still climbing high altitude mountains.",
-        "include": "(STR>11&STR<14&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+        "include": "(STR>11&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
     },
     "821212": {
         "id": 821212,
         "event": "You still go to the gym every other day.",
-        "include": "(STR>11&STR<14&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+        "include": "(STR>11&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
     },
     "821213": {
         "id": 821213,
         "event": "Your vision, hearing and sense of taste and smell are declining. You also start to have heart problems.",
         "branch": [
-            "STR<14:10000"
+            "STR<100:10000"
         ]
     },
 
@@ -1057,42 +1057,42 @@
     "831101": {
         "id": 831101,
         "event": "You are so exceptionally pretty that you become a child star.",
-        "include": "(CHR>10&CHR<14&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+        "include": "(CHR>10&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
     },
     "831102": {
         "id": 831102,
         "event": "You have already stared in many movies, and you find it hard to balance school and work.",
-        "include": "(CHR>10&CHR<14&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+        "include": "(CHR>10&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
     },
     "831103": {
         "id": 831103,
         "event": "You become a superstar.",
-        "include": "(CHR>10&CHR<14&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+        "include": "(CHR>10&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
     },
     "831104": {
         "id": 831104,
         "event": "You have a big scandal, but it is resolved by your company.",
-        "include": "(CHR>10&CHR<14&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+        "include": "(CHR>10&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
     },
     "831105": {
         "id": 831105,
         "event": "You start to get plastic surgeries to keep your appearance in good shape.",
-        "include": "(CHR>10&CHR<14&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+        "include": "(CHR>10&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
     },
     "831106": {
         "id": 831106,
         "event": "New stars gradually take your place and you have less and less opportunities.",
-        "include": "(CHR>10&CHR<14&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+        "include": "(CHR>10&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
     },
     "831107": {
         "id": 831107,
         "event": "Your appearance gets speedily worse because you don’t have enough money to keep doing plastic surgery.",
-        "include": "(CHR>10&CHR<14&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+        "include": "(CHR>10&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
     },
     "831108": {
         "id": 831108,
         "event": "Your face becomes unrecognizable.",
-        "include": "(CHR>10&CHR<14&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+        "include": "(CHR>10&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
     },
 
     "840001": {
@@ -1309,47 +1309,47 @@
     "841001": {
         "id": 841001,
         "event": "You become famous as a child prodigy for exceptionally high IQ.",
-        "include": "(INT>9&INT<14&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+        "include": "(INT>9&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
     },
     "841002": {
         "id": 841002,
         "event": "Your tested IQ score reaches 140+, and you master 6 languages.",
-        "include": "(INT>9&INT<14&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+        "include": "(INT>9&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
     },
     "841003": {
         "id": 841003,
         "event": "You start to pursue PHD.",
-        "include": "(INT>9&INT<14&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+        "include": "(INT>9&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
     },
     "841004": {
         "id": 841004,
         "event": "You published a book and is highly rated.",
-        "include": "(INT>9&INT<14&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+        "include": "(INT>9&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
     },
     "841005": {
         "id": 841005,
         "event": "You published a second book but it’s being criticized as ‘mediocre.’",
-        "include": "(INT>9&INT<14&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+        "include": "(INT>9&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
     },
     "841006": {
         "id": 841006,
         "event": "Many governmental officials seek advice from you.",
-        "include": "(INT>9&INT<14&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+        "include": "(INT>9&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
     },
     "841007": {
         "id": 841007,
         "event": "You branch out into new academic domains and cutting-edge technologies.",
-        "include": "(INT>9&INT<14&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+        "include": "(INT>9&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
     },
     "841008": {
         "id": 841008,
         "event": "You published an autobiography.",
-        "include": "(INT>9&INT<14&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+        "include": "(INT>9&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
     },
     "841009": {
         "id": 841009,
         "event": "You win an important prize for your previous academic achievements.",
-        "include": "(INT>9&INT<14&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+        "include": "(INT>9&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
     },
 
     "850001": {
@@ -1439,22 +1439,22 @@
     "851001": {
         "id": 851001,
         "event": "You already have your own tactics of interacting with different people.",
-        "include": "(SPR>9&SPR<14&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+        "include": "(SPR>9&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
     },
     "851002": {
         "id": 851002,
         "event": "You are the head of a girl’s gang, no one at school dares to challenge you.",
-        "include": "(SPR>9&SPR<14&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+        "include": "(SPR>9&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
     },
     "851003": {
         "id": 851003,
         "event": "You are confident about yourself, and you always manage to get the best out of any opportunity that you come across.",
-        "include": "(SPR>9&SPR<14&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+        "include": "(SPR>9&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
     },
     "851004": {
         "id": 851004,
         "event": "You are always the person to go to whenever someone runs into trouble. You can always find the right person to resolve the issues. Everyone praise you for helping them.",
-        "include": "(SPR>9&SPR<14&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
+        "include": "(SPR>9&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
     },
 
     "910001": {
@@ -1562,27 +1562,27 @@
     "910801": {
         "id": 910801,
         "event": "You are a girl. You are born into an upper-class family.",
-        "include": "(MNY>7&MNY<14&(AF>0)"
+        "include": "(MNY>7&(AF>0)"
     },
     "910802": {
         "id": 910802,
         "event": "You decide to leave the country and immigrate to the UK. There you find a job and your colleagues respect you.",
-        "include": "(MNY>7&MNY<14&(AF>0)"
+        "include": "(MNY>7&(AF>0)"
     },
     "910803": {
         "id": 910803,
         "event": "You transformed parts of your bodies to better functioning prosthesis including your heart and brain which ensure longer lifespans.",
-        "include": "(MNY>7&MNY<14&(AF>0)"
+        "include": "(MNY>7&(AF>0)"
     },
     "910804": {
         "id": 910804,
         "event": "You retire and stay at home.",
-        "include": "(MNY>7&MNY<14&(AF>0)"
+        "include": "(MNY>7&(AF>0)"
     },
     "910805": {
         "id": 910805,
         "event": "You move into a nursing home.",
-        "include": "(MNY>7&MNY<14&(AF>0)"
+        "include": "(MNY>7&(AF>0)"
     },
 
     "920001": {
@@ -1808,44 +1808,44 @@
     "921001": {
         "id": 921001,
         "event": "You start to practice competitive sports.",
-        "include": "(STR>9&STR<14&(AF>0|(MNY<5&IND>0))"
+        "include": "(STR>9&(AF>0|(MNY<5&IND>0))"
     },
     "921002": {
         "id": 921002,
         "event": "Everyone thinks that you are 10 years younger than you actually are.",
-        "include": "(STR>9&STR<14&(AF>0|(MNY<5&IND>0))"
+        "include": "(STR>9&(AF>0|(MNY<5&IND>0))"
     },
     "921003": {
         "id": 921003,
         "event": "You become a yoga master.",
-        "include": "(STR>9&STR<14&(AF>0|(MNY<5&IND>0))"
+        "include": "(STR>9&(AF>0|(MNY<5&IND>0))"
     },
     "921004": {
         "id": 921004,
         "event": "You stop having periods.",
-        "include": "(STR>9&STR<14&(AF>0|(MNY<5&IND>0))"
+        "include": "(STR>9&(AF>0|(MNY<5&IND>0))"
     },
     "921005": {
         "id": 921005,
         "event": "Your hair starts to turn grey.",
-        "include": "(STR>9&STR<14&(AF>0|(MNY<5&IND>0))"
+        "include": "(STR>9&(AF>0|(MNY<5&IND>0))"
     },
     "921006": {
         "id": 921006,
         "event": "Your vision and hearing start to get blurry.",
-        "include": "(STR>9&STR<14&(AF>0|(MNY<5&IND>0))"
+        "include": "(STR>9&(AF>0|(MNY<5&IND>0))"
     },
     "921007": {
         "id": 921007,
         "event": "When other people suffer from diseases you are still climbing high altitude mountains.",
-        "include": "(STR>9&STR<14&(AF>0|(MNY<5&IND>0))"
+        "include": "(STR>9&(AF>0|(MNY<5&IND>0))"
     },
     "921008": {
         "id": 921008,
         "event": "You fell off from a high place and passed out.",
-        "include": "(STR>9&STR<14&(AF>0|(MNY<5&IND>0))",
+        "include": "(STR>9&(AF>0|(MNY<5&IND>0))",
         "branch": [
-            "STR>9&STR<14:10000"
+            "STR>9:10000"
         ]
     },
     
@@ -1982,27 +1982,27 @@
     "931101": {
         "id": 931101,
         "event": "You are so exceptionally pretty, and many commercials want you.",
-        "include": "(CHR>10&CHR<14&(AF>0|(MNY<5&IND>0))"
+        "include": "(CHR>10&(AF>0|(MNY<5&IND>0))"
     },
     "931102": {
         "id": 931102,
         "event": "You miss the times when you were a ‘child star,’ having all the attention under the spotlight. Now you are nobody.",
-        "include": "(CHR>10&CHR<14&(AF>0|(MNY<5&IND>0))"
+        "include": "(CHR>10&(AF>0|(MNY<5&IND>0))"
     },
     "931103": {
         "id": 931103,
         "event": "You find people never take you seriously, they are nice to you because of your beautiful look.",
-        "include": "(CHR>10&CHR<14&(AF>0|(MNY<5&IND>0))"
+        "include": "(CHR>10&(AF>0|(MNY<5&IND>0))"
     },
     "931104": {
         "id": 931104,
         "event": "You hate your beauty because it just brings you way more trouble, harassment and abuse over the years.",
-        "include": "(CHR>10&CHR<14&(AF>0|(MNY<5&IND>0))"
+        "include": "(CHR>10&(AF>0|(MNY<5&IND>0))"
     },
     "931105": {
         "id": 931105,
         "event": "People still ask you for IDs because you look way younger than you are.",
-        "include": "(CHR>10&CHR<14&(AF>0|(MNY<5&IND>0))"
+        "include": "(CHR>10&(AF>0|(MNY<5&IND>0))"
     },
 
     "940001": {
@@ -2105,32 +2105,32 @@
     "940801": {
         "id": 940801,
         "event": "You start to go to school, and you always get the best grades in your school, everyone calls you a prodigy.",
-        "include": "(INT>7&INT<14&(AF>0|(MNY<5&IND>0))"
+        "include": "(INT>7&(AF>0|(MNY<5&IND>0))"
     },
     "940802": {
         "id": 940802,
         "event": "You published your diary in the UK. You are also diagnosed depression.",
-        "include": "(INT>7&INT<14&(AF>0|(MNY<5&IND>0))"
+        "include": "(INT>7&(AF>0|(MNY<5&IND>0))"
     },
     "940803": {
         "id": 940803,
         "event": "Your depression gets worse.",
-        "include": "(INT>7&INT<14&(AF>0|(MNY<5&IND>0))"
+        "include": "(INT>7&(AF>0|(MNY<5&IND>0))"
     },
     "940804": {
         "id": 940804,
         "event": "Your female friends often seek advice from you.",
-        "include": "(INT>7&INT<14&(AF>0|(MNY<5&IND>0))"
+        "include": "(INT>7&(AF>0|(MNY<5&IND>0))"
     },
     "940805": {
         "id": 940805,
         "event": "You start to self-taught a lot of things online including the most cutting-edge technologies.",
-        "include": "(INT>7&INT<14&(AF>0|(MNY<5&IND>0))"
+        "include": "(INT>7&(AF>0|(MNY<5&IND>0))"
     },
     "940806": {
         "id": 940806,
         "event": "You attempt to stop your depression medication and make peace with yourself.",
-        "include": "(INT>7&INT<14&(AF>0|(MNY<5&IND>0))"
+        "include": "(INT>7&(AF>0|(MNY<5&IND>0))"
     },
 
     "950001": {
@@ -2220,22 +2220,22 @@
     "951001": {
         "id": 951001,
         "event": "You already have your own tactics of interacting with different people.",
-        "include": "(SPR>9&SPR<14&(AF>0|(MNY<5&IND>0))"
+        "include": "(SPR>9&(AF>0|(MNY<5&IND>0))"
     },
     "951002": {
         "id": 951002,
         "event": "You are the head of a girl’s gang, no one dares to challenge you.",
-        "include": "(SPR>9&SPR<14&(AF>0|(MNY<5&IND>0))"
+        "include": "(SPR>9&(AF>0|(MNY<5&IND>0))"
     },
     "951003": {
         "id": 951003,
         "event": "You are confident about yourself, and you always manage to get the best out of any opportunity that you come across.",
-        "include": "(SPR>9&SPR<14&(AF>0|(MNY<5&IND>0))"
+        "include": "(SPR>9&(AF>0|(MNY<5&IND>0))"
     },
     "951004": {
         "id": 951004,
         "event": "You are always the person to go to whenever someone runs into trouble. You can always find the right person to resolve the issues. Everyone praises you for helping them.",
-        "include": "(SPR>9&SPR<14&(AF>0|(MNY<5&IND>0))"
+        "include": "(SPR>9&(AF>0|(MNY<5&IND>0))"
     },
 
 
