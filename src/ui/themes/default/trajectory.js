@@ -244,8 +244,11 @@ export default class Trajectory extends ui.view.DefaultTheme.TrajectoryUI {
     }
 
     onNext() {
-        if(this.#isEnd) return;
-
+        if (this.#isEnd) {
+            this.scbSpeed.value = 0;
+            this.speed = 0;
+            return;
+        }
         const { age, content, isEnd } = core.next();
         this.#isEnd = isEnd;
 
@@ -255,15 +258,17 @@ export default class Trajectory extends ui.view.DefaultTheme.TrajectoryUI {
             Laya.timer.frameOnce(1,this,()=>{
                 this.panelTrajectory.scrollTo(0, this.panelTrajectory.contentHeight);
             });
-            return
         }
 
+        // empty events
         if (JSON.stringify(content) == "{}")
             return;
+
         this.panelTrajectory.scrollTo(0, this.panelTrajectory.contentHeight);
         this.renderTrajectory(age, content);
 
         this.updateProperty();
+        if (this.#isEnd) return;
     }
 
     renderTrajectory(age, content) {

@@ -1,12 +1,12 @@
 {
     "x":0,
     "type":"View",
-    "selectedBox":10,
-    "selecteID":268,
+    "selectedBox":1,
+    "selecteID":6,
     "searchKey":"View",
     "props":{"width":1125,"sceneColor":"#000000","runtime":"Laya.runtime.ViewBase","height":2436},
     "nodeParent":-1,
-    "maxID":273,
+    "maxID":274,
     "label":"View",
     "isOpen":true,
     "isDirectory":true,
@@ -18,7 +18,7 @@
             "x":15,
             "type":"Label",
             "searchKey":"Label,title,title",
-            "props":{"y":80,"var":"title","text":"UI_Title_Summary","name":"title","fontSize":80,"font":"Agency FB","color":"#ffffff","centerX":0},
+            "props":{"zOrder":1,"y":80,"var":"title","text":"UI_Title_Summary","name":"title","fontSize":80,"font":"Agency FB","color":"#000000","centerX":0},
             "nodeParent":1,
             "label":"title",
             "isDirectory":false,
@@ -32,7 +32,7 @@
             "x":15,
             "type":"Box",
             "searchKey":"Box,summary",
-            "props":{"top":230,"right":40,"name":"summary","left":40,"bottom":800},
+            "props":{"zOrder":1,"top":230,"right":40,"name":"summary","left":40,"bottom":800},
             "nodeParent":1,
             "label":"summary",
             "isOpen":true,
@@ -90,7 +90,7 @@
             "x":15,
             "type":"Box",
             "searchKey":"Box,selectedTalents",
-            "props":{"right":40,"name":"selectedTalents","left":40,"height":450,"bottom":300},
+            "props":{"zOrder":1,"right":40,"name":"selectedTalents","left":40,"height":450,"bottom":300},
             "nodeParent":1,
             "label":"selectedTalents",
             "isOpen":true,
@@ -161,7 +161,7 @@
             "x":15,
             "type":"Box",
             "searchKey":"Box,buttonGroup",
-            "props":{"top":2200,"right":1,"name":"buttonGroup","left":1,"bottom":0},
+            "props":{"zOrder":1,"top":2200,"right":1,"name":"buttonGroup","left":1,"bottom":0},
             "nodeParent":1,
             "label":"buttonGroup",
             "isOpen":true,
@@ -227,6 +227,20 @@
                         }]
                 }],
             "$LOCKED":true
+        },
+        {
+            "x":15,
+            "type":"Image",
+            "searchKey":"Image",
+            "props":{"top":0,"skin":"images/background/09.png","right":0,"left":0,"bottom":0},
+            "nodeParent":1,
+            "label":"Image",
+            "isDirectory":false,
+            "isAniNode":true,
+            "hasChild":false,
+            "compId":273,
+            "child":[
+                ]
         }],
     "animations":[
         {
