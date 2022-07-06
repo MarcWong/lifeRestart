@@ -47,7 +47,7 @@
     "90006": {
         "id": "90006",
         "name": "Helen of Troy",
-        "description": "You are extremely beautiful.",
+        "description": "You become growingly extremely pretty.",
         "condition": "AGE?[8]",
         "grade": 0,
         "effect": {
@@ -67,7 +67,7 @@
     "90008": {
         "id": "90008",
         "name": "You are beautiful",
-        "description": "You are very beautiful.",
+        "description": "You become growingly pretty.",
         "condition": "AGE?[8]",
         "grade": 0,
         "effect": {
@@ -88,7 +88,7 @@
     "90010": {
         "id": "90010",
         "name": "Queen's gambit",
-        "description": "You are very intelligent.",
+        "description": "You become growingly intelligent.",
         "condition": "AGE?[8]",
         "grade": 0,
         "effect": {

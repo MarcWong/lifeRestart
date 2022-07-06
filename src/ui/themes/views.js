@@ -364,12 +364,12 @@ const dark = {
             [pages.MODE]: {
                 vars: {
                     textCountry: 'text_main',
-                    btnAfg: 'btn_main',
-                    btnChn: 'btn_main',
-                    btnEgp: 'btn_main',
-                    btnIdn: 'btn_main',
-                    btnJpn: 'btn_main',
-                    btnUsa: 'btn_main'
+                    btnAfg: 'btn_main2',
+                    btnChn: 'btn_main2',
+                    btnEgp: 'btn_main2',
+                    btnIdn: 'btn_main2',
+                    btnJpn: 'btn_main2',
+                    btnUsa: 'btn_main2'
                 }
             },
             [pages.SEXORIENTATION]: {

@@ -41,12 +41,12 @@ export default class Summary extends ui.view.DefaultTheme.SummaryUI {
             [core.PropertyTypes.HSTR, $lang.UI_Property_Strength],
             [core.PropertyTypes.HMNY, $lang.UI_Property_Money],
             [core.PropertyTypes.HSPR, $lang.UI_Property_Spirit],
-            [core.PropertyTypes.HAGE, $lang.UI_Final_Age],
-            [core.PropertyTypes.SUM, $lang.UI_Total_Judge],
+            //[core.PropertyTypes.HAGE, $lang.UI_Final_Age],
+            //[core.PropertyTypes.SUM, $lang.UI_Total_Judge],
         ].map(([type, key]) => {
             const data = summary[type];
             return {
-                label: `${key}${$lang.UI_Colon} ${data.value} ${$lang[data.judge]}`,
+                label: `${key}${$lang.UI_Colon} ${data.value}`,
                 grade: data.grade,
             }
         });

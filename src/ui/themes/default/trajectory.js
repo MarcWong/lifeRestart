@@ -15,7 +15,7 @@ export default class Trajectory extends ui.view.DefaultTheme.TrajectoryUI {
 
         this.panelTrajectory.vScrollBar.elasticDistance = 150;
         this.scbSpeed.on(Laya.Event.CHANGE, this, () => this.speed = this.scbSpeed.value);
-        this.scbSpeed.on(Laya.Event.MOUSE_UP, this, () => this.onNext());
+        // this.scbSpeed.on(Laya.Event.MOUSE_UP, this, () => this.onNext());
     }
 
     AGE = {
@@ -160,7 +160,7 @@ export default class Trajectory extends ui.view.DefaultTheme.TrajectoryUI {
         this.#enableExtend = enableExtend;
 
         this.boxSpeed.visible = false;
-        this.scbSpeed.value = this.scbSpeed.max * 0.8; // init speed
+        this.scbSpeed.value = this.scbSpeed.max * 1.0; // init speed
         this.btnSummary.visible = false;
         this.#trajectoryItems = [];
         this.#isEnd = false;
@@ -208,6 +208,27 @@ export default class Trajectory extends ui.view.DefaultTheme.TrajectoryUI {
             if (newProperty[types.SPR] < 8)
                 newProperty[types.SPR] = newProperty[types.SPR] < 4 ? newProperty[types.SPR] + 5 : 8;
         }
+
+        // Printing text
+        if (newProperty[types.AFG] == 1)
+            this.#printText += "Coundtry: Afganistan\n"
+        else if (newProperty[types.CHN] == 1)
+            this.#printText += "Coundtry: China\n"
+        else if (newProperty[types.EGP] == 1)
+            this.#printText += "Coundtry: Egypt\n"
+        else if (newProperty[types.IND] == 1)
+            this.#printText += "Coundtry: India\n"
+        else if (newProperty[types.JPN] == 1)
+            this.#printText += "Coundtry: Japan\n"
+        else if (newProperty[types.USA] == 1)
+            this.#printText += "Coundtry: USA\n"
+        this.#printText += "Sex orientation: "
+        this.#printText += (newProperty[types.LBTQ] == 1 ? "LBTQ" : "Straight") + "\n"
+        this.#printText += "Appearance: " + newProperty[types.CHR] + "\n"
+        this.#printText += "IQ: " + newProperty[types.INT] + "\n"
+        this.#printText += "Healthy: " + newProperty[types.STR] + "\n"
+        this.#printText += "Family wealth: " + newProperty[types.MNY] + "\n"
+        this.#printText += "EQ: " + newProperty[types.SPR] + "\n"
         return newProperty
     }
 
@@ -251,20 +272,21 @@ export default class Trajectory extends ui.view.DefaultTheme.TrajectoryUI {
         item.labContent.text = content.map(
             ({type, description, grade, name, postEvent}) => {
                 switch(type) {
+                    case 'EVT':
+                        return description + (postEvent ? `\n${postEvent}` : '');
                     case 'TLT':
                         return `Lucky Charm {${name}}: ${description}`;
-                    case 'EVT':
-                        return description + (postEvent?`\n${postEvent}`:'');
                 }
             }
         ).join('\n');
+        console.log("text:", item.labContent.text)
+        this.#printText += "Year " + (2022 + realAge) + ", age: " + realAge + "\n" + item.labContent.text + "\n";
 
         item.grade(content[content.length - 1].grade);
 
         this.vboxTrajectory.addChild(item);
         this.#trajectoryItems.push(item);
         item.y = this.vboxTrajectory.height;
-        this.#printText += "Year " + (2022 + realAge) + ", age: " + realAge + "\n" + item.labContent.text + "\n";
     }
 
     onSummary() {
