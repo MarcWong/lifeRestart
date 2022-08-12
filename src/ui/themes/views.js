@@ -56,16 +56,16 @@ const dark = {
                         hoverColor: '#4a5361',
                     },
                     {
-                        defaultColor: '#6495ed',
-                        hoverColor: '#87cefa',
+                        defaultColor: '#464646',
+                        hoverColor: '#4a5361',
                     },
                     {
-                        defaultColor: '#e2a7ff',
-                        hoverColor: '#e7beff',
+                        defaultColor: '#464646',
+                        hoverColor: '#4a5361',
                     },
                     {
-                        defaultColor: '#ffa07a',
-                        hoverColor: '#f7a989',
+                        defaultColor: '#464646',
+                        hoverColor: '#4a5361',
                     },
                 ],
                 ageColor: '#ffffee',
@@ -79,15 +79,15 @@ const dark = {
             },
             grade: [
                 '#cccccc',
-                '#55fffe',
-                '#b17cff',
-                '#ffce45',
+                '#cccccc',
+                '#cccccc',
+                '#cccccc'
             ],
             filter: [
                 '#ccccccff',
-                '#55fffeff',
-                '#b17cffff',
-                '#ffce45ff',
+                '#ccccccff',
+                '#ccccccff',
+                '#ccccccff'
             ],
             card: [
                 {
@@ -102,11 +102,11 @@ const dark = {
                         radius: 4,
                     },
                     selected: {
-                        defaultColor: '#c0c0c0',
-                        defaultStroke: '#a5ff88',
-                        defaultLabel: '#3b3b3b',
+                        defaultColor: '#464646',
+                        defaultStroke: '#f8f8f8',
+                        defaultLabel: '#eeeeee',
                         hoverColor: '#c0c0c0',
-                        hoverStroke: '#a5ff88',
+                        hoverStroke: '#f8f8f8',
                         hoverLabel: '#3b3b3b',
                         lineWidth: 4,
                         radius: 4,
@@ -298,7 +298,7 @@ const dark = {
                 hoverColor: '#cccccc',
                 hoverLabel: '#000000',
                 lineWidth: 2,
-                radius: 100,
+                radius: 40,
             },
             btn_small: {
                 defaultColor: '#5865f2',
@@ -318,7 +318,7 @@ const dark = {
                 defaultLabel: '#000000',
                 bgColor: '#ffffff',
                 lineWidth: 0,
-                radius: 4,
+                radius: 20,
                 alpha: 0.8,
             },
             font_default: {
@@ -358,12 +358,13 @@ const dark = {
             },
             [pages.PROPERTYTEXT]: {
                 vars: {
+                    boxProperty: 'text_main',
                     btnContinue: 'btn_main'
                 }
             },
             [pages.MODE]: {
                 vars: {
-                    textCountry: 'text_main',
+                    boxText: 'text_main',
                     btnAfg: 'btn_main2',
                     btnChn: 'btn_main2',
                     btnEgp: 'btn_main2',
@@ -374,12 +375,14 @@ const dark = {
             },
             [pages.SEXORIENTATION]: {
                 vars: {
+                    boxText: 'text_main',
                     btnStraight: 'btn_main2',
                     btnLBTQ: 'btn_main2'
                 }
             },
             [pages.TALENT]: {
                 vars: {
+                    boxText: 'text_main',
                     btnDrawCard: 'btn_main2',
                     title: 'title',
                 }

@@ -1,8 +1,8 @@
 {
     "x":0,
     "type":"View",
-    "selectedBox":10,
-    "selecteID":271,
+    "selectedBox":263,
+    "selecteID":270,
     "searchKey":"View",
     "props":{"width":1125,"sceneColor":"#000000","runtime":"Laya.runtime.ViewBase","height":2436},
     "nodeParent":-1,
@@ -143,7 +143,7 @@
                                     "x":60,
                                     "type":"Box",
                                     "searchKey":"Box,blank",
-                                    "props":{"top":0,"runtime":"Laya.runtime.BlankBox","right":0,"name":"blank","left":0,"bottom":0,"alpha":0.3},
+                                    "props":{"top":0,"right":0,"name":"blank","left":0,"bottom":0,"alpha":0.3},
                                     "nodeParent":263,
                                     "label":"blank",
                                     "isDirectory":false,
@@ -151,7 +151,8 @@
                                     "hasChild":false,
                                     "compId":270,
                                     "child":[
-                                        ]
+                                        ],
+                                    "$HIDDEN":true
                                 }]
                         }]
                 }],
