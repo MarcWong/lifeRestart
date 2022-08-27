@@ -4,7 +4,7 @@ export default class Summary extends ui.view.DefaultTheme.SummaryUI {
         this.listSummary.renderHandler = Laya.Handler.create(this, this.renderSummary, null, false);
         this.listSelectedTalents.renderHandler = Laya.Handler.create(this, this.renderTalent, null, false);
         this.btnAgain.on(Laya.Event.CLICK, this, this.onAgain);
-        this.btnPrint.on(Laya.Event.CLICK, this, this.onPrint);
+        this.btnPrint.on(Laya.Event.CLICK, this, this.onPrintTxt);
     }
 
     #printText;
@@ -13,36 +13,49 @@ export default class Summary extends ui.view.DefaultTheme.SummaryUI {
         window.location.reload()
     }
 
-    onPrint() {
-        const txts = this.#printText.split('\n')
-        let element = document.createElement('canvas')
-        element.id = 'canvas'
-        element.width = 700
-        element.height = 16000
-        let ctx = element.getContext("2d")
-        ctx.font = "30px 'Casadia Code', Consolas, monospace"
-        let y = 30
-        const wrapTxt = 41 // characters in a line
-        for (let id = 0; id < txts.length; id++) {
-            let n = 0
-            while (n * wrapTxt < txts[id].length) {
-                ctx.fillText(txts[id].substring(n * wrapTxt, (n+1)*wrapTxt), 10, y)
-                y += 33 // linespace
-                n += 1
-            }
-        }
-        // element.height = y+30
-
+    onPrintTxt() {
         const win = window.open()
-        win.document.write("<img src='"
-            + element.toDataURL()
-            + "'/>")
-        win.focus()    
+        const txts = this.#printText.split('\n')
+        for (let id = 0; id < txts.length; id++) {
+            win.document.write("<p style='margin:6px 0; width: 900px; font-size: 16px; font-family:Casadia Code, Consolas, monospace'>"
+                + txts[id]
+                + "</p>")
+        }
+        win.focus()
         win.document.close()
         win.print()
-        // win.close()
-        // this.downloadTxt(this.#printText, "print.txt")
     }
+
+    // onPrint() {
+    //     const txts = this.#printText.split('\n')
+    //     let element = document.createElement('canvas')
+    //     element.id = 'canvas'
+    //     element.width = 700
+    //     element.height = 16000
+    //     let ctx = element.getContext("2d")
+    //     ctx.font = "30px 'Casadia Code', Consolas, monospace"
+    //     let y = 30
+    //     const wrapTxt = 41 // characters in a line
+    //     for (let id = 0; id < txts.length; id++) {
+    //         let n = 0
+    //         while (n * wrapTxt < txts[id].length) {
+    //             ctx.fillText(txts[id].substring(n * wrapTxt, (n+1)*wrapTxt), 10, y)
+    //             y += 33 // linespace
+    //             n += 1
+    //         }
+    //     }
+    //     // element.height = y+30
+
+    //     const win = window.open()
+    //     win.document.write("<img src='"
+    //         + element.toDataURL()
+    //         + "'/>")
+    //     win.focus()    
+    //     win.document.close()
+    //     win.print()
+    //     // win.close()
+    //     // this.downloadTxt(this.#printText, "print.txt")
+    // }
 
     // Save as a txt
     // downloadTxt(text, fileName) {

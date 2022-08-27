@@ -1,8 +1,8 @@
 {
     "x":0,
     "type":"View",
-    "selectedBox":151,
-    "selecteID":152,
+    "selectedBox":41,
+    "selecteID":175,
     "searchKey":"View",
     "props":{"width":1125,"sceneColor":"#000000","runtime":"Laya.runtime.ViewBase","height":2436},
     "nodeParent":-1,
@@ -34,13 +34,14 @@
                     "props":{"space":15,"centerY":91,"centerX":0,"align":"middle"},
                     "nodeParent":31,
                     "label":"HBox",
-                    "isOpen":false,
+                    "isOpen":true,
                     "isDirectory":true,
                     "isAniNode":true,
                     "hasChild":true,
                     "compId":71,
                     "child":[
                         {
+                            "x":45,
                             "type":"Box",
                             "searchKey":"Box,propertyBox",
                             "props":{"x":0,"width":220,"runtime":"Laya.runtime.ColorfulBox","name":"propertyBox","height":120,"centerY":0},
@@ -53,6 +54,7 @@
                             "compId":34,
                             "child":[
                                 {
+                                    "x":60,
                                     "type":"Label",
                                     "searchKey":"Label,label",
                                     "props":{"y":30,"text":"UI_Property_Charm","name":"label","fontSize":45,"font":"SimHei","color":"#ffffff","centerX":0,"anchorY":0.5,"anchorX":0.5},
@@ -66,6 +68,7 @@
                                         ]
                                 },
                                 {
+                                    "x":60,
                                     "type":"Box",
                                     "searchKey":"Box,propertyValue",
                                     "props":{"runtime":"Laya.runtime.ColorfulBox","right":0,"name":"propertyValue","left":0,"height":60,"bottom":0},
@@ -78,6 +81,7 @@
                                     "compId":41,
                                     "child":[
                                         {
+                                            "x":75,
                                             "type":"Label",
                                             "searchKey":"Label,label,labCharm",
                                             "props":{"var":"labCharm","text":"10","name":"label","fontSize":55,"font":"SimHei","color":"#55fffe","centerY":0,"centerX":0,"anchorY":0.5,"anchorX":0.5},
@@ -92,11 +96,13 @@
                                                 ]
                                         },
                                         {
+                                            "x":75,
                                             "type":"Label",
                                             "searchKey":"Label,label,labCharmAdd",
-                                            "props":{"y":31,"x":191,"visible":false,"var":"labCharmAdd","text":"10","name":"label","fontSize":55,"font":"SimHei","color":"#55fffe","centerY":0,"centerX":80,"anchorY":0.5,"anchorX":0.5},
+                                            "props":{"visible":false,"var":"labCharmAdd","text":"10","name":"label","fontSize":55,"font":"SimHei","color":"#55fffe","centerY":0,"centerX":72,"anchorY":0.5,"anchorX":0.5},
                                             "nodeParent":41,
                                             "label":"label",
+                                            "isOpen":false,
                                             "isDirectory":false,
                                             "isAniNode":true,
                                             "hasChild":false,
@@ -108,6 +114,7 @@
                             "$HIDDEN":false
                         },
                         {
+                            "x":45,
                             "type":"Box",
                             "searchKey":"Box,propertyBox",
                             "props":{"x":1,"width":220,"runtime":"Laya.runtime.ColorfulBox","name":"propertyBox","height":120,"centerY":0},
@@ -120,6 +127,7 @@
                             "compId":50,
                             "child":[
                                 {
+                                    "x":60,
                                     "type":"Label",
                                     "searchKey":"Label,label",
                                     "props":{"y":30,"text":"UI_Property_Intelligence","name":"label","fontSize":45,"font":"SimHei","color":"#ffffff","centerX":0,"anchorY":0.5,"anchorX":0.5},
@@ -133,6 +141,7 @@
                                         ]
                                 },
                                 {
+                                    "x":60,
                                     "type":"Box",
                                     "searchKey":"Box,propertyValue",
                                     "props":{"runtime":"Laya.runtime.ColorfulBox","right":0,"name":"propertyValue","left":0,"height":60,"bottom":0},
@@ -145,6 +154,7 @@
                                     "compId":55,
                                     "child":[
                                         {
+                                            "x":75,
                                             "type":"Label",
                                             "searchKey":"Label,label,labIntelligence",
                                             "props":{"var":"labIntelligence","text":"10","name":"label","fontSize":55,"font":"SimHei","color":"#55fffe","centerY":0,"centerX":0,"anchorY":0.5,"anchorX":0.5},
@@ -159,6 +169,7 @@
                                                 ]
                                         },
                                         {
+                                            "x":75,
                                             "type":"Label",
                                             "searchKey":"Label,label,labIntelligenceAdd",
                                             "props":{"visible":false,"var":"labIntelligenceAdd","text":"10","name":"label","fontSize":55,"font":"SimHei","color":"#55fffe","centerY":2,"centerX":70,"anchorY":0.5,"anchorX":0.5},
@@ -175,6 +186,7 @@
                             "$HIDDEN":false
                         },
                         {
+                            "x":45,
                             "type":"Box",
                             "searchKey":"Box,propertyBox",
                             "props":{"x":2,"width":220,"runtime":"Laya.runtime.ColorfulBox","name":"propertyBox","height":120,"centerY":0},
@@ -187,6 +199,7 @@
                             "compId":74,
                             "child":[
                                 {
+                                    "x":60,
                                     "type":"Label",
                                     "searchKey":"Label,label",
                                     "props":{"y":30,"text":"UI_Property_Strength","name":"label","fontSize":45,"font":"SimHei","color":"#ffffff","centerX":0,"anchorY":0.5,"anchorX":0.5},
@@ -200,6 +213,7 @@
                                         ]
                                 },
                                 {
+                                    "x":60,
                                     "type":"Box",
                                     "searchKey":"Box,propertyValue",
                                     "props":{"runtime":"Laya.runtime.ColorfulBox","right":0,"name":"propertyValue","left":0,"height":60,"bottom":0},
@@ -212,6 +226,7 @@
                                     "compId":79,
                                     "child":[
                                         {
+                                            "x":75,
                                             "type":"Label",
                                             "searchKey":"Label,label,labStrength",
                                             "props":{"var":"labStrength","text":"10","name":"label","fontSize":55,"font":"SimHei","color":"#55fffe","centerY":0,"centerX":0,"anchorY":0.5,"anchorX":0.5},
@@ -226,6 +241,7 @@
                                                 ]
                                         },
                                         {
+                                            "x":75,
                                             "type":"Label",
                                             "searchKey":"Label,label,labStrengthAdd",
                                             "props":{"visible":false,"var":"labStrengthAdd","text":"10","name":"label","fontSize":55,"font":"SimHei","color":"#55fffe","centerY":0,"centerX":65,"anchorY":0.5,"anchorX":0.5},
@@ -241,6 +257,7 @@
                                 }]
                         },
                         {
+                            "x":45,
                             "type":"Box",
                             "searchKey":"Box,propertyBox",
                             "props":{"x":3,"width":220,"runtime":"Laya.runtime.ColorfulBox","name":"propertyBox","height":120,"centerY":0},
@@ -253,6 +270,7 @@
                             "compId":43,
                             "child":[
                                 {
+                                    "x":60,
                                     "type":"Label",
                                     "searchKey":"Label,label",
                                     "props":{"y":30,"text":"UI_Property_Money","name":"label","fontSize":45,"font":"SimHei","color":"#ffffff","centerX":0,"anchorY":0.5,"anchorX":0.5},
@@ -266,6 +284,7 @@
                                         ]
                                 },
                                 {
+                                    "x":60,
                                     "type":"Box",
                                     "searchKey":"Box,propertyValue",
                                     "props":{"runtime":"Laya.runtime.ColorfulBox","right":0,"name":"propertyValue","left":0,"height":60,"bottom":0},
@@ -278,6 +297,7 @@
                                     "compId":48,
                                     "child":[
                                         {
+                                            "x":75,
                                             "type":"Label",
                                             "searchKey":"Label,label,labMoney",
                                             "props":{"var":"labMoney","text":"10","name":"label","fontSize":55,"font":"SimHei","color":"#55fffe","centerY":0,"centerX":0,"anchorY":0.5,"anchorX":0.5},
@@ -292,6 +312,7 @@
                                                 ]
                                         },
                                         {
+                                            "x":75,
                                             "type":"Label",
                                             "searchKey":"Label,label,labMoneyAdd",
                                             "props":{"visible":false,"var":"labMoneyAdd","text":"10","name":"label","fontSize":55,"font":"SimHei","color":"#55fffe","centerY":0,"centerX":82,"anchorY":0.5,"anchorX":0.5},
@@ -307,6 +328,7 @@
                                 }]
                         },
                         {
+                            "x":45,
                             "type":"Box",
                             "searchKey":"Box,propertyBox",
                             "props":{"x":4,"width":220,"runtime":"Laya.runtime.ColorfulBox","name":"propertyBox","height":120,"centerY":0},
@@ -319,6 +341,7 @@
                             "compId":81,
                             "child":[
                                 {
+                                    "x":60,
                                     "type":"Label",
                                     "searchKey":"Label,label",
                                     "props":{"y":30,"text":"UI_Property_Spirit","name":"label","fontSize":45,"font":"SimHei","color":"#ffffff","centerX":0,"anchorY":0.5,"anchorX":0.5},
@@ -332,6 +355,7 @@
                                         ]
                                 },
                                 {
+                                    "x":60,
                                     "type":"Box",
                                     "searchKey":"Box,propertyValue",
                                     "props":{"runtime":"Laya.runtime.ColorfulBox","right":0,"name":"propertyValue","left":0,"height":60,"bottom":0},
@@ -344,6 +368,7 @@
                                     "compId":86,
                                     "child":[
                                         {
+                                            "x":75,
                                             "type":"Label",
                                             "searchKey":"Label,label,labSpirit",
                                             "props":{"var":"labSpirit","text":"10","name":"label","fontSize":55,"font":"SimHei","color":"#55fffe","centerY":0,"centerX":0,"anchorY":0.5,"anchorX":0.5},
@@ -358,6 +383,7 @@
                                                 ]
                                         },
                                         {
+                                            "x":75,
                                             "type":"Label",
                                             "searchKey":"Label,label,labSpiritAdd",
                                             "props":{"visible":false,"var":"labSpiritAdd","text":"10","name":"label","fontSize":55,"font":"SimHei","color":"#55fffe","centerY":2,"centerX":65,"anchorY":0.5,"anchorX":0.5},
@@ -380,14 +406,13 @@
                     "props":{"y":92,"x":181,"centerY":-27,"centerX":0},
                     "nodeParent":31,
                     "label":"Box",
-                    "isOpen":true,
+                    "isOpen":false,
                     "isDirectory":true,
                     "isAniNode":true,
                     "hasChild":true,
                     "compId":158,
                     "child":[
                         {
-                            "x":45,
                             "type":"Box",
                             "searchKey":"Box,propertyBox",
                             "props":{"x":-55,"width":350,"runtime":"Laya.runtime.ColorfulBox","name":"propertyBox","height":120,"centerY":-14},
@@ -400,7 +425,6 @@
                             "compId":167,
                             "child":[
                                 {
-                                    "x":60,
                                     "type":"Label",
                                     "searchKey":"Label,label",
                                     "props":{"y":30,"text":"Country","name":"label","fontSize":45,"font":"SimHei","color":"#ffffff","centerX":0,"anchorY":0.5,"anchorX":0.5},
@@ -414,7 +438,6 @@
                                         ]
                                 },
                                 {
-                                    "x":60,
                                     "type":"Box",
                                     "searchKey":"Box,propertyValue",
                                     "props":{"width":220,"runtime":"Laya.runtime.ColorfulBox","right":0,"name":"propertyValue","left":0,"height":60,"bottom":0},
@@ -427,7 +450,6 @@
                                     "compId":169,
                                     "child":[
                                         {
-                                            "x":75,
                                             "type":"Label",
                                             "searchKey":"Label,label,labCountry",
                                             "props":{"var":"labCountry","text":"China","name":"label","fontSize":55,"font":"SimHei","color":"#55fffe","centerY":0,"centerX":0,"anchorY":0.5,"anchorX":0.5},
@@ -444,7 +466,6 @@
                             "$HIDDEN":false
                         },
                         {
-                            "x":45,
                             "type":"Box",
                             "searchKey":"Box,propertyBox",
                             "props":{"x":353,"width":350,"runtime":"Laya.runtime.ColorfulBox","name":"propertyBox","height":120,"centerY":-14},
@@ -457,7 +478,6 @@
                             "compId":171,
                             "child":[
                                 {
-                                    "x":60,
                                     "type":"Label",
                                     "searchKey":"Label,label",
                                     "props":{"y":30,"text":"Sex orientation","name":"label","fontSize":45,"font":"SimHei","color":"#ffffff","centerX":0,"anchorY":0.5,"anchorX":0.5},
@@ -471,7 +491,6 @@
                                         ]
                                 },
                                 {
-                                    "x":60,
                                     "type":"Box",
                                     "searchKey":"Box,propertyValue",
                                     "props":{"runtime":"Laya.runtime.ColorfulBox","right":0,"name":"propertyValue","left":0,"height":60,"bottom":0},
@@ -484,7 +503,6 @@
                                     "compId":173,
                                     "child":[
                                         {
-                                            "x":75,
                                             "type":"Label",
                                             "searchKey":"Label,label,labSex",
                                             "props":{"var":"labSex","text":"LBTQ","name":"label","fontSize":55,"font":"SimHei","color":"#55fffe","centerY":0,"centerX":0,"anchorY":0.5,"anchorX":0.5},

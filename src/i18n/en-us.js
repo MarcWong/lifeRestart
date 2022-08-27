@@ -44,7 +44,7 @@ export default ({
     UI_Manual: 'Manual',
     UI_Auto: 'Auto',
 
-    UI_Goto_Summary: 'Goto Summary',
+    UI_Goto_Summary: 'Go to Summary',
     UI_Title_Summary: 'Life Summary',
     UI_Talent_Extend: 'Talent, You can choose one to extend',
     UI_Remake_Again: 'Remake Again',
