@@ -17,7 +17,7 @@ export default class Summary extends ui.view.DefaultTheme.SummaryUI {
         const win = window.open()
         const txts = this.#printText.split('\n')
         for (let id = 0; id < txts.length; id++) {
-            win.document.write("<p style='margin:6px 0; width: 900px; font-size: 16px; font-family:Casadia Code, Consolas, monospace'>"
+            win.document.write("<p style='margin:4px 0; width: 370px; font-size: 16px; font-family:Casadia Code, Consolas, monospace'>"
                 + txts[id]
                 + "</p>")
         }
