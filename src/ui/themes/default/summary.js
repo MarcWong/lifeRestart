@@ -12,9 +12,10 @@ export default class Summary extends ui.view.DefaultTheme.SummaryUI {
     #printText;
 
     onAgain() {
-        core.talentExtend(this.#selectedTalent);
-        core.times ++;
-        $ui.switchView(UI.pages.MAIN);
+        // core.talentExtend(this.#selectedTalent);
+        // core.times ++;
+        // $ui.switchView(UI.pages.MAIN);
+        window.location.reload()
     }
 
     onPrint() {
@@ -46,7 +47,7 @@ export default class Summary extends ui.view.DefaultTheme.SummaryUI {
         ].map(([type, key]) => {
             const data = summary[type];
             return {
-                label: `${key}${$lang.UI_Colon} ${data.value}`,
+                label: `${key}${$lang.UI_Colon} ${data.value > 13 ? 13 : data.value}`,
                 grade: data.grade,
             }
         });

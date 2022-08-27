@@ -29,7 +29,7 @@ export default class Property extends ui.view.DefaultTheme.PropertyUI {
         this.btnRandomAllocate.on(Laya.Event.CLICK, this, this.random);
         this.btnNext.on(Laya.Event.CLICK, this, this.next);
 
-        this.listSelectedTalents.renderHandler = Laya.Handler.create(this, this.renderTalent, null, false);
+        // this.listSelectedTalents.renderHandler = Laya.Handler.create(this, this.renderTalent, null, false);
     }
 
     #types;
@@ -186,12 +186,12 @@ export default class Property extends ui.view.DefaultTheme.PropertyUI {
         }
     }
 
-    renderTalent(box) {
-        const dataSource = box.dataSource;
+    // renderTalent(box) {
+    //     const dataSource = box.dataSource;
 
-        box.label = $_.format($lang.F_TalentSelection, dataSource);
-        const style = $ui.common.card[dataSource.grade].normal;
+    //     box.label = $_.format($lang.F_TalentSelection, dataSource);
+    //     const style = $ui.common.card[dataSource.grade].normal;
 
-        $_.deepMapSet(box, style);
-    }
+    //     $_.deepMapSet(box, style);
+    // }
 }
