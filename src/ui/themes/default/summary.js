@@ -7,34 +7,56 @@ export default class Summary extends ui.view.DefaultTheme.SummaryUI {
         this.btnPrint.on(Laya.Event.CLICK, this, this.onPrint);
     }
 
-    #selectedTalent;
-    #enableExtend;
     #printText;
 
     onAgain() {
-        // core.talentExtend(this.#selectedTalent);
-        // core.times ++;
-        // $ui.switchView(UI.pages.MAIN);
         window.location.reload()
     }
 
     onPrint() {
-        this.downloadTxt(this.#printText, "print.txt")
+        const txts = this.#printText.split('\n')
+        let element = document.createElement('canvas')
+        element.id = 'canvas'
+        element.width = 700
+        element.height = 16000
+        let ctx = element.getContext("2d")
+        ctx.font = "30px 'Casadia Code', Consolas, monospace"
+        let y = 30
+        const wrapTxt = 41 // characters in a line
+        for (let id = 0; id < txts.length; id++) {
+            let n = 0
+            while (n * wrapTxt < txts[id].length) {
+                ctx.fillText(txts[id].substring(n * wrapTxt, (n+1)*wrapTxt), 10, y)
+                y += 33 // linespace
+                n += 1
+            }
+        }
+        // element.height = y+30
+
+        const win = window.open()
+        win.document.write("<img src='"
+            + element.toDataURL()
+            + "'/>")
+        win.focus()    
+        win.document.close()
+        win.print()
+        // win.close()
+        // this.downloadTxt(this.#printText, "print.txt")
     }
 
-
-    downloadTxt(text, fileName) {
-        let element = document.createElement('a')
-        element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(text))
-        element.setAttribute('download', fileName)
-        element.style.display = 'none'
-        element.click()
-    }
+    // Save as a txt
+    // downloadTxt(text, fileName) {
+    //     let element = document.createElement('a')
+    //     element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(text))
+    //     element.setAttribute('download', fileName)
+    //     element.style.display = 'none'
+    //     element.click()
+    // }
 
     init({ talents, printText, enableExtend}) {
         const {summary, lastExtendTalent} = core;
-        this.#enableExtend = enableExtend;
         this.#printText = printText;
+        console.log(this.#printText.split('\n'))
 
         this.listSummary.array = [
             [core.PropertyTypes.HCHR, $lang.UI_Property_Charm],
@@ -52,16 +74,6 @@ export default class Summary extends ui.view.DefaultTheme.SummaryUI {
             }
         });
 
-        talents.sort(({id:a, grade:ag}, {id:b, grade:bg},)=>{
-            if(a == lastExtendTalent) return -1;
-            if(b == lastExtendTalent) return 1;
-            return bg - ag;
-        });
-        // if(this.#enableExtend) {
-        //     this.#selectedTalent = talents[0].id;
-        // } else {
-        //     this.#selectedTalent = lastExtendTalent;
-        // }
         this.listSelectedTalents.array = talents;
     }
     renderSummary(box) {
@@ -74,21 +86,6 @@ export default class Summary extends ui.view.DefaultTheme.SummaryUI {
         box.label = $_.format($lang.F_TalentSelection, dataSource);
         const style = $ui.common.card[dataSource.grade];
         $_.deepMapSet(box, dataSource.id = style.normal);
-        // box.getChildByName('blank').pause = dataSource.id != this.#selectedTalent;
-        // box.off(Laya.Event.CLICK, this, this.onSelectTalent);
-        // box.on(Laya.Event.CLICK, this, this.onSelectTalent, [dataSource.id]);
     }
 
-    // onSelectTalent(talentId) {
-    //     if(!this.#enableExtend) {
-    //         return $$event('message', ['M_DisableExtendTalent']);
-    //     }
-    //     if(talentId == this.#selectedTalent) {
-    //         this.#selectedTalent = null;
-    //     } else {
-    //         this.#selectedTalent = talentId;
-    //     }
-
-    //     this.listSelectedTalents.refresh();
-    // }
 }
