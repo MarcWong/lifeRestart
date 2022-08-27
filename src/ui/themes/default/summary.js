@@ -57,11 +57,11 @@ export default class Summary extends ui.view.DefaultTheme.SummaryUI {
             if(b == lastExtendTalent) return 1;
             return bg - ag;
         });
-        if(this.#enableExtend) {
-            this.#selectedTalent = talents[0].id;
-        } else {
-            this.#selectedTalent = lastExtendTalent;
-        }
+        // if(this.#enableExtend) {
+        //     this.#selectedTalent = talents[0].id;
+        // } else {
+        //     this.#selectedTalent = lastExtendTalent;
+        // }
         this.listSelectedTalents.array = talents;
     }
     renderSummary(box) {
@@ -73,22 +73,22 @@ export default class Summary extends ui.view.DefaultTheme.SummaryUI {
         const dataSource = box.dataSource;
         box.label = $_.format($lang.F_TalentSelection, dataSource);
         const style = $ui.common.card[dataSource.grade];
-        $_.deepMapSet(box, dataSource.id == this.#selectedTalent? style.selected: style.normal);
-        box.getChildByName('blank').pause = dataSource.id != this.#selectedTalent;
-        box.off(Laya.Event.CLICK, this, this.onSelectTalent);
-        box.on(Laya.Event.CLICK, this, this.onSelectTalent, [dataSource.id]);
+        $_.deepMapSet(box, dataSource.id = style.normal);
+        // box.getChildByName('blank').pause = dataSource.id != this.#selectedTalent;
+        // box.off(Laya.Event.CLICK, this, this.onSelectTalent);
+        // box.on(Laya.Event.CLICK, this, this.onSelectTalent, [dataSource.id]);
     }
 
-    onSelectTalent(talentId) {
-        if(!this.#enableExtend) {
-            return $$event('message', ['M_DisableExtendTalent']);
-        }
-        if(talentId == this.#selectedTalent) {
-            this.#selectedTalent = null;
-        } else {
-            this.#selectedTalent = talentId;
-        }
+    // onSelectTalent(talentId) {
+    //     if(!this.#enableExtend) {
+    //         return $$event('message', ['M_DisableExtendTalent']);
+    //     }
+    //     if(talentId == this.#selectedTalent) {
+    //         this.#selectedTalent = null;
+    //     } else {
+    //         this.#selectedTalent = talentId;
+    //     }
 
-        this.listSelectedTalents.refresh();
-    }
+    //     this.listSelectedTalents.refresh();
+    // }
 }

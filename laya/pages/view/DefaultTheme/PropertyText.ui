@@ -2,11 +2,11 @@
     "x":0,
     "type":"View",
     "selectedBox":1,
-    "selecteID":106,
+    "selecteID":110,
     "searchKey":"View",
     "props":{"y":1218,"x":562,"width":1125,"sceneColor":"#000000","runtime":"Laya.runtime.ViewBase","height":2436,"anchorY":0.5,"anchorX":0.5},
     "nodeParent":-1,
-    "maxID":110,
+    "maxID":111,
     "label":"View",
     "isOpen":true,
     "isDirectory":true,
@@ -74,21 +74,6 @@
         },
         {
             "x":15,
-            "type":"Label",
-            "searchKey":"Label,title",
-            "props":{"zOrder":1,"width":620,"text":"♀Samsara","name":"title","height":100,"fontSize":130,"font":"Agency FB","color":"#000000","centerY":1118,"centerX":298,"bold":true,"anchorY":0.5,"anchorX":0.5},
-            "nodeParent":1,
-            "label":"title",
-            "isOpen":true,
-            "isDirectory":false,
-            "isAniNode":true,
-            "hasChild":false,
-            "compId":106,
-            "child":[
-                ]
-        },
-        {
-            "x":15,
             "type":"Image",
             "searchKey":"Image",
             "props":{"top":0,"skin":"images/background/06.png","right":0,"left":0,"bottom":0},
@@ -98,6 +83,21 @@
             "isAniNode":true,
             "hasChild":false,
             "compId":109,
+            "child":[
+                ]
+        },
+        {
+            "x":15,
+            "type":"Label",
+            "searchKey":"Label,title",
+            "props":{"zOrder":1,"y":10,"x":10,"width":520,"text":"♀Samsara","name":"title","height":100,"fontSize":130,"font":"Agency FB","color":"#000000","centerY":1118,"centerX":302,"bold":true,"anchorY":0.5,"anchorX":0.5},
+            "nodeParent":1,
+            "label":"title",
+            "isOpen":true,
+            "isDirectory":false,
+            "isAniNode":true,
+            "hasChild":false,
+            "compId":110,
             "child":[
                 ]
         }],

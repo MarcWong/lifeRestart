@@ -1,13 +1,13 @@
 {
     "x":0,
     "type":"View",
-    "selectedBox":1,
-    "selecteID":279,
+    "selectedBox":281,
+    "selecteID":282,
     "searchKey":"View",
     "referenceLines":null,
     "props":{"width":1125,"sceneColor":"#000000","runtime":"Laya.runtime.ViewBase","height":2436},
     "nodeParent":-1,
-    "maxID":281,
+    "maxID":283,
     "label":"View",
     "isOpen":true,
     "isDirectory":true,
@@ -29,7 +29,6 @@
             "compId":8,
             "child":[
                 {
-                    "x":30,
                     "type":"HBox",
                     "searchKey":"HBox",
                     "props":{"top":0,"height":100,"centerX":0},
@@ -42,7 +41,6 @@
                     "compId":50,
                     "child":[
                         {
-                            "x":45,
                             "type":"Label",
                             "searchKey":"Label,font_default",
                             "props":{"x":0,"text":"UI_Left_Property_Point","name":"font_default","fontSize":70,"font":"SimHei","color":"#ffffff","centerY":0},
@@ -56,7 +54,6 @@
                                 ]
                         },
                         {
-                            "x":45,
                             "type":"Label",
                             "searchKey":"Label,font_default",
                             "props":{"x":1,"text":"UI_Colon","name":"font_default","fontSize":70,"font":"SimHei","color":"#ffffff","centerY":0},
@@ -70,7 +67,6 @@
                                 ]
                         },
                         {
-                            "x":45,
                             "type":"Label",
                             "searchKey":"Label,font_default,labLeftPropertyPoint",
                             "props":{"x":2,"var":"labLeftPropertyPoint","text":"0","name":"font_default","fontSize":70,"color":"#ffffff","centerY":0},
@@ -85,7 +81,6 @@
                         }]
                 },
                 {
-                    "x":30,
                     "type":"VBox",
                     "searchKey":"VBox",
                     "props":{"top":200,"space":100,"right":50,"left":50},
@@ -98,7 +93,6 @@
                     "compId":120,
                     "child":[
                         {
-                            "x":45,
                             "type":"Box",
                             "searchKey":"Box,boxCharm",
                             "props":{"y":0,"var":"boxCharm","right":0,"left":0,"height":130},
@@ -450,7 +444,6 @@
                                 }]
                         },
                         {
-                            "x":45,
                             "type":"Box",
                             "searchKey":"Box,boxIntelligence",
                             "props":{"y":1,"var":"boxIntelligence","right":0,"left":0,"height":130},
@@ -802,7 +795,6 @@
                                 }]
                         },
                         {
-                            "x":45,
                             "type":"Box",
                             "searchKey":"Box,boxStrength",
                             "props":{"y":2,"var":"boxStrength","right":0,"left":0,"height":130},
@@ -815,7 +807,6 @@
                             "compId":151,
                             "child":[
                                 {
-                                    "x":60,
                                     "type":"Label",
                                     "searchKey":"Label,font_default",
                                     "props":{"x":183,"text":"UI_Property_Strength","name":"font_default","fontSize":70,"font":"SimHei","color":"#ffffff","centerY":0,"anchorY":0.5,"anchorX":0.5},
@@ -829,7 +820,6 @@
                                         ]
                                 },
                                 {
-                                    "x":60,
                                     "type":"Box",
                                     "searchKey":"Box,property,boxStrengthAllocate",
                                     "props":{"width":590,"var":"boxStrengthAllocate","runtime":"Laya.runtime.ColorFilterItem","right":30,"name":"property","height":110,"centerY":0},
@@ -1156,7 +1146,6 @@
                                 }]
                         },
                         {
-                            "x":45,
                             "type":"Box",
                             "searchKey":"Box,boxEQ,boxMoney",
                             "props":{"y":3,"var":"boxMoney","right":0,"name":"boxEQ","left":0,"height":130},
@@ -1169,7 +1158,6 @@
                             "compId":181,
                             "child":[
                                 {
-                                    "x":60,
                                     "type":"Label",
                                     "searchKey":"Label,font_default",
                                     "props":{"x":183,"text":"UI_Property_Spirit","name":"font_default","fontSize":70,"font":"SimHei","color":"#ffffff","centerY":0,"anchorY":0.5,"anchorX":0.5},
@@ -1183,7 +1171,6 @@
                                         ]
                                 },
                                 {
-                                    "x":60,
                                     "type":"Box",
                                     "searchKey":"Box,property,boxSpiritAllocate",
                                     "props":{"width":590,"var":"boxSpiritAllocate","runtime":"Laya.runtime.ColorFilterItem","right":30,"name":"property","height":110,"centerY":0},
@@ -1196,7 +1183,6 @@
                                     "compId":185,
                                     "child":[
                                         {
-                                            "x":75,
                                             "type":"Box",
                                             "searchKey":"Box,btnSpiritReduce,btnSpiritReduce",
                                             "props":{"width":110,"var":"btnSpiritReduce","name":"btnSpiritReduce","left":0,"height":110,"centerY":0},
@@ -1314,7 +1300,6 @@
                                                 }]
                                         },
                                         {
-                                            "x":75,
                                             "type":"Box",
                                             "searchKey":"Box",
                                             "props":{"y":0,"x":110,"top":0,"right":110,"left":110,"bottom":0},
@@ -1327,7 +1312,6 @@
                                             "compId":195,
                                             "child":[
                                                 {
-                                                    "x":90,
                                                     "type":"TextInput",
                                                     "searchKey":"TextInput,inputSpirit,inputSpirit",
                                                     "props":{"var":"inputSpirit","type":"number","top":0,"text":"0","right":0,"promptColor":"#828282","prompt":0,"name":"inputSpirit","maxChars":1,"left":0,"fontSize":80,"font":"SimHei","color":"#ffffff","bottom":0,"align":"center"},
@@ -1341,7 +1325,6 @@
                                                         ]
                                                 },
                                                 {
-                                                    "x":90,
                                                     "type":"Rect",
                                                     "searchKey":"Rect",
                                                     "props":{"y":0,"x":0,"width":370,"lineWidth":1,"height":4,"fillColor":"#ffffff"},
@@ -1355,7 +1338,6 @@
                                                         ]
                                                 },
                                                 {
-                                                    "x":90,
                                                     "type":"Rect",
                                                     "searchKey":"Rect",
                                                     "props":{"y":106,"x":0,"width":370,"lineWidth":1,"height":4,"fillColor":"#ffffff"},
@@ -1370,7 +1352,6 @@
                                                 }]
                                         },
                                         {
-                                            "x":75,
                                             "type":"Box",
                                             "searchKey":"Box,btnSpiritIncrease,btnSpiritIncrease",
                                             "props":{"width":110,"var":"btnSpiritIncrease","right":0,"name":"btnSpiritIncrease","height":110,"centerY":0},
@@ -1383,7 +1364,6 @@
                                             "compId":200,
                                             "child":[
                                                 {
-                                                    "x":90,
                                                     "type":"Box",
                                                     "searchKey":"Box",
                                                     "props":{"width":110,"height":110,"centerY":0,"centerX":0,"anchorY":0.5,"anchorX":0.5},
@@ -1449,7 +1429,6 @@
                                                         }]
                                                 },
                                                 {
-                                                    "x":90,
                                                     "type":"Box",
                                                     "searchKey":"Box",
                                                     "props":{"width":110,"runtime":"Laya.runtime.ScaleButton","height":110,"centerY":0,"centerX":0,"anchorY":0.5,"anchorX":0.5},
@@ -1518,7 +1497,6 @@
                                 }]
                         },
                         {
-                            "x":45,
                             "type":"Box",
                             "searchKey":"Box,boxMoney",
                             "props":{"y":-187,"x":-50,"right":0,"name":"boxMoney","left":0,"height":130},
@@ -1531,7 +1509,6 @@
                             "compId":252,
                             "child":[
                                 {
-                                    "x":60,
                                     "type":"Label",
                                     "searchKey":"Label,font_default",
                                     "props":{"x":183,"text":"UI_Property_Money","name":"font_default","fontSize":70,"font":"SimHei","color":"#ffffff","centerY":0,"anchorY":0.5,"anchorX":0.5},
@@ -1545,7 +1522,6 @@
                                         ]
                                 },
                                 {
-                                    "x":60,
                                     "type":"Box",
                                     "searchKey":"Box,property",
                                     "props":{"width":590,"runtime":"Laya.runtime.ColorFilterItem","right":30,"name":"property","height":110,"centerY":0},
@@ -1558,7 +1534,6 @@
                                     "compId":254,
                                     "child":[
                                         {
-                                            "x":75,
                                             "type":"Box",
                                             "searchKey":"Box,btnMoneyReduce,btnMoneyReduce",
                                             "props":{"width":110,"var":"btnMoneyReduce","name":"btnMoneyReduce","left":0,"height":110,"centerY":0},
@@ -1676,7 +1651,6 @@
                                                 }]
                                         },
                                         {
-                                            "x":75,
                                             "type":"Box",
                                             "searchKey":"Box",
                                             "props":{"y":0,"x":110,"top":0,"right":110,"left":110,"bottom":0},
@@ -1689,7 +1663,6 @@
                                             "compId":264,
                                             "child":[
                                                 {
-                                                    "x":90,
                                                     "type":"TextInput",
                                                     "searchKey":"TextInput,inputMoney,inputMoney",
                                                     "props":{"var":"inputMoney","type":"number","top":0,"text":"0","right":0,"promptColor":"#828282","prompt":0,"name":"inputMoney","maxChars":1,"left":0,"fontSize":80,"font":"SimHei","color":"#ffffff","bottom":0,"align":"center"},
@@ -1703,7 +1676,6 @@
                                                         ]
                                                 },
                                                 {
-                                                    "x":90,
                                                     "type":"Rect",
                                                     "searchKey":"Rect",
                                                     "props":{"y":0,"x":0,"width":370,"lineWidth":1,"height":4,"fillColor":"#ffffff"},
@@ -1717,7 +1689,6 @@
                                                         ]
                                                 },
                                                 {
-                                                    "x":90,
                                                     "type":"Rect",
                                                     "searchKey":"Rect",
                                                     "props":{"y":106,"x":0,"width":370,"lineWidth":1,"height":4,"fillColor":"#ffffff"},
@@ -1732,7 +1703,6 @@
                                                 }]
                                         },
                                         {
-                                            "x":75,
                                             "type":"Box",
                                             "searchKey":"Box,btnMoneyIncrease,btnMoneyIncrease",
                                             "props":{"width":110,"var":"btnMoneyIncrease","right":0,"name":"btnMoneyIncrease","height":110,"centerY":0},
@@ -1894,7 +1864,6 @@
             "compId":56,
             "child":[
                 {
-                    "x":30,
                     "type":"Label",
                     "searchKey":"Label,font_default",
                     "props":{"top":20,"text":"UI_Selected_Talent","name":"font_default","left":20,"fontSize":50,"font":"SimHei","color":"#ffffff"},
@@ -1908,7 +1877,6 @@
                         ]
                 },
                 {
-                    "x":30,
                     "type":"List",
                     "searchKey":"List,listSelectedTalents,listSelectedTalents",
                     "props":{"var":"listSelectedTalents","vScrollBarSkin":" ","top":110,"spaceY":20,"right":10,"repeatY":3,"repeatX":1,"name":"listSelectedTalents","left":10,"bottom":10},
@@ -1921,7 +1889,6 @@
                     "compId":58,
                     "child":[
                         {
-                            "x":45,
                             "type":"Box",
                             "searchKey":"Box",
                             "props":{"y":15,"runtime":"Laya.runtime.ColorfulBox","right":15,"renderType":"render","left":15,"height":80},
@@ -1934,7 +1901,6 @@
                             "compId":215,
                             "child":[
                                 {
-                                    "x":60,
                                     "type":"Label",
                                     "searchKey":"Label,label",
                                     "props":{"y":20,"text":"Title","name":"label","fontSize":50,"font":"SimHei","color":"#ffffff","centerY":0,"centerX":0},
@@ -2051,6 +2017,35 @@
             "compId":280,
             "child":[
                 ]
+        },
+        {
+            "x":15,
+            "type":"Box",
+            "searchKey":"Box,boxText,boxText",
+            "props":{"zOrder":1,"width":1121,"var":"boxText","runtime":"Laya.runtime.ColorfulBox","name":"boxText","height":273,"centerY":481,"centerX":9,"bgColor":"#f6f4f4","alpha":0.7},
+            "nodeParent":1,
+            "label":"boxText",
+            "isOpen":true,
+            "isDirectory":true,
+            "isAniNode":true,
+            "hasChild":true,
+            "compId":281,
+            "child":[
+                {
+                    "x":30,
+                    "type":"Label",
+                    "searchKey":"Label,label",
+                    "props":{"zOrder":1,"wordWrap":true,"width":1121,"text":"To even it out or to be bold with the category you think is the most important one — that is the question.","name":"label","height":224,"fontSize":72,"font":"Agency FB","color":"#191717","centerY":0,"centerX":30,"anchorY":0.5,"anchorX":0.5},
+                    "nodeParent":281,
+                    "label":"label",
+                    "isOpen":true,
+                    "isDirectory":false,
+                    "isAniNode":true,
+                    "hasChild":false,
+                    "compId":282,
+                    "child":[
+                        ]
+                }]
         }],
     "animations":[
         {

@@ -219,67 +219,6 @@ const dark = {
                     radius: 0,
                 }
             ],
-            achievement: [
-                {
-                    defaultColor: '#464646',
-                    defaultStroke: '#f8f8f8',
-                    defaultLabel: '#eeeeee',
-                    hoverColor: '#c0c0c0',
-                    hoverStroke: '#f8f8f8',
-                    hoverLabel: '#3b3b3b',
-                    lineWidth: 4,
-                    radius: 0,
-                },{
-                    defaultColor: '#6495ed',
-                    defaultStroke: '#f8f8f8',
-                    defaultLabel: '#eeeeee',
-                    hoverColor: '#87cefa',
-                    hoverStroke: '#f8f8f8',
-                    hoverLabel: '#3b3b3b',
-                    lineWidth: 4,
-                    radius: 0,
-                },{
-                    defaultColor: '#e2a7ff',
-                    defaultStroke: '#f8f8f8',
-                    defaultLabel: '#eeeeee',
-                    hoverColor: '#e7beff',
-                    hoverStroke: '#f8f8f8',
-                    hoverLabel: '#3b3b3b',
-                    lineWidth: 4,
-                    radius: 0,
-                },
-                {
-                    defaultColor: '#ffa07a',
-                    defaultStroke: '#f8f8f8',
-                    defaultLabel: '#eeeeee',
-                    hoverColor: '#f7a989',
-                    hoverStroke: '#f8f8f8',
-                    hoverLabel: '#3b3b3b',
-                    lineWidth: 4,
-                    radius: 0,
-                }
-            ],
-            characterItem: {
-                name: {
-                    defaultColor: '#393e46',
-                    defaultStroke: '#eeeeee',
-                    defaultLabel: '#eeeeee',
-                    hoverColor: '#ff7878',
-                    hoverStroke: '#eeeeee',
-                    hoverLabel: '#eeeeee',
-                    lineWidth: 2,
-                },
-                state: {
-                    defaultColor: '#393e46',
-                    defaultStroke: '#eeeeee',
-                    defaultLabel: '#eeeeee',
-                    hoverColor: '#393e46',
-                    hoverStroke: '#eeeeee',
-                    hoverLabel: '#eeeeee',
-                    lineWidth: 2,
-                },
-                propertyColor: '#000000',
-            },
         },
         class: {
             btn_main: {
@@ -389,6 +328,7 @@ const dark = {
             },
             [pages.PROPERTY]: {
                 vars: {
+                    boxText: 'text_main',
                     btnRandomAllocate: 'btn_main',
                     btnNext: 'btn_main2',
                     title: 'title',
@@ -450,113 +390,12 @@ const dark = {
                     font_default: 'font_default',
                 }
             },
-            [pages.ACHIEVEMENT]: {
-                vars: {
-                    btnBack: 'btn_small',
-                    btnRank: 'btn_small',
-                },
-                names: {
-                    font_default: 'font_default',
-                    title: 'title',
-                }
-            },
-            [pages.THANKS]: {
-                vars: {
-                    btnBack: 'btn_small',
-                    btnAFD: {
-                        defaultColor: '#8764de',
-                        defaultStroke: '#8764de',
-                        defaultLabel: '#ffffff',
-                        hoverColor: '#9774ee',
-                        hoverStroke: '#9774ee',
-                        hoverLabel: '#ffffff',
-                        radius: 4,
-                    },
-                    btnDDF: {
-                        defaultColor: '#cc6699',
-                        defaultStroke: '#cc6699',
-                        defaultLabel: '#ffffff',
-                        hoverColor: '#dc76a9',
-                        hoverStroke: '#dc76a9',
-                        hoverLabel: '#ffffff',
-                        radius: 4,
-                    },
-                },
-            },
-            [pages.THEMES]: {
-                vars: {
-                    btnOK: {
-                        defaultColor: '#28b070',
-                        defaultLabel: '#ffffff',
-                        hoverColor: '#00ff00',
-                        hoverLabel: '#ffffff',
-                        radius: 80,
-                    },
-                    btnClose: {
-                        defaultColor: '#eb3941',
-                        defaultLabel: '#ffffff',
-                        hoverColor: '#ff0000',
-                        hoverLabel: '#ffffff',
-                        radius: 80,
-                    },
-                }
-            },
-            [pages.SAVELOAD]: {
-                vars: {
-                    btnClose: {
-                        defaultColor: '#eb3941',
-                        hoverColor: '#ff0000',
-                    },
-                    btnSave: {
-                        defaultColor: '#007046',
-                        hoverColor: '#76f190',
-                    },
-                    btnRead: {
-                        defaultColor: '#007046',
-                        hoverColor: '#76f190',
-                    },
-                    btnLoad: {
-                        defaultColor: '#fc5531',
-                        hoverColor: '#f28b54',
-                    },
-                    btnWrite: {
-                        defaultColor: '#fc5531',
-                        hoverColor: '#f28b54',
-                    },
-                    btnBackup: {
-                        defaultColor: '#9c30cd',
-                        hoverColor: '#bf50fd',
-                        radius: 8,
-                        defaultLabel: '#ffffff',
-                        hoverLabel: '#ffffff',
-                    },
-                },
-                names: {
-                    btnSmall: {
-                        radius: 80,
-                        defaultLabel: '#ffffff',
-                        hoverLabel: '#ffffff',
-                    }
-                }
-            },
             [pages.MODE]: {
                 names: {
                     font_default: 'font_default',
                     btn: 'btn_main',
                 }
             },
-        },
-        popups: {
-            [popups.ACHIEVEMENT]: {
-                vars: {
-                    bg1: {
-                        defaultColor: '#292a28',
-                        defaultStroke: '#84ff55',
-                        hoverColor: '#292a28',
-                        hoverStroke: '#84ff55',
-                    }
-                }
-            }
         }
     }
 }

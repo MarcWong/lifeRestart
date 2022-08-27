@@ -215,7 +215,7 @@
             "x":15,
             "type":"Box",
             "searchKey":"Box,boxText,boxText",
-            "props":{"zOrder":1,"y":318,"x":30,"width":1106,"var":"boxText","runtime":"Laya.runtime.ColorfulBox","name":"boxText","height":93,"centerY":-854,"centerX":20,"bgColor":"#f6f4f4","alpha":0.7},
+            "props":{"zOrder":1,"y":318,"x":9,"width":1106,"var":"boxText","runtime":"Laya.runtime.ColorfulBox","name":"boxText","height":93,"centerY":-854,"centerX":20,"bgColor":"#f6f4f4","alpha":0.7},
             "nodeParent":1,
             "label":"boxText",
             "isOpen":true,

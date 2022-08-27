@@ -48,6 +48,7 @@ export default ({
     UI_Title_Summary: 'Life Summary',
     UI_Talent_Extend: 'Talent, You can choose one to extend',
     UI_Remake_Again: 'Remake Again',
+    UI_Print: 'Print',
 
     UI_Final_Age: 'Age',
     UI_Total_Judge: 'Judge',
@@ -100,20 +101,6 @@ export default ({
     UI_Strength_Judge_Level_9: '金丹',
     UI_Strength_Judge_Level_10: '元婴',
     UI_Strength_Judge_Level_11: '仙体',
-
-    UI_Remake_Times_Judge_Level_0: 'Purple rate constant',
-    UI_Remake_Times_Judge_Level_1: 'Purple rate double',
-    UI_Remake_Times_Judge_Level_2: 'Purple rate triple',
-    UI_Remake_Times_Judge_Level_3: 'Purple rate Quadruple',
-    UI_Remake_Times_Judge_Level_4: 'Purple rate Quintuple',
-    UI_Remake_Times_Judge_Level_5: 'Purple rate Sextuple',
-
-    UI_Achievement_Count_Judge_Level_0: 'Orange rate constant',
-    UI_Achievement_Count_Judge_Level_1: 'Orange rate double',
-    UI_Achievement_Count_Judge_Level_2: 'Orange rate triple',
-    UI_Achievement_Count_Judge_Level_3: 'Orange rate Quadruple',
-    UI_Achievement_Count_Judge_Level_4: 'Orange rate Quintuple',
-    UI_Achievement_Count_Judge_Level_5: 'Orange rate Sextuple',
 
     UI_Support_Programmer: 'Programmer',
     UI_Support_Designer: 'Designer',
