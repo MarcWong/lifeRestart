@@ -17,10 +17,11 @@ export default class Summary extends ui.view.DefaultTheme.SummaryUI {
         const win = window.open()
         const txts = this.#printText.split('\n')
         for (let id = 0; id < txts.length; id++) {
-            win.document.write("<p style='margin:4px 0; width: 370px; font-size: 16px; font-family:Casadia Code, Consolas, monospace'>"
+            win.document.write("<p style='margin:4px 0; width: 350px; font-size: 16px; font-family:Casadia Code, Consolas, monospace'>"
                 + txts[id]
                 + "</p>")
         }
+        win.document.write("<p style='margin:4px 0; width: 350px; font-size: 16px; font-family:Casadia Code, Consolas, monospace'>Visit http://samsara.hackpku.com/ to play it at home <br>© 2022 Yuwei Jiang</p>")
         win.focus()
         win.document.close()
         win.print()

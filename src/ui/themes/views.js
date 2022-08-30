@@ -230,24 +230,14 @@ const dark = {
                 lineWidth: 2,
                 radius: 40,
             },
-            btn_main2: {
-                defaultColor: '#ffffff',
-                defaultLabel: '#000000',
-                bgColor: '#999999',
+            btn_print: {
+                defaultColor: '#3ec103',
+                defaultLabel: '#eeeeee',
+                bgColor: '#073065',
                 hoverColor: '#cccccc',
-                hoverLabel: '#000000',
+                hoverLabel: '#eeeeee',
                 lineWidth: 2,
                 radius: 40,
-            },
-            btn_small: {
-                defaultColor: '#5865f2',
-                defaultStroke: '#eeeeee',
-                defaultLabel: '#eeeeee',
-                hoverColor: '#1160b0',
-                hoverStroke: '#eeeeee',
-                hoverLabel: '#eeeeee',
-                lineWidth: 0,
-                radius: 4,
             },
             title: {
                 color: '#ffffff',
@@ -268,25 +258,10 @@ const dark = {
         pages: {
             [pages.MAIN]: {
                 vars: {
-                    btnRemake: 'btn_main',
-                    btnThemes: {
-                        defaultColor: '#cccccc',
-                        radius: 100,
-                    },
-                    btnSaveLoad: {
-                        defaultColor: '#5865f2',
-                        defaultStroke: '#eeeeee',
-                        defaultLabel: '#eeeeee',
-                        hoverColor: '#1160b0',
-                        hoverStroke: '#eeeeee',
-                        hoverLabel: '#eeeeee',
-                        lineWidth: 0,
-                        radius: 100,
-                    },
+                    btnRemake: 'btn_main'
                 },
                 names: {
-                    title: 'title',
-                    btnSmall: 'btn_small',
+                    title: 'title'
                 }
             },
             [pages.REBORN]: {
@@ -306,23 +281,23 @@ const dark = {
                     boxText: 'text_main',
                     btnAfg: 'btn_main',
                     btnChn: 'btn_main',
-                    btnEgp: 'btn_main2',
-                    btnInd: 'btn_main2',
-                    btnJpn: 'btn_main2',
-                    btnUsa: 'btn_main2'
+                    btnEgp: 'btn_main',
+                    btnInd: 'btn_main',
+                    btnJpn: 'btn_main',
+                    btnUsa: 'btn_main'
                 }
             },
             [pages.SEXORIENTATION]: {
                 vars: {
                     boxText: 'text_main',
-                    btnStraight: 'btn_main2',
-                    btnLBTQ: 'btn_main2'
+                    btnStraight: 'btn_main',
+                    btnLBTQ: 'btn_main'
                 }
             },
             [pages.TALENT]: {
                 vars: {
                     boxText: 'text_main',
-                    btnDrawCard: 'btn_main2',
+                    btnDrawCard: 'btn_main',
                     title: 'title',
                 }
             },
@@ -330,7 +305,7 @@ const dark = {
                 vars: {
                     boxText: 'text_main',
                     btnRandomAllocate: 'btn_main',
-                    btnNext: 'btn_main2',
+                    btnNext: 'btn_main',
                     title: 'title',
                 },
                 names: {
@@ -383,19 +358,13 @@ const dark = {
             [pages.SUMMARY]: {
                 vars: {
                     btnAgain: 'btn_main',
-                    btnPrint: 'btn_main',
+                    btnPrint: 'btn_print',
                     title: 'title',
                 },
                 names: {
                     font_default: 'font_default',
                 }
-            },
-            [pages.MODE]: {
-                names: {
-                    font_default: 'font_default',
-                    btn: 'btn_main',
-                }
-            },
+            }
         }
     }
 }
