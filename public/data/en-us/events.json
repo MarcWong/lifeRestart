@@ -1277,7 +1277,7 @@
     },
     "840704": {
         "id": 840704,
-        "event": "You start to pursue PHD.",
+        "event": "You start to pursue PhD.",
         "include": "(INT>6&INT<10&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
     },
     "840705": {
@@ -1318,7 +1318,7 @@
     },
     "841003": {
         "id": 841003,
-        "event": "You start to pursue PHD.",
+        "event": "You start to pursue PhD.",
         "include": "(INT>9&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
     },
     "841004": {

@@ -17,46 +17,15 @@ export default class Summary extends ui.view.DefaultTheme.SummaryUI {
         const win = window.open()
         const txts = this.#printText.split('\n')
         for (let id = 0; id < txts.length; id++) {
-            win.document.write("<p style='margin:4px 0; width: 350px; font-size: 16px; font-family:Casadia Code, Consolas, monospace'>"
+            win.document.write("<p style='margin:2px 0; width: 280px; font-size: 9px; font-family:Casadia Code, Consolas, monospace'>"
                 + txts[id]
                 + "</p>")
         }
-        win.document.write("<p style='margin:4px 0; width: 340px; font-size: 16px; font-family:Casadia Code, Consolas, monospace'>Visit http://samsara.hackpku.com/ to play it at home <br>© 2022 Yuwei Jiang</p>")
+        win.document.write("<p style='margin: 12px 0 0; width: 280px; font-size: 9px; font-family:Casadia Code, Consolas, monospace'>Visit http://samsara.hackpku.com/ to play it at home.<br> © 2022 Yuwei Jiang</p>")
         win.focus()
         win.document.close()
         win.print()
     }
-
-    // onPrint() {
-    //     const txts = this.#printText.split('\n')
-    //     let element = document.createElement('canvas')
-    //     element.id = 'canvas'
-    //     element.width = 700
-    //     element.height = 16000
-    //     let ctx = element.getContext("2d")
-    //     ctx.font = "30px 'Casadia Code', Consolas, monospace"
-    //     let y = 30
-    //     const wrapTxt = 41 // characters in a line
-    //     for (let id = 0; id < txts.length; id++) {
-    //         let n = 0
-    //         while (n * wrapTxt < txts[id].length) {
-    //             ctx.fillText(txts[id].substring(n * wrapTxt, (n+1)*wrapTxt), 10, y)
-    //             y += 33 // linespace
-    //             n += 1
-    //         }
-    //     }
-    //     // element.height = y+30
-
-    //     const win = window.open()
-    //     win.document.write("<img src='"
-    //         + element.toDataURL()
-    //         + "'/>")
-    //     win.focus()    
-    //     win.document.close()
-    //     win.print()
-    //     // win.close()
-    //     // this.downloadTxt(this.#printText, "print.txt")
-    // }
 
     // Save as a txt
     // downloadTxt(text, fileName) {
@@ -70,7 +39,6 @@ export default class Summary extends ui.view.DefaultTheme.SummaryUI {
     init({ talents, printText, enableExtend}) {
         const {summary, lastExtendTalent} = core;
         this.#printText = printText;
-        console.log(this.#printText.split('\n'))
 
         this.listSummary.array = [
             [core.PropertyTypes.HCHR, $lang.UI_Property_Charm],
