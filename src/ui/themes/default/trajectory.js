@@ -183,7 +183,7 @@ export default class Trajectory extends ui.view.DefaultTheme.TrajectoryUI {
         this.#enableExtend = enableExtend;
 
         this.boxSpeed.visible = false;
-        this.scbSpeed.value = this.scbSpeed.max * 0.9; // init speed
+        this.scbSpeed.value = this.scbSpeed.max * 0.5; // init speed
         this.btnSummary.visible = false;
         // this.#trajectoryItems = [];
         this.#isEnd = false;

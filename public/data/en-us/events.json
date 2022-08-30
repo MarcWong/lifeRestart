@@ -591,7 +591,7 @@
     },
     "820409": {
         "id": 820409,
-        "event": "YYou are diagnosed cancer and start to get medical treatments.",
+        "event": "You are diagnosed cancer and start to get medical treatments.",
         "include": "(STR>3&STR<6&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
     },
     "820410": {
@@ -2247,7 +2247,7 @@
     },
     "11001": {
         "id": 11001,
-        "event": "North America experiences the Grate Famines due to the vector change from climate warming in 2025. As a result, what was once known as rubbish or garbage is one of today’s most valuable resources and is mined both on land and sea. Everything is a resource. The cost of carbon is now included in the price of goods and transactions. "
+        "event": "North America experiences the Great Famines due to the vector change from climate warming in 2025. As a result, what was once known as rubbish or garbage is one of today’s most valuable resources and is mined both on land and sea. Everything is a resource. The cost of carbon is now included in the price of goods and transactions. "
     },
     "11002": {
         "id": 11002,
@@ -2399,7 +2399,7 @@
     },
     "11039": {
         "id": 11039,
-        "event": "Global birth rate has gone done to 1.2 births per woman."
+        "event": "Global birth rate has gone down to 1.2 births per woman."
     },
     "11040": {
         "id": 11040,
