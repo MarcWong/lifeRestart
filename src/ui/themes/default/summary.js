@@ -16,12 +16,14 @@ export default class Summary extends ui.view.DefaultTheme.SummaryUI {
     onPrintTxt() {
         const win = window.open()
         const txts = this.#printText.split('\n')
+        win.document.write("<pstyle='margin: 6px 0; width: 280px; font-size: 9px; font-family:Casadia Code, Consolas, monospace'>Life Summary @Samsara</p>")
         for (let id = 0; id < txts.length; id++) {
             win.document.write("<p style='margin:2px 0; width: 280px; font-size: 9px; font-family:Casadia Code, Consolas, monospace'>"
                 + txts[id]
                 + "</p>")
         }
-        win.document.write("<p style='margin: 12px 0 0; width: 280px; font-size: 9px; font-family:Casadia Code, Consolas, monospace'>Visit http://samsara.hackpku.com/ to play it at home.<br> © 2022 Yuwei Jiang</p>")
+        win.document.write("<div style='margin: 8px 0 0; width: 280px;'><img src='images/qrcode.png' style='width: 280px;height:280px;'></div>")
+        win.document.write("<p style='margin: 8px 0 0; width: 280px; font-size: 9px; font-family:Casadia Code, Consolas, monospace'>Visit http://samsara.hackpku.com/ to play it at home.<br> © 2022 Yuwei Jiang</p>")
         win.focus()
         win.document.close()
         win.print()
