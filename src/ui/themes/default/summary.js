@@ -22,7 +22,7 @@ export default class Summary extends ui.view.DefaultTheme.SummaryUI {
                 + txts[id]
                 + "</p>")
         }
-        win.document.write("<div style='margin: 8px 0 0; width: 280px;'><img src='images/qrcode.png' style='width: 280px;height:280px;'></div>")
+        win.document.write("<div style='margin: 8px 0 0; width: 280px; text-align:center;'><img src='images/qrcode.png' style='width: 225px;height:225px;'></div>")
         win.document.write("<p style='margin: 8px 0 0; width: 280px; font-size: 9px; font-family:Casadia Code, Consolas, monospace'>Visit http://samsara.hackpku.com/ to play it at home.<br> © 2022 Yuwei Jiang</p>")
         win.focus()
         win.document.close()
