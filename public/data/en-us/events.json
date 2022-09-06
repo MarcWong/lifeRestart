@@ -280,47 +280,47 @@
     },
     "810802": {
         "id": 810802,
-        "event": "You are a girl. You are born into an upper-class family.",
+        "event": "You enter a private international kindergarten..",
         "include": "(MNY>7&MNY<10&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
     },
     "810803": {
         "id": 810803,
-        "event": "You are a girl. You are born into an upper-class family.",
+        "event": "You are not the most popular girl in school, but no one dares to bully you..",
         "include": "(MNY>7&MNY<10&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
     },
     "810804": {
         "id": 810804,
-        "event": "You are a girl. You are born into an upper-class family.",
+        "event": "You were invited to attend the most popular girl’s birthday party, you argued with your parents because they are not rich enough.",
         "include": "(MNY>7&MNY<10&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
     },
     "810805": {
         "id": 810805,
-        "event": "You are a girl. You are born into an upper-class family.",
+        "event": "You graduated from a top university and got accepted to a top ranked MA program..",
         "include": "(MNY>7&MNY<10&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
     },
     "810806": {
         "id": 810806,
-        "event": "You are a girl. You are born into an upper-class family.",
+        "event": "You are promoted to the management team of the company.",
         "include": "(MNY>7&MNY<10&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
     },
     "810807": {
         "id": 810807,
-        "event": "You are a girl. You are born into an upper-class family.",
+        "event": "You transformed parts of your bodies to better functioning prosthesis including your heart and brain which ensure longer lifespans.",
         "include": "(MNY>7&MNY<10&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
     },
     "810808": {
         "id": 810808,
-        "event": "You are a girl. You are born into an upper-class family.",
+        "event": "You start your second career of your passion; it doesn’t earn more money than your first profession, but you have enough money already.",
         "include": "(MNY>7&MNY<10&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
     },
     "810809": {
         "id": 810809,
-        "event": "You are a girl. You are born into an upper-class family.",
+        "event": "You retired and started traveling.",
         "include": "(MNY>7&MNY<10&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
     },
     "810810": {
         "id": 810810,
-        "event": "You are a girl. You are born into an upper-class family.",
+        "event": "You move into an expensive nursing home.",
         "include": "(MNY>7&MNY<10&(US>0|CH>0|EGY>0|JAP>0|(MNY>4&IND>0)))"
     },
 

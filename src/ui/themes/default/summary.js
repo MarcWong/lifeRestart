@@ -24,7 +24,7 @@ export default class Summary extends ui.view.DefaultTheme.SummaryUI {
         }
         win.document.write("<div style='margin: 8px 0 0; width: 280px; text-align: center;'><img src='images/qrcode.png' style='width: 150px;height:150px;'></div>")
         win.document.write("<p style='margin: 8px 0 0; width: 280px; font-size: 12px; font-family:Casadia Code, Consolas, monospace'>Visit http://samsara.hackpku.com/ to play it at home.<br> © 2022 Yuwei Jiang</p>")
-        win.document.write("<p style='margin: 8px 0 0; width: 280px; font-size: 12px; font-family:Casadia Code, Consolas, monospace'>Artist Contact: sabinajiang0505 @outlook.com</p>")
+        win.document.write("<p style='margin: 8px 0 0; width: 280px; font-size: 12px; font-family:Casadia Code, Consolas, monospace'>Contact: sabinajiang0505@outlook.com</p>")
         win.focus()
         win.document.close()
         win.print()
