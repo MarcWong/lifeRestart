@@ -112,3 +112,4 @@ __localStorage.json
 
 .DS_Store
 *.tar
+.vscode
