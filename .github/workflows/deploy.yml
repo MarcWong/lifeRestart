@@ -6,7 +6,7 @@ on:
       - master
 
 permissions:
-  contents: write  # 允许 GitHub Action 推送内容
+  contents: write
 
 jobs:
   build-and-deploy:
@@ -21,14 +21,17 @@ jobs:
       with:
         node-version: '18'
 
+    - name: Install pnpm
+      run: npm install -g pnpm
+
     - name: Install dependencies
-      run: npm install
+      run: pnpm install
 
     - name: Build the project
-      run: npm run build
+      run: pnpm build
 
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./dist
+        publish_dir: ./public
